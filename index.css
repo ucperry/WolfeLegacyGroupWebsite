@@ -1,0 +1,672 @@
+.container {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Scoreboard";
+  }
+  
+  .Scoreboard {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "homeTeamColumn gameInfoColumn awayTeamColumn";
+    grid-area: Scoreboard;
+  }
+  
+  .homeTeamColumn {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "homeTeamGameArea"
+      "homeTeamAthleteIdentityArea";
+    grid-area: homeTeamColumn;
+  }
+  
+  .homeTeamGameArea {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "hTgIndentitySection hTgStatSection";
+    grid-area: homeTeamGameArea;
+  }
+  
+  .hTgIndentitySection {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "hTgITeamCityTile"
+      "hTgITeamLogoTile"
+      "hTgITeamMascotTile";
+    grid-area: hTgIndentitySection;
+  }
+  
+  .hTgITeamCityTile { grid-area: hTgITeamCityTile; }
+  
+  .hTgITeamLogoTile { grid-area: hTgITeamLogoTile; }
+  
+  .hTgITeamMascotTile { grid-area: hTgITeamMascotTile; }
+  
+  .hTgStatSection {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "hTgSTeamScoreTile"
+      "hTgSTeamFoulTile";
+    grid-area: hTgStatSection;
+  }
+  
+  .hTgSTeamScoreTile {  display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 0.5fr 1.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". hTgStScoreHeader"
+      "hTgStScoreDisplay hTgStScoreDisplay";
+    grid-area: hTgSTeamScoreTile;
+  }
+  
+  .hTgStScoreHeader { grid-area: hTgStScoreHeader; }
+  
+  .hTgStScoreDisplay { grid-area: hTgStScoreDisplay; }
+  
+  .hTgSTeamFoulTile {  display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 1.3fr 0.7fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "hTgStFoulDisplay hTgStFoulDisplay"
+      ". hTgStFoulFooter";
+    grid-area: hTgSTeamFoulTile;
+  }
+  
+  .hTgStFoulDisplay { grid-area: hTgStFoulDisplay; }
+  
+  .hTgStFoulFooter { grid-area: hTgStFoulFooter; }
+  
+  .homeTeamAthleteIdentityArea {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "hTaIStarterSection"
+      "hTaIReserveSection";
+    grid-area: homeTeamAthleteIdentityArea;
+  }
+  
+  .hTaIStarterSection {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "hTaIsPlayer1Tile"
+      "hTaIsPlayer2Tile"
+      "hTaIsPlayer3Tile"
+      "hTaIsPlayer4Tile"
+      "hTaIsPlayer5Tile";
+    grid-area: hTaIStarterSection;
+  }
+  
+  .hTaIsPlayer1Tile { grid-area: hTaIsPlayer1Tile; }
+  
+  .hTaIsPlayer2Tile { grid-area: hTaIsPlayer2Tile; }
+  
+  .hTaIsPlayer3Tile { grid-area: hTaIsPlayer3Tile; }
+  
+  .hTaIsPlayer4Tile { grid-area: hTaIsPlayer4Tile; }
+  
+  .hTaIsPlayer5Tile { grid-area: hTaIsPlayer5Tile; }
+  
+  .hTaIReserveSection {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "hTaIsPlayer6Tile"
+      "hTaIsPlayer7Tile"
+      "hTaIsPlayer8Tile"
+      "hTaIsPlayer9Tile"
+      "hTaIsPlayer10Tile";
+    grid-area: hTaIReserveSection;
+  }
+  
+  .hTaIsPlayer6Tile { grid-area: hTaIsPlayer6Tile; }
+  
+  .hTaIsPlayer7Tile { grid-area: hTaIsPlayer7Tile; }
+  
+  .hTaIsPlayer8Tile { grid-area: hTaIsPlayer8Tile; }
+  
+  .hTaIsPlayer9Tile { grid-area: hTaIsPlayer9Tile; }
+  
+  .hTaIsPlayer10Tile { grid-area: hTaIsPlayer10Tile; }
+  
+  .gameInfoColumn {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1.5fr .75fr 1.25fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gameInfoSponsPossArea"
+      "gameInfoGameTimeArea"
+      "gameInfoTimeoutArea"
+      "gameInfoLeaderBoardArea";
+    grid-area: gameInfoColumn;
+  }
+  
+  .gameInfoSponsPossArea {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gIspSponsorSection"
+      "gIspPossessionSection";
+    grid-area: gameInfoSponsPossArea;
+  }
+  
+  .gIspSponsorSection {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gIsPsHomeAdTile gIsPsAwayAdTile";
+    grid-area: gIspSponsorSection;
+  }
+  
+  .gIsPsHomeAdTile { grid-area: gIsPsHomeAdTile; }
+  
+  .gIsPsAwayAdTile { grid-area: gIsPsAwayAdTile; }
+  
+  .gIspPossessionSection {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gIsPHomeArrowTile gIsPPossSymTile gIsPAwayArrowTile";
+    grid-area: gIspPossessionSection;
+  }
+  
+  .gIsPHomeArrowTile { grid-area: gIsPHomeArrowTile; }
+  
+  .gIsPPossSymTile { grid-area: gIsPPossSymTile; }
+  
+  .gIsPAwayArrowTile { grid-area: gIsPAwayArrowTile; }
+  
+  .gameInfoGameTimeArea {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 0.5fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gIgTClockSection"
+      "gIgTPeriodSection"
+      "gIgTClockControlsSection";
+    grid-area: gameInfoGameTimeArea;
+  }
+  
+  .gIgTClockSection {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gIgTcTOLHomeTile gIgTcDisplayTile gIgTcTOLAwayTile";
+    grid-area: gIgTClockSection;
+  }
+  
+  .gIgTcTOLHomeTile {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 1.6fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gIgTcThHeader"
+      "gIgTcThDisplay";
+    grid-area: gIgTcTOLHomeTile;
+  }
+  
+  .gIgTcThHeader { grid-area: gIgTcThHeader; }
+  
+  .gIgTcThDisplay { grid-area: gIgTcThDisplay; }
+  
+  .gIgTcDisplayTile {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 1.6fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gIgTcDHeader"
+      "gIgTcClockDisplay";
+    grid-area: gIgTcDisplayTile;
+  }
+  
+  .gIgTcDHeader { grid-area: gIgTcDHeader; }
+  
+  .gIgTcClockDisplay { grid-area: gIgTcClockDisplay; }
+  
+  .gIgTcTOLAwayTile {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 1.6fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gIgTcTAHeader"
+      "gIgTcTADisplay";
+    grid-area: gIgTcTOLAwayTile;
+  }
+  
+  .gIgTcTAHeader { grid-area: gIgTcTAHeader; }
+  
+  .gIgTcTADisplay { grid-area: gIgTcTADisplay; }
+  
+  .gIgTPeriodSection {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gIgTpHeader gIgTpHeader gIgTpHeader gIgTpHeader"
+      "gIgTp1Tile gIgTp2Tile gIgTp3Tile gIgTp4Tile";
+    grid-area: gIgTPeriodSection;
+  }
+  
+  .gIgTpHeader { grid-area: gIgTpHeader; }
+  
+  .gIgTp1Tile { grid-area: gIgTp1Tile; }
+  
+  .gIgTp2Tile { grid-area: gIgTp2Tile; }
+  
+  .gIgTp3Tile { grid-area: gIgTp3Tile; }
+  
+  .gIgTp4Tile { grid-area: gIgTp4Tile; }
+  
+  .gIgTClockControlsSection {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gIgTcCTimeIncTile gIgTcCTimeDecTile gIgTcCStartTile gIgTcCStopTile";
+    grid-area: gIgTClockControlsSection;
+  }
+  
+  .gIgTcCTimeIncTile {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.7fr 1.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gIgTcCTimeIncHeader"
+      "gIgTcCTimeIncBtn";
+    grid-area: gIgTcCTimeIncTile;
+  }
+  
+  .gIgTcCTimeIncHeader { grid-area: gIgTcCTimeIncHeader; }
+  
+  .gIgTcCTimeIncBtn { grid-area: gIgTcCTimeIncBtn; }
+  
+  .gIgTcCTimeDecTile {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.7fr 1.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gIgTcCTimeDecHeader"
+      "gIgTcCTimeDecBtn";
+    grid-area: gIgTcCTimeDecTile;
+  }
+  
+  .gIgTcCTimeDecHeader { grid-area: gIgTcCTimeDecHeader; }
+  
+  .gIgTcCTimeDecBtn { grid-area: gIgTcCTimeDecBtn; }
+  
+  .gIgTcCStartTile {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.7fr 1.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gIgTcCStartHeader"
+      "gIgTcCStartBtn";
+    grid-area: gIgTcCStartTile;
+  }
+  
+  .gIgTcCStartHeader { grid-area: gIgTcCStartHeader; }
+  
+  .gIgTcCStartBtn { grid-area: gIgTcCStartBtn; }
+  
+  .gIgTcCStopTile {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.7fr 1.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gIgTcCStopHeader"
+      "gIgTcCStopBtn";
+    grid-area: gIgTcCStopTile;
+  }
+  
+  .gIgTcCStopHeader { grid-area: gIgTcCStopHeader; }
+  
+  .gIgTcCStopBtn { grid-area: gIgTcCStopBtn; }
+  
+  .gameInfoTimeoutArea {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gIToHomeTeamSection gIToAwayTeamSection";
+    grid-area: gameInfoTimeoutArea;
+  }
+  
+  .gIToHomeTeamSection {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gItOh60sTile gItOh30sTile";
+    grid-area: gIToHomeTeamSection;
+  }
+  
+  .gItOh60sTile {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.6fr 1.4fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gItOh60sHeader"
+      "gItOh60sBtns";
+    grid-area: gItOh60sTile;
+  }
+  
+  .gItOh60sHeader { grid-area: gItOh60sHeader; }
+  
+  .gItOh60sBtns { grid-area: gItOh60sBtns; }
+  
+  .gItOh30sTile {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.6fr 1.4fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gItOh30sHeader"
+      "gItOh30sBtns";
+    grid-area: gItOh30sTile;
+  }
+  
+  .gItOh30sHeader { grid-area: gItOh30sHeader; }
+  
+  .gItOh30sBtns { grid-area: gItOh30sBtns; }
+  
+  .gIToAwayTeamSection {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gItOa60sTile gItOa30sTile";
+    grid-area: gIToAwayTeamSection;
+  }
+  
+  .gItOa60sTile {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.6fr 1.4fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gItOa60sHeader"
+      "gItOa60sBtns";
+    grid-area: gItOa60sTile;
+  }
+  
+  .gItOa60sHeader { grid-area: gItOa60sHeader; }
+  
+  .gItOa60sBtns { grid-area: gItOa60sBtns; }
+  
+  .gItOa30sTile {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.6fr 1.4fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gItOa30sHeader"
+      "gItOa30sBtns";
+    grid-area: gItOa30sTile;
+  }
+  
+  .gItOa30sHeader { grid-area: gItOa30sHeader; }
+  
+  .gItOa30sBtns { grid-area: gItOa30sBtns; }
+  
+  .gameInfoLeaderBoardArea {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gILbPointsSection gILbRebSection gILbAssistSection";
+    grid-area: gameInfoLeaderBoardArea;
+  }
+  
+  .gILbPointsSection {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gIlBpHeader"
+      "gIlBpLeader1Tile"
+      "gIlBpLeader2Tile"
+      "gIlBpLeader3Tile";
+    grid-area: gILbPointsSection;
+  }
+  
+  .gIlBpHeader { grid-area: gIlBpHeader; }
+  
+  .gIlBpLeader1Tile { grid-area: gIlBpLeader1Tile; }
+  
+  .gIlBpLeader2Tile { grid-area: gIlBpLeader2Tile; }
+  
+  .gIlBpLeader3Tile { grid-area: gIlBpLeader3Tile; }
+  
+  .gILbRebSection {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gIlBrHeader"
+      "gIlBrLeader1Tile"
+      "gIlBrLeader2Tile"
+      "gIlBrLeader3Tile";
+    grid-area: gILbRebSection;
+  }
+  
+  .gIlBrHeader { grid-area: gIlBrHeader; }
+  
+  .gIlBrLeader1Tile { grid-area: gIlBrLeader1Tile; }
+  
+  .gIlBrLeader2Tile { grid-area: gIlBrLeader2Tile; }
+  
+  .gIlBrLeader3Tile { grid-area: gIlBrLeader3Tile; }
+  
+  .gILbAssistSection {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gIlBaHeader"
+      "gIlBaLeader1Tile"
+      "gIlBaLeader2Tile"
+      "gIlBaLeader3Tile";
+    grid-area: gILbAssistSection;
+  }
+  
+  .gIlBaHeader { grid-area: gIlBaHeader; }
+  
+  .gIlBaLeader1Tile { grid-area: gIlBaLeader1Tile; }
+  
+  .gIlBaLeader2Tile { grid-area: gIlBaLeader2Tile; }
+  
+  .gIlBaLeader3Tile { grid-area: gIlBaLeader3Tile; }
+  
+  .awayTeamColumn {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "awayTeamGameArea"
+      "awayTeamAthleteIdentityArea";
+    grid-area: awayTeamColumn;
+  }
+  
+  .awayTeamGameArea {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "aTgStatSection aTgIdentitySection";
+    grid-area: awayTeamGameArea;
+  }
+  
+  .aTgStatSection {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "aTgSTeamScoreTile"
+      "aTgSTeamFoulTile";
+    grid-area: aTgStatSection;
+  }
+  
+  .aTgSTeamScoreTile {  display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    grid-template-rows: 0.5fr 1.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "aTgStScoreHeader ."
+      "aTgStScoreDisplay aTgStScoreDisplay";
+    grid-area: aTgSTeamScoreTile;
+  }
+  
+  .aTgStScoreHeader { grid-area: aTgStScoreHeader; }
+  
+  .aTgStScoreDisplay { grid-area: aTgStScoreDisplay; }
+  
+  .aTgSTeamFoulTile {  display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    grid-template-rows: 1.3fr 0.7fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "aTgStFoulDisplay aTgStFoulDisplay"
+      "aTgStFoulFooter .";
+    grid-area: aTgSTeamFoulTile;
+  }
+  
+  .aTgStFoulDisplay { grid-area: aTgStFoulDisplay; }
+  
+  .aTgStFoulFooter { grid-area: aTgStFoulFooter; }
+  
+  .aTgIdentitySection {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "aTgITeamCityTile"
+      "aTgITeamLogoTile"
+      "aTgITeamMascotTile";
+    grid-area: aTgIdentitySection;
+  }
+  
+  .aTgITeamCityTile { grid-area: aTgITeamCityTile; }
+  
+  .aTgITeamLogoTile { grid-area: aTgITeamLogoTile; }
+  
+  .aTgITeamMascotTile { grid-area: aTgITeamMascotTile; }
+  
+  .awayTeamAthleteIdentityArea {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "aTaIStarterSection"
+      "aTaIReserveSection";
+    grid-area: awayTeamAthleteIdentityArea;
+  }
+  
+  .aTaIStarterSection {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "aTaIsPlayer1Tile"
+      "aTaIsPlayer2Tile"
+      "aTaIsPlayer3Tile"
+      "aTaIsPlayer4Tile"
+      "aTaIsPlayer5Tile";
+    grid-area: aTaIStarterSection;
+  }
+  
+  .aTaIsPlayer1Tile { grid-area: aTaIsPlayer1Tile; }
+  
+  .aTaIsPlayer2Tile { grid-area: aTaIsPlayer2Tile; }
+  
+  .aTaIsPlayer3Tile { grid-area: aTaIsPlayer3Tile; }
+  
+  .aTaIsPlayer4Tile { grid-area: aTaIsPlayer4Tile; }
+  
+  .aTaIsPlayer5Tile { grid-area: aTaIsPlayer5Tile; }
+  
+  .aTaIReserveSection {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "aTaIsPlayer6Tile"
+      "aTaIsPlayer7Tile"
+      "aTaIsPlayer8Tile"
+      "aTaIsPlayer9Tile"
+      "aTaIsPlayer10Tile";
+    grid-area: aTaIReserveSection;
+  }
+  
+  .aTaIsPlayer6Tile { grid-area: aTaIsPlayer6Tile; }
+  
+  .aTaIsPlayer7Tile { grid-area: aTaIsPlayer7Tile; }
+  
+  .aTaIsPlayer8Tile { grid-area: aTaIsPlayer8Tile; }
+  
+  .aTaIsPlayer9Tile { grid-area: aTaIsPlayer9Tile; }
+  
+  .aTaIsPlayer10Tile { grid-area: aTaIsPlayer10Tile; }
+  
