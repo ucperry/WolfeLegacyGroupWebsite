@@ -5,6 +5,7 @@
     grid-auto-flow: row;
     grid-template-areas:
       "Scoreboard";
+      border: 6px solid orange;
   }
   
   .Scoreboard {  display: grid;
