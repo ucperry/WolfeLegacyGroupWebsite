@@ -16,6 +16,7 @@
     grid-template-areas:
       "homeTeamColumn gameInfoColumn awayTeamColumn";
     grid-area: Scoreboard;
+    border: 5px solid aqua;
   }
   
   .homeTeamColumn {  display: grid;
@@ -27,6 +28,7 @@
       "homeTeamGameArea"
       "homeTeamAthleteIdentityArea";
     grid-area: homeTeamColumn;
+    border: 4px solid Red;
   }
   
   .homeTeamGameArea {  display: grid;
@@ -37,6 +39,7 @@
     grid-template-areas:
       "hTgIndentitySection hTgStatSection";
     grid-area: homeTeamGameArea;
+    border: 3px solid yellow;
   }
   
   .hTgIndentitySection {  display: grid;
@@ -49,13 +52,17 @@
       "hTgITeamLogoTile"
       "hTgITeamMascotTile";
     grid-area: hTgIndentitySection;
+    border: 2px solid purple;
   }
   
-  .hTgITeamCityTile { grid-area: hTgITeamCityTile; }
+  .hTgITeamCityTile { grid-area: hTgITeamCityTile; 
+    border: 1px solid black;}
   
-  .hTgITeamLogoTile { grid-area: hTgITeamLogoTile; }
+  .hTgITeamLogoTile { grid-area: hTgITeamLogoTile; 
+    border: 1px solid black;}
   
-  .hTgITeamMascotTile { grid-area: hTgITeamMascotTile; }
+  .hTgITeamMascotTile { grid-area: hTgITeamMascotTile; 
+    border: 1px solid black;}
   
   .hTgStatSection {  display: grid;
     grid-template-columns: 1fr;
@@ -66,6 +73,7 @@
       "hTgSTeamScoreTile"
       "hTgSTeamFoulTile";
     grid-area: hTgStatSection;
+    border: 2px solid purple;
   }
   
   .hTgSTeamScoreTile {  display: grid;
@@ -77,6 +85,7 @@
       ". hTgStScoreHeader"
       "hTgStScoreDisplay hTgStScoreDisplay";
     grid-area: hTgSTeamScoreTile;
+    border: 1px solid black;
   }
   
   .hTgStScoreHeader { grid-area: hTgStScoreHeader; }
@@ -92,6 +101,7 @@
       "hTgStFoulDisplay hTgStFoulDisplay"
       ". hTgStFoulFooter";
     grid-area: hTgSTeamFoulTile;
+    border: 1px solid black;
   }
   
   .hTgStFoulDisplay { grid-area: hTgStFoulDisplay; }
@@ -107,6 +117,7 @@
       "hTaIStarterSection"
       "hTaIReserveSection";
     grid-area: homeTeamAthleteIdentityArea;
+    border: 3px solid yellow;
   }
   
   .hTaIStarterSection {  display: grid;
@@ -121,17 +132,23 @@
       "hTaIsPlayer4Tile"
       "hTaIsPlayer5Tile";
     grid-area: hTaIStarterSection;
+    border: 2px solid purple;
   }
   
-  .hTaIsPlayer1Tile { grid-area: hTaIsPlayer1Tile; }
+  .hTaIsPlayer1Tile { grid-area: hTaIsPlayer1Tile; 
+    border: 1px solid black;}
   
-  .hTaIsPlayer2Tile { grid-area: hTaIsPlayer2Tile; }
+  .hTaIsPlayer2Tile { grid-area: hTaIsPlayer2Tile; 
+    border: 1px solid black;}
   
-  .hTaIsPlayer3Tile { grid-area: hTaIsPlayer3Tile; }
+  .hTaIsPlayer3Tile { grid-area: hTaIsPlayer3Tile; 
+    border: 1px solid black;}
   
-  .hTaIsPlayer4Tile { grid-area: hTaIsPlayer4Tile; }
+  .hTaIsPlayer4Tile { grid-area: hTaIsPlayer4Tile; 
+    border: 1px solid black;}
   
-  .hTaIsPlayer5Tile { grid-area: hTaIsPlayer5Tile; }
+  .hTaIsPlayer5Tile { grid-area: hTaIsPlayer5Tile; 
+    border: 1px solid black;}
   
   .hTaIReserveSection {  display: grid;
     grid-template-columns: 1fr;
@@ -145,17 +162,23 @@
       "hTaIsPlayer9Tile"
       "hTaIsPlayer10Tile";
     grid-area: hTaIReserveSection;
+    border: 2px solid purple;
   }
   
-  .hTaIsPlayer6Tile { grid-area: hTaIsPlayer6Tile; }
+  .hTaIsPlayer6Tile { grid-area: hTaIsPlayer6Tile; 
+    border: 1px solid black;}
   
-  .hTaIsPlayer7Tile { grid-area: hTaIsPlayer7Tile; }
+  .hTaIsPlayer7Tile { grid-area: hTaIsPlayer7Tile; 
+    border: 1px solid black;}
   
-  .hTaIsPlayer8Tile { grid-area: hTaIsPlayer8Tile; }
+  .hTaIsPlayer8Tile { grid-area: hTaIsPlayer8Tile; 
+    border: 1px solid black;}
   
-  .hTaIsPlayer9Tile { grid-area: hTaIsPlayer9Tile; }
+  .hTaIsPlayer9Tile { grid-area: hTaIsPlayer9Tile; 
+    border: 1px solid black;}
   
-  .hTaIsPlayer10Tile { grid-area: hTaIsPlayer10Tile; }
+  .hTaIsPlayer10Tile { grid-area: hTaIsPlayer10Tile; 
+    border: 1px solid black;}
   
   .gameInfoColumn {  display: grid;
     grid-template-columns: 1fr;
@@ -168,6 +191,7 @@
       "gameInfoTimeoutArea"
       "gameInfoLeaderBoardArea";
     grid-area: gameInfoColumn;
+    border: 4px solid green;
   }
   
   .gameInfoSponsPossArea {  display: grid;
@@ -179,6 +203,7 @@
       "gIspSponsorSection"
       "gIspPossessionSection";
     grid-area: gameInfoSponsPossArea;
+    border: 3px solid yellow;
   }
   
   .gIspSponsorSection {  display: grid;
@@ -189,11 +214,14 @@
     grid-template-areas:
       "gIsPsHomeAdTile gIsPsAwayAdTile";
     grid-area: gIspSponsorSection;
+    border: 2px solid purple;
   }
   
-  .gIsPsHomeAdTile { grid-area: gIsPsHomeAdTile; }
+  .gIsPsHomeAdTile { grid-area: gIsPsHomeAdTile; 
+    border: 1px solid black;}
   
-  .gIsPsAwayAdTile { grid-area: gIsPsAwayAdTile; }
+  .gIsPsAwayAdTile { grid-area: gIsPsAwayAdTile; 
+    border: 1px solid black;}
   
   .gIspPossessionSection {  display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -203,13 +231,17 @@
     grid-template-areas:
       "gIsPHomeArrowTile gIsPPossSymTile gIsPAwayArrowTile";
     grid-area: gIspPossessionSection;
+    border: 2px solid purple;
   }
   
-  .gIsPHomeArrowTile { grid-area: gIsPHomeArrowTile; }
+  .gIsPHomeArrowTile { grid-area: gIsPHomeArrowTile; 
+    border: 1px solid black;}
   
-  .gIsPPossSymTile { grid-area: gIsPPossSymTile; }
+  .gIsPPossSymTile { grid-area: gIsPPossSymTile; 
+    border: 1px solid black;}
   
-  .gIsPAwayArrowTile { grid-area: gIsPAwayArrowTile; }
+  .gIsPAwayArrowTile { grid-area: gIsPAwayArrowTile; 
+    border: 1px solid black;}
   
   .gameInfoGameTimeArea {  display: grid;
     grid-template-columns: 1fr;
@@ -221,6 +253,7 @@
       "gIgTPeriodSection"
       "gIgTClockControlsSection";
     grid-area: gameInfoGameTimeArea;
+    border: 3px solid yellow;
   }
   
   .gIgTClockSection {  display: grid;
@@ -231,6 +264,7 @@
     grid-template-areas:
       "gIgTcTOLHomeTile gIgTcDisplayTile gIgTcTOLAwayTile";
     grid-area: gIgTClockSection;
+    border: 2px solid purple;
   }
   
   .gIgTcTOLHomeTile {  display: grid;
@@ -242,6 +276,7 @@
       "gIgTcThHeader"
       "gIgTcThDisplay";
     grid-area: gIgTcTOLHomeTile;
+    border: 1px solid black;
   }
   
   .gIgTcThHeader { grid-area: gIgTcThHeader; }
@@ -272,6 +307,7 @@
       "gIgTcTAHeader"
       "gIgTcTADisplay";
     grid-area: gIgTcTOLAwayTile;
+    border: 1px solid black;
   }
   
   .gIgTcTAHeader { grid-area: gIgTcTAHeader; }
@@ -287,17 +323,22 @@
       "gIgTpHeader gIgTpHeader gIgTpHeader gIgTpHeader"
       "gIgTp1Tile gIgTp2Tile gIgTp3Tile gIgTp4Tile";
     grid-area: gIgTPeriodSection;
+    border: 2px solid purple;
   }
   
   .gIgTpHeader { grid-area: gIgTpHeader; }
   
-  .gIgTp1Tile { grid-area: gIgTp1Tile; }
+  .gIgTp1Tile { grid-area: gIgTp1Tile; 
+    border: 1px solid black;}
   
-  .gIgTp2Tile { grid-area: gIgTp2Tile; }
+  .gIgTp2Tile { grid-area: gIgTp2Tile; 
+    border: 1px solid black;}
   
-  .gIgTp3Tile { grid-area: gIgTp3Tile; }
+  .gIgTp3Tile { grid-area: gIgTp3Tile; 
+    border: 1px solid black;}
   
-  .gIgTp4Tile { grid-area: gIgTp4Tile; }
+  .gIgTp4Tile { grid-area: gIgTp4Tile; 
+    border: 1px solid black;}
   
   .gIgTClockControlsSection {  display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -307,6 +348,7 @@
     grid-template-areas:
       "gIgTcCTimeIncTile gIgTcCTimeDecTile gIgTcCStartTile gIgTcCStopTile";
     grid-area: gIgTClockControlsSection;
+    border: 2px solid purple;
   }
   
   .gIgTcCTimeIncTile {  display: grid;
@@ -318,6 +360,7 @@
       "gIgTcCTimeIncHeader"
       "gIgTcCTimeIncBtn";
     grid-area: gIgTcCTimeIncTile;
+    border: 1px solid black;
   }
   
   .gIgTcCTimeIncHeader { grid-area: gIgTcCTimeIncHeader; }
@@ -333,6 +376,7 @@
       "gIgTcCTimeDecHeader"
       "gIgTcCTimeDecBtn";
     grid-area: gIgTcCTimeDecTile;
+    border: 1px solid black;
   }
   
   .gIgTcCTimeDecHeader { grid-area: gIgTcCTimeDecHeader; }
@@ -348,6 +392,7 @@
       "gIgTcCStartHeader"
       "gIgTcCStartBtn";
     grid-area: gIgTcCStartTile;
+    border: 1px solid black;
   }
   
   .gIgTcCStartHeader { grid-area: gIgTcCStartHeader; }
@@ -363,6 +408,7 @@
       "gIgTcCStopHeader"
       "gIgTcCStopBtn";
     grid-area: gIgTcCStopTile;
+    border: 1px solid black;
   }
   
   .gIgTcCStopHeader { grid-area: gIgTcCStopHeader; }
@@ -377,6 +423,7 @@
     grid-template-areas:
       "gIToHomeTeamSection gIToAwayTeamSection";
     grid-area: gameInfoTimeoutArea;
+    border: 3px solid yellow;
   }
   
   .gIToHomeTeamSection {  display: grid;
@@ -387,6 +434,7 @@
     grid-template-areas:
       "gItOh60sTile gItOh30sTile";
     grid-area: gIToHomeTeamSection;
+    border: 2px solid purple;
   }
   
   .gItOh60sTile {  display: grid;
@@ -398,6 +446,7 @@
       "gItOh60sHeader"
       "gItOh60sBtns";
     grid-area: gItOh60sTile;
+    border: 1px solid black;
   }
   
   .gItOh60sHeader { grid-area: gItOh60sHeader; }
@@ -413,6 +462,7 @@
       "gItOh30sHeader"
       "gItOh30sBtns";
     grid-area: gItOh30sTile;
+    border: 1px solid black;
   }
   
   .gItOh30sHeader { grid-area: gItOh30sHeader; }
@@ -427,6 +477,7 @@
     grid-template-areas:
       "gItOa60sTile gItOa30sTile";
     grid-area: gIToAwayTeamSection;
+    border: 2px solid purple;
   }
   
   .gItOa60sTile {  display: grid;
@@ -438,6 +489,7 @@
       "gItOa60sHeader"
       "gItOa60sBtns";
     grid-area: gItOa60sTile;
+    border: 1px solid black;
   }
   
   .gItOa60sHeader { grid-area: gItOa60sHeader; }
@@ -453,6 +505,7 @@
       "gItOa30sHeader"
       "gItOa30sBtns";
     grid-area: gItOa30sTile;
+    border: 1px solid black;
   }
   
   .gItOa30sHeader { grid-area: gItOa30sHeader; }
@@ -467,6 +520,7 @@
     grid-template-areas:
       "gILbPointsSection gILbRebSection gILbAssistSection";
     grid-area: gameInfoLeaderBoardArea;
+    border: 3px solid yellow;
   }
   
   .gILbPointsSection {  display: grid;
@@ -480,15 +534,19 @@
       "gIlBpLeader2Tile"
       "gIlBpLeader3Tile";
     grid-area: gILbPointsSection;
+    border: 2px solid purple;
   }
   
   .gIlBpHeader { grid-area: gIlBpHeader; }
   
-  .gIlBpLeader1Tile { grid-area: gIlBpLeader1Tile; }
+  .gIlBpLeader1Tile { grid-area: gIlBpLeader1Tile; 
+    border: 1px solid black;}
   
-  .gIlBpLeader2Tile { grid-area: gIlBpLeader2Tile; }
+  .gIlBpLeader2Tile { grid-area: gIlBpLeader2Tile; 
+    border: 1px solid black;}
   
-  .gIlBpLeader3Tile { grid-area: gIlBpLeader3Tile; }
+  .gIlBpLeader3Tile { grid-area: gIlBpLeader3Tile; 
+    border: 1px solid black;}
   
   .gILbRebSection {  display: grid;
     grid-template-columns: 1fr;
@@ -501,15 +559,19 @@
       "gIlBrLeader2Tile"
       "gIlBrLeader3Tile";
     grid-area: gILbRebSection;
+    border: 2px solid purple;
   }
   
   .gIlBrHeader { grid-area: gIlBrHeader; }
   
-  .gIlBrLeader1Tile { grid-area: gIlBrLeader1Tile; }
+  .gIlBrLeader1Tile { grid-area: gIlBrLeader1Tile; 
+    border: 1px solid black;}
   
-  .gIlBrLeader2Tile { grid-area: gIlBrLeader2Tile; }
+  .gIlBrLeader2Tile { grid-area: gIlBrLeader2Tile; 
+    border: 1px solid black;}
   
-  .gIlBrLeader3Tile { grid-area: gIlBrLeader3Tile; }
+  .gIlBrLeader3Tile { grid-area: gIlBrLeader3Tile; 
+    border: 1px solid black;}
   
   .gILbAssistSection {  display: grid;
     grid-template-columns: 1fr;
@@ -522,15 +584,19 @@
       "gIlBaLeader2Tile"
       "gIlBaLeader3Tile";
     grid-area: gILbAssistSection;
+    border: 2px solid purple;
   }
   
   .gIlBaHeader { grid-area: gIlBaHeader; }
   
-  .gIlBaLeader1Tile { grid-area: gIlBaLeader1Tile; }
+  .gIlBaLeader1Tile { grid-area: gIlBaLeader1Tile; 
+    border: 1px solid black;}
   
-  .gIlBaLeader2Tile { grid-area: gIlBaLeader2Tile; }
+  .gIlBaLeader2Tile { grid-area: gIlBaLeader2Tile; 
+    border: 1px solid black;}
   
-  .gIlBaLeader3Tile { grid-area: gIlBaLeader3Tile; }
+  .gIlBaLeader3Tile { grid-area: gIlBaLeader3Tile; 
+    border: 1px solid black;}
   
   .awayTeamColumn {  display: grid;
     grid-template-columns: 1fr;
@@ -541,6 +607,7 @@
       "awayTeamGameArea"
       "awayTeamAthleteIdentityArea";
     grid-area: awayTeamColumn;
+    border: 4px solid blue;
   }
   
   .awayTeamGameArea {  display: grid;
@@ -551,6 +618,7 @@
     grid-template-areas:
       "aTgStatSection aTgIdentitySection";
     grid-area: awayTeamGameArea;
+    border: 3px solid yellow;
   }
   
   .aTgStatSection {  display: grid;
@@ -562,6 +630,7 @@
       "aTgSTeamScoreTile"
       "aTgSTeamFoulTile";
     grid-area: aTgStatSection;
+    border: 2px solid purple;
   }
   
   .aTgSTeamScoreTile {  display: grid;
@@ -573,6 +642,7 @@
       "aTgStScoreHeader ."
       "aTgStScoreDisplay aTgStScoreDisplay";
     grid-area: aTgSTeamScoreTile;
+    border: 1px solid black;
   }
   
   .aTgStScoreHeader { grid-area: aTgStScoreHeader; }
@@ -588,6 +658,7 @@
       "aTgStFoulDisplay aTgStFoulDisplay"
       "aTgStFoulFooter .";
     grid-area: aTgSTeamFoulTile;
+    border: 1px solid black;
   }
   
   .aTgStFoulDisplay { grid-area: aTgStFoulDisplay; }
@@ -604,13 +675,17 @@
       "aTgITeamLogoTile"
       "aTgITeamMascotTile";
     grid-area: aTgIdentitySection;
+    border: 2px solid purple;
   }
   
-  .aTgITeamCityTile { grid-area: aTgITeamCityTile; }
+  .aTgITeamCityTile { grid-area: aTgITeamCityTile; 
+    border: 1px solid black;}
   
-  .aTgITeamLogoTile { grid-area: aTgITeamLogoTile; }
+  .aTgITeamLogoTile { grid-area: aTgITeamLogoTile; 
+    border: 1px solid black;}
   
-  .aTgITeamMascotTile { grid-area: aTgITeamMascotTile; }
+  .aTgITeamMascotTile { grid-area: aTgITeamMascotTile; 
+    border: 1px solid black;}
   
   .awayTeamAthleteIdentityArea {  display: grid;
     grid-template-columns: 1fr;
@@ -621,6 +696,7 @@
       "aTaIStarterSection"
       "aTaIReserveSection";
     grid-area: awayTeamAthleteIdentityArea;
+    border: 3px solid yellow;
   }
   
   .aTaIStarterSection {  display: grid;
@@ -635,17 +711,23 @@
       "aTaIsPlayer4Tile"
       "aTaIsPlayer5Tile";
     grid-area: aTaIStarterSection;
+    border: 2px solid purple;
   }
   
-  .aTaIsPlayer1Tile { grid-area: aTaIsPlayer1Tile; }
+  .aTaIsPlayer1Tile { grid-area: aTaIsPlayer1Tile; 
+    border: 1px solid black;}
   
-  .aTaIsPlayer2Tile { grid-area: aTaIsPlayer2Tile; }
+  .aTaIsPlayer2Tile { grid-area: aTaIsPlayer2Tile; 
+    border: 1px solid black;}
   
-  .aTaIsPlayer3Tile { grid-area: aTaIsPlayer3Tile; }
+  .aTaIsPlayer3Tile { grid-area: aTaIsPlayer3Tile; 
+    border: 1px solid black;}
   
-  .aTaIsPlayer4Tile { grid-area: aTaIsPlayer4Tile; }
+  .aTaIsPlayer4Tile { grid-area: aTaIsPlayer4Tile; 
+    border: 1px solid black;}
   
-  .aTaIsPlayer5Tile { grid-area: aTaIsPlayer5Tile; }
+  .aTaIsPlayer5Tile { grid-area: aTaIsPlayer5Tile; 
+    border: 1px solid black;}
   
   .aTaIReserveSection {  display: grid;
     grid-template-columns: 1fr;
@@ -659,15 +741,21 @@
       "aTaIsPlayer9Tile"
       "aTaIsPlayer10Tile";
     grid-area: aTaIReserveSection;
+    border: 2px solid purple;
   }
   
-  .aTaIsPlayer6Tile { grid-area: aTaIsPlayer6Tile; }
+  .aTaIsPlayer6Tile { grid-area: aTaIsPlayer6Tile; 
+    border: 1px solid black;}
   
-  .aTaIsPlayer7Tile { grid-area: aTaIsPlayer7Tile; }
+  .aTaIsPlayer7Tile { grid-area: aTaIsPlayer7Tile; 
+    border: 1px solid black;}
   
-  .aTaIsPlayer8Tile { grid-area: aTaIsPlayer8Tile; }
+  .aTaIsPlayer8Tile { grid-area: aTaIsPlayer8Tile; 
+    border: 1px solid black;}
   
-  .aTaIsPlayer9Tile { grid-area: aTaIsPlayer9Tile; }
+  .aTaIsPlayer9Tile { grid-area: aTaIsPlayer9Tile; 
+    border: 1px solid black;}
   
-  .aTaIsPlayer10Tile { grid-area: aTaIsPlayer10Tile; }
+  .aTaIsPlayer10Tile { grid-area: aTaIsPlayer10Tile;
+    border: 1px solid black; }
   
