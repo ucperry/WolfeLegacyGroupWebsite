@@ -60,20 +60,23 @@
   }
   
   .hTgITeamCityTile { grid-area: hTgITeamCityTile; 
-    text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
-    border: 1px solid black;
+    text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+    border: 1px solid grey;
   }
   
   .hTgITeamLogoTile { grid-area: hTgITeamLogoTile;
     font-size: 20; 
-    border: 1px solid black;}
+    border: 1px solid grey;}
   
   .hTgITeamMascotTile { grid-area: hTgITeamMascotTile; 
     color: white;
-	  font-size: 47px;
+	  font-size: 50;
 	  -webkit-text-stroke: 1px #f8a8a8;
 	  text-shadow: 0px 2px 4px red;
-    border: 1px solid black;
+    border: 1px solid grey;
   }
   
   .hTgStatSection {  display: grid;
@@ -97,7 +100,7 @@
       "hTgStScoreHeader hTgStScoreDisplay"
       ". hTgStScoreDisplay";
     grid-area: hTgSTeamScoreTile;
-    border: 1px solid black;
+    border: 1px solid grey;
   }
   
   .hTgStScoreHeader { grid-area: hTgStScoreHeader; 
@@ -122,7 +125,7 @@
       ". hTgStFoulDisplay"
       "hTgStFoulFooter hTgStFoulDisplay";
     grid-area: hTgSTeamFoulTile;
-    border: 1px solid black;
+    border: 1px solid grey;
   }
   
   .hTgStFoulDisplay { grid-area: hTgStFoulDisplay;
@@ -163,16 +166,16 @@
   }
   
   .hTaIsPlayer1Tile { grid-area: hTaIsPlayer1Tile; 
-    border: 1px solid black;}
+    border: 1px solid grey;}
   
   .hTaIsPlayer2Tile { grid-area: hTaIsPlayer2Tile; 
-    border: 1px solid black;}
+    border: 1px solid grey;}
   
   .hTaIsPlayer3Tile { grid-area: hTaIsPlayer3Tile; 
-    border: 1px solid black;}
+    border: 1px solid grey;}
   
   .hTaIsPlayer4Tile { grid-area: hTaIsPlayer4Tile; 
-    border: 1px solid black;}
+    border: 1px solid grey;}
   
   .hTaIsPlayer5Tile { grid-area: hTaIsPlayer5Tile; 
     border: 1px solid black;}
@@ -193,439 +196,441 @@
   }
   
   .hTaIsPlayer6Tile { grid-area: hTaIsPlayer6Tile; 
-    border: 1px solid black;}
+    border: 1px solid grey;}
   
   .hTaIsPlayer7Tile { grid-area: hTaIsPlayer7Tile; 
-    border: 1px solid black;}
+    border: 1px solid grey;}
   
   .hTaIsPlayer8Tile { grid-area: hTaIsPlayer8Tile; 
-    border: 1px solid black;}
+    border: 1px solid grey;}
   
   .hTaIsPlayer9Tile { grid-area: hTaIsPlayer9Tile; 
-    border: 1px solid black;}
+    border: 1px solid grey;}
   
   .hTaIsPlayer10Tile { grid-area: hTaIsPlayer10Tile; 
-    border: 1px solid black;}
+    border: 1px solid grey;}
   
   .gameInfoColumn {  display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1.5fr .75fr 1.25fr;
+    grid-template-rows: .75fr 1.5fr .5fr .5fr 1.75fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "gameInfoSponsPossArea"
-      "gameInfoGameTimeArea"
-      "gameInfoTimeoutArea"
-      "gameInfoLeaderBoardArea";
+      "gameInfoSponsorArea"
+      "gameInfoGameClockArea"
+      "gameInfoGamePeriodArea"
+      "gameInfoTeamTimeoutArea"
+      "gameInfoLeaderBoardsArea";
     grid-area: gameInfoColumn;
     border: 4px solid green;
   }
   
-  .gameInfoSponsPossArea {  display: grid;
+  .gameInfoSponsorArea {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr .5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gIsAAdvertSection"
+      "gIsAPossessionSection";
+    grid-area: gameInfoSponsorArea;
+    border: 3px solid yellow
+  }
+  
+  .gIsAAdvertSection { grid-area: gIsAAdvertSection;border: 2px solid purple; }
+  
+  .gIsAPossessionSection {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gIsAPossesionHomeTile gIsAPossesionHeaderTile gIsAPossesionAwayTile";
+    grid-area: gIsAPossessionSection;
+    border: 2px solid purple;
+  }
+  
+  .gIsAPossesionHomeTile { grid-area: gIsAPossesionHomeTile; 
+    border: 1px solid grey; 
+  }
+  
+  .gIsAPossesionHeaderTile { grid-area: gIsAPossesionHeaderTile; 
+    border: 1px solid grey;
+  }
+  
+  .gIsAPossesionAwayTile { grid-area: gIsAPossesionAwayTile; 
+    border: 1px solid grey;
+  }
+  
+  .gameInfoGameClockArea {  display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "gIspSponsorSection"
-      "gIspPossessionSection";
-    grid-area: gameInfoSponsPossArea;
-    border: 3px solid yellow;
+      "gIgCDisplaySection"
+      "gIgCControlsSection";
+    grid-area: gameInfoGameClockArea;
+    border: 3px solid yellow
   }
   
-  .gIspSponsorSection {  display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "gIsPsHomeAdTile gIsPsAwayAdTile";
-    grid-area: gIspSponsorSection;
-    border: 2px solid purple;
-  }
-  
-  .gIsPsHomeAdTile { grid-area: gIsPsHomeAdTile; 
-    border: 1px solid black;}
-  
-  .gIsPsAwayAdTile { grid-area: gIsPsAwayAdTile; 
-    border: 1px solid black;}
-  
-  .gIspPossessionSection {  display: grid;
+  .gIgCDisplaySection {  display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "gIsPHomeArrowTile gIsPPossSymTile gIsPAwayArrowTile";
-    grid-area: gIspPossessionSection;
+      "gIgCdHomeTOLTile gIgCdCounterTile gIgCdAwayTOLTile";
+    grid-area: gIgCDisplaySection;
     border: 2px solid purple;
   }
   
-  .gIsPHomeArrowTile { grid-area: gIsPHomeArrowTile; 
-    border: 1px solid black;}
-  
-  .gIsPPossSymTile { grid-area: gIsPPossSymTile; 
-    border: 1px solid black;}
-  
-  .gIsPAwayArrowTile { grid-area: gIsPAwayArrowTile; 
-    border: 1px solid black;}
-  
-  .gameInfoGameTimeArea {  display: grid;
+  .gIgCdHomeTOLTile {  display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1.5fr 0.5fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "gIgTClockSection"
-      "gIgTPeriodSection"
-      "gIgTClockControlsSection";
-    grid-area: gameInfoGameTimeArea;
-    border: 3px solid yellow;
-  }
-  
-  .gIgTClockSection {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "gIgTcTOLHomeTile gIgTcDisplayTile gIgTcTOLAwayTile";
-    grid-area: gIgTClockSection;
-    border: 2px solid purple;
-  }
-  
-  .gIgTcTOLHomeTile {  display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 1.6fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "gIgTcThHeader"
-      "gIgTcThDisplay";
-    grid-area: gIgTcTOLHomeTile;
-    border: 1px solid black;
-  }
-  
-  .gIgTcThHeader { grid-area: gIgTcThHeader; }
-  
-  .gIgTcThDisplay { grid-area: gIgTcThDisplay; }
-  
-  .gIgTcDisplayTile {  display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 1.6fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "gIgTcDHeader"
-      "gIgTcClockDisplay";
-    grid-area: gIgTcDisplayTile;
-    border: 1px solid black;
-  }
-  
-  .gIgTcDHeader { grid-area: gIgTcDHeader; }
-  
-  .gIgTcClockDisplay { grid-area: gIgTcClockDisplay; }
-  
-  .gIgTcTOLAwayTile {  display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 1.6fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "gIgTcTAHeader"
-      "gIgTcTADisplay";
-    grid-area: gIgTcTOLAwayTile;
-    border: 1px solid black;
-  }
-  
-  .gIgTcTAHeader { grid-area: gIgTcTAHeader; }
-  
-  .gIgTcTADisplay { grid-area: gIgTcTADisplay; }
-  
-  .gIgTPeriodSection {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "gIgTpHeader gIgTpHeader gIgTpHeader gIgTpHeader"
-      "gIgTp1Tile gIgTp2Tile gIgTp3Tile gIgTp4Tile";
-    grid-area: gIgTPeriodSection;
-    border: 2px solid purple;
+      "gIgCdHomeTOLHeader"
+      "gIgCdHomeTOLoutput";
+    grid-area: gIgCdHomeTOLTile;
+    border: 1px solid grey;
   }
   
-  .gIgTpHeader { grid-area: gIgTpHeader; }
+  .gIgCdHomeTOLHeader { grid-area: gIgCdHomeTOLHeader; }
   
-  .gIgTp1Tile { grid-area: gIgTp1Tile; 
-    border: 1px solid black;}
+  .gIgCdHomeTOLoutput { grid-area: gIgCdHomeTOLoutput; }
   
-  .gIgTp2Tile { grid-area: gIgTp2Tile; 
-    border: 1px solid black;}
+  .gIgCdCounterTile {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gIgCdCHeader"
+      "gIgCdCOutput";
+    grid-area: gIgCdCounterTile;
+    border: 1px solid grey;
+  }
   
-  .gIgTp3Tile { grid-area: gIgTp3Tile; 
-    border: 1px solid black;}
+  .gIgCdCHeader { grid-area: gIgCdCHeader; }
   
-  .gIgTp4Tile { grid-area: gIgTp4Tile; 
-    border: 1px solid black;}
+  .gIgCdCOutput { grid-area: gIgCdCOutput; }
   
-  .gIgTClockControlsSection {  display: grid;
+  .gIgCdAwayTOLTile {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gIgCdAwayTOLHeader"
+      "gIgCdAwayTOLOutput";
+    grid-area: gIgCdAwayTOLTile;
+    border: 1px solid grey;
+  }
+  
+  .gIgCdAwayTOLHeader { grid-area: gIgCdAwayTOLHeader; }
+  
+  .gIgCdAwayTOLOutput { grid-area: gIgCdAwayTOLOutput; }
+  
+  .gIgCControlsSection {  display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "gIgTcCTimeIncTile gIgTcCTimeDecTile gIgTcCStartTile gIgTcCStopTile";
-    grid-area: gIgTClockControlsSection;
+      "gIgCcTimeIncTile gIgCcTimeDecTile gIgCcTimeStartTile gIgCcTimeStopTile";
+    grid-area: gIgCControlsSection;
     border: 2px solid purple;
   }
   
-  .gIgTcCTimeIncTile {  display: grid;
+  .gIgCcTimeIncTile {  display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.7fr 1.3fr;
+    grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "gIgTcCTimeIncHeader"
-      "gIgTcCTimeIncBtn";
-    grid-area: gIgTcCTimeIncTile;
-    border: 1px solid black;
+      "gIgCcTimeIncHeader"
+      "gIgCcTimeIncBtn";
+    grid-area: gIgCcTimeIncTile;
+    border: 1px solid grey;
   }
   
-  .gIgTcCTimeIncHeader { grid-area: gIgTcCTimeIncHeader; }
+  .gIgCcTimeIncHeader { grid-area: gIgCcTimeIncHeader; }
   
-  .gIgTcCTimeIncBtn { grid-area: gIgTcCTimeIncBtn; }
+  .gIgCcTimeIncBtn { grid-area: gIgCcTimeIncBtn; }
   
-  .gIgTcCTimeDecTile {  display: grid;
+  .gIgCcTimeDecTile {  display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.7fr 1.3fr;
+    grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "gIgTcCTimeDecHeader"
-      "gIgTcCTimeDecBtn";
-    grid-area: gIgTcCTimeDecTile;
-    border: 1px solid black;
+      "gIgCcTimeDecHeader"
+      "gIgCcTimeDecBtn";
+    grid-area: gIgCcTimeDecTile;
+    border: 1px solid grey;
   }
   
-  .gIgTcCTimeDecHeader { grid-area: gIgTcCTimeDecHeader; }
+  .gIgCcTimeDecHeader { grid-area: gIgCcTimeDecHeader; }
   
-  .gIgTcCTimeDecBtn { grid-area: gIgTcCTimeDecBtn; }
+  .gIgCcTimeDecBtn { grid-area: gIgCcTimeDecBtn; }
   
-  .gIgTcCStartTile {  display: grid;
+  .gIgCcTimeStartTile {  display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.7fr 1.3fr;
+    grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "gIgTcCStartHeader"
-      "gIgTcCStartBtn";
-    grid-area: gIgTcCStartTile;
-    border: 1px solid black;
+      "gIgCcTimeStartHeader"
+      "gIgCcTimeStartBtn";
+    grid-area: gIgCcTimeStartTile;
+    border: 1px solid grey;
   }
   
-  .gIgTcCStartHeader { grid-area: gIgTcCStartHeader; }
+  .gIgCcTimeStartHeader { grid-area: gIgCcTimeStartHeader; }
   
-  .gIgTcCStartBtn { grid-area: gIgTcCStartBtn; }
+  .gIgCcTimeStartBtn { grid-area: gIgCcTimeStartBtn; }
   
-  .gIgTcCStopTile {  display: grid;
+  .gIgCcTimeStopTile {  display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.7fr 1.3fr;
+    grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "gIgTcCStopHeader"
-      "gIgTcCStopBtn";
-    grid-area: gIgTcCStopTile;
-    border: 1px solid black;
+      "gIgCcTimeStopHeader"
+      "gIgCcTimeStopBtn";
+    grid-area: gIgCcTimeStopTile;
+    border: 1px solid grey;
   }
   
-  .gIgTcCStopHeader { grid-area: gIgTcCStopHeader; }
+  .gIgCcTimeStopHeader { grid-area: gIgCcTimeStopHeader; }
   
-  .gIgTcCStopBtn { grid-area: gIgTcCStopBtn; }
+  .gIgCcTimeStopBtn { grid-area: gIgCcTimeStopBtn; }
   
-  .gameInfoTimeoutArea {  display: grid;
+  .gameInfoGamePeriodArea {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gIgPHeaderSection"
+      "gIgPSelectorsSection";
+    grid-area: gameInfoGamePeriodArea;
+    border: 3px solid yellow
+  }
+  
+  .gIgPHeaderSection { grid-area: gIgPHeaderSection; border: 2px solid purple;}
+  
+  .gIgPSelectorsSection {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gIgPBtn1Tile gIgPBtn2Tile gIgPBtn3Tile gIgPBtn4Tile";
+    grid-area: gIgPSelectorsSection;
+    border: 2px solid purple;
+  }
+  
+  .gIgPBtn1Tile { grid-area: gIgPBtn1Tile;
+    border: 1px solid grey;
+  }
+  
+  .gIgPBtn2Tile { grid-area: gIgPBtn2Tile; 
+    border: 1px solid grey;
+  }
+  
+  .gIgPBtn3Tile { grid-area: gIgPBtn3Tile; 
+    border: 1px solid grey;
+  }
+  
+  .gIgPBtn4Tile { grid-area: gIgPBtn4Tile; 
+    border: 1px solid grey;
+  }
+  
+  .gameInfoTeamTimeoutArea {  display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "gIToHomeTeamSection gIToAwayTeamSection";
-    grid-area: gameInfoTimeoutArea;
-    border: 3px solid yellow;
+      "gItTHomeSection gItTAwaySection";
+    grid-area: gameInfoTeamTimeoutArea;
+    border: 3px solid yellow
   }
   
-  .gIToHomeTeamSection {  display: grid;
+  .gItTHomeSection {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gItTHomeFullTile"
+      "gItTHome30sTile";
+    grid-area: gItTHomeSection;
+    border: 2px solid purple;
+  }
+  
+  .gItTHomeFullTile {  display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "gItOh60sTile gItOh30sTile";
-    grid-area: gIToHomeTeamSection;
-    border: 2px solid purple;
+      "gItThomeFullHeader gItThomeFullBtns";
+    grid-area: gItTHomeFullTile;
+    border: 1px solid grey;
   }
   
-  .gItOh60sTile {  display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.6fr 1.4fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "gItOh60sHeader"
-      "gItOh60sBtns";
-    grid-area: gItOh60sTile;
-    border: 1px solid black;
-  }
+  .gItThomeFullHeader { grid-area: gItThomeFullHeader; }
   
-  .gItOh60sHeader { grid-area: gItOh60sHeader; }
+  .gItThomeFullBtns { grid-area: gItThomeFullBtns; }
   
-  .gItOh60sBtns { grid-area: gItOh60sBtns; }
-  
-  .gItOh30sTile {  display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.6fr 1.4fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "gItOh30sHeader"
-      "gItOh30sBtns";
-    grid-area: gItOh30sTile;
-    border: 1px solid black;
-  }
-  
-  .gItOh30sHeader { grid-area: gItOh30sHeader; }
-  
-  .gItOh30sBtns { grid-area: gItOh30sBtns; }
-  
-  .gIToAwayTeamSection {  display: grid;
+  .gItTHome30sTile {  display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "gItOa60sTile gItOa30sTile";
-    grid-area: gIToAwayTeamSection;
+      "gItThome30sHeader gItThome30sBtns";
+    grid-area: gItTHome30sTile;
+    border: 1px solid grey;
+  }
+  
+  .gItThome30sHeader { grid-area: gItThome30sHeader; }
+  
+  .gItThome30sBtns { grid-area: gItThome30sBtns; }
+  
+  .gItTAwaySection {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gItTAwayFullTile"
+      "gItTAway30sTile";
+    grid-area: gItTAwaySection;
     border: 2px solid purple;
   }
   
-  .gItOa60sTile {  display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.6fr 1.4fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "gItOa60sHeader"
-      "gItOa60sBtns";
-    grid-area: gItOa60sTile;
-    border: 1px solid black;
-  }
-  
-  .gItOa60sHeader { grid-area: gItOa60sHeader; }
-  
-  .gItOa60sBtns { grid-area: gItOa60sBtns; }
-  
-  .gItOa30sTile {  display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.6fr 1.4fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "gItOa30sHeader"
-      "gItOa30sBtns";
-    grid-area: gItOa30sTile;
-    border: 1px solid black;
-  }
-  
-  .gItOa30sHeader { grid-area: gItOa30sHeader; }
-  
-  .gItOa30sBtns { grid-area: gItOa30sBtns; }
-  
-  .gameInfoLeaderBoardArea {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  .gItTAwayFullTile {  display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "gILbPointsSection gILbRebSection gILbAssistSection";
-    grid-area: gameInfoLeaderBoardArea;
-    border: 3px solid yellow;
+      "gItTAwayFullBtns gItTAwayFullHeader";
+    grid-area: gItTAwayFullTile;
+    border: 1px solid grey;
   }
   
-  .gILbPointsSection {  display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: .7fr 1.1fr 1.1fr 1.1fr;
+  .gItTAwayFullBtns { grid-area: gItTAwayFullBtns; }
+  
+  .gItTAwayFullHeader { grid-area: gItTAwayFullHeader; }
+  
+  .gItTAway30sTile {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "gIlBpHeader"
-      "gIlBpLeader1Tile"
-      "gIlBpLeader2Tile"
-      "gIlBpLeader3Tile";
-    grid-area: gILbPointsSection;
-    border: 2px solid purple;
+      "gItTAway30sBtns gItTAway30sHeader";
+    grid-area: gItTAway30sTile;
+    border: 1px solid grey;
   }
   
-  .gIlBpHeader { grid-area: gIlBpHeader; }
+  .gItTAway30sBtns { grid-area: gItTAway30sBtns; }
   
-  .gIlBpLeader1Tile { grid-area: gIlBpLeader1Tile; 
-    border: 1px solid black;}
+  .gItTAway30sHeader { grid-area: gItTAway30sHeader; }
   
-  .gIlBpLeader2Tile { grid-area: gIlBpLeader2Tile; 
-    border: 1px solid black;}
-  
-  .gIlBpLeader3Tile { grid-area: gIlBpLeader3Tile; 
-    border: 1px solid black;}
-  
-  .gILbRebSection {  display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: .7fr 1.1fr 1.1fr 1.1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "gIlBrHeader"
-      "gIlBrLeader1Tile"
-      "gIlBrLeader2Tile"
-      "gIlBrLeader3Tile";
-    grid-area: gILbRebSection;
-    border: 2px solid purple;
+  .gameInfoLeaderBoardsArea {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: .5fr 1.5fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "gIlBHeaderSection"
+      "gIlBPlayersSection"; 
+    grid-area: gameInfoLeaderBoardsArea; 
+    border: 3px solid yellow
+  }
+  .gIlBHeaderSection {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "gIlBhPointsTile gIlBhRebsTile gIlBhAssistsTile"; 
+    grid-area: gIlBHeaderSection; 
+    border: 2px solid purple
+  }
+  .gIlBhPointsTile { grid-area: gIlBhPointsTile; 
+    border: 1px solid grey
+  }
+  .gIlBhRebsTile { grid-area: gIlBhRebsTile; 
+    border: 1px solid grey
+  }
+  .gIlBhAssistsTile { grid-area: gIlBhAssistsTile; 
+    border: 1px solid grey
   }
   
-  .gIlBrHeader { grid-area: gIlBrHeader; }
-  
-  .gIlBrLeader1Tile { grid-area: gIlBrLeader1Tile; 
-    border: 1px solid black;}
-  
-  .gIlBrLeader2Tile { grid-area: gIlBrLeader2Tile; 
-    border: 1px solid black;}
-  
-  .gIlBrLeader3Tile { grid-area: gIlBrLeader3Tile; 
-    border: 1px solid black;}
-  
-  .gILbAssistSection {  display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: .7fr 1.1fr 1.1fr 1.1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "gIlBaHeader"
-      "gIlBaLeader1Tile"
-      "gIlBaLeader2Tile"
-      "gIlBaLeader3Tile";
-    grid-area: gILbAssistSection;
-    border: 2px solid purple;
+  .gIlBPlayersSection {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "gIlBpLeaderlistTile gIlBrLeaderlistTile gIlBaLeaderlistTile"; 
+    grid-area: gIlBPlayersSection;
+    border: 2px solid purple 
   }
-  
-  .gIlBaHeader { grid-area: gIlBaHeader; }
-  
-  .gIlBaLeader1Tile { grid-area: gIlBaLeader1Tile; 
-    border: 1px solid black;}
-  
-  .gIlBaLeader2Tile { grid-area: gIlBaLeader2Tile; 
-    border: 1px solid black;}
-  
-  .gIlBaLeader3Tile { grid-area: gIlBaLeader3Tile; 
-    border: 1px solid black;}
-  
+  .gIlBpLeaderlistTile {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "gIlBpLplayer1"
+      "gIlBpLplayer2"
+      "gIlBpLplayer3"; 
+    grid-area: gIlBpLeaderlistTile; 
+    border: 1px solid grey
+  }
+  .gIlBpLplayer1 { grid-area: gIlBpLplayer1; }
+  .gIlBpLplayer2 { grid-area: gIlBpLplayer2; }
+  .gIlBpLplayer3 { grid-area: gIlBpLplayer3; }
+  .gIlBrLeaderlistTile {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "gIlBrLplayer1"
+      "gIlBrLplayer2"
+      "gIlBrLplayer3"; 
+    grid-area: gIlBrLeaderlistTile; 
+    border: 1px solid grey
+  }
+  .gIlBrLplayer1 { grid-area: gIlBrLplayer1; }
+  .gIlBrLplayer2 { grid-area: gIlBrLplayer2; }
+  .gIlBrLplayer3 { grid-area: gIlBrLplayer3; }
+  .gIlBaLeaderlistTile {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "gIlBaLplayer1"
+      "gIlBaLplayer2"
+      "gIlBaLplayer3"; 
+    grid-area: gIlBaLeaderlistTile; 
+    border: 1px solid grey
+  }
+  .gIlBaLplayer1 { grid-area: gIlBaLplayer1; }
+  .gIlBaLplayer2 { grid-area: gIlBaLplayer2; }
+  .gIlBaLplayer3 { grid-area: gIlBaLplayer3; }
+
   .awayTeamColumn {  display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 1.5fr;
@@ -671,7 +676,7 @@
       "aTgStScoreDisplay aTgStScoreHeader"
       "aTgStScoreDisplay .";
     grid-area: aTgSTeamScoreTile;
-    border: 1px solid black;
+    border: 1px solid grey;
   }
   
   .aTgStScoreHeader { grid-area: aTgStScoreHeader; 
@@ -695,7 +700,7 @@
       "aTgStFoulDisplay ."
       "aTgStFoulDisplay aTgStFoulFooter";
     grid-area: aTgSTeamFoulTile;
-    border: 1px solid black;
+    border: 1px solid grey;
   }
   
   .aTgStFoulDisplay { grid-area: aTgStFoulDisplay; 
@@ -723,20 +728,23 @@
   
   .aTgITeamCityTile { grid-area: aTgITeamCityTile; 
     color: blue;
-    text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
-    border: 1px solid black;
+    text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+    border: 1px solid grey;
   }
   
   .aTgITeamLogoTile { grid-area: aTgITeamLogoTile;
     font-size: 20; 
-    border: 1px solid black;}
+    border: 1px solid grey;}
   
   .aTgITeamMascotTile { grid-area: aTgITeamMascotTile; 
     color: white;
-	  font-size: 47px;
+	  font-size: 50;
 	  -webkit-text-stroke: 1px #a1a3f7;
 	  text-shadow: 0px 2px 4px blue;
-    border: 1px solid black;
+    border: 1px solid grey;
   }
   
   .awayTeamAthleteIdentityArea {  display: grid;
@@ -767,19 +775,19 @@
   }
   
   .aTaIsPlayer1Tile { grid-area: aTaIsPlayer1Tile; 
-    border: 1px solid black;}
+    border: 1px solid grey;}
   
   .aTaIsPlayer2Tile { grid-area: aTaIsPlayer2Tile; 
-    border: 1px solid black;}
+    border: 1px solid grey;}
   
   .aTaIsPlayer3Tile { grid-area: aTaIsPlayer3Tile; 
-    border: 1px solid black;}
+    border: 1px solid grey;}
   
   .aTaIsPlayer4Tile { grid-area: aTaIsPlayer4Tile; 
-    border: 1px solid black;}
+    border: 1px solid grey;}
   
   .aTaIsPlayer5Tile { grid-area: aTaIsPlayer5Tile; 
-    border: 1px solid black;}
+    border: 1px solid grey;}
   
   .aTaIReserveSection {  display: grid;
     grid-template-columns: 1fr;
@@ -797,17 +805,17 @@
   }
   
   .aTaIsPlayer6Tile { grid-area: aTaIsPlayer6Tile; 
-    border: 1px solid black;}
+    border: 1px solid grey;}
   
   .aTaIsPlayer7Tile { grid-area: aTaIsPlayer7Tile; 
-    border: 1px solid black;}
+    border: 1px solid grey;}
   
   .aTaIsPlayer8Tile { grid-area: aTaIsPlayer8Tile; 
-    border: 1px solid black;}
+    border: 1px solid grey;}
   
   .aTaIsPlayer9Tile { grid-area: aTaIsPlayer9Tile; 
-    border: 1px solid black;}
+    border: 1px solid grey;}
   
   .aTaIsPlayer10Tile { grid-area: aTaIsPlayer10Tile;
-    border: 1px solid black; }
+    border: 1px solid grey; }
   
