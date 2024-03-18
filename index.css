@@ -17,6 +17,8 @@
       "homeTeamColumn gameInfoColumn awayTeamColumn";
     grid-area: Scoreboard;
     border: 5px solid aqua;
+    text-align: center;
+    font-family: Orbitron;
   }
   
   .homeTeamColumn {  display: grid;
@@ -39,6 +41,7 @@
     grid-template-areas:
       "hTgIndentitySection hTgStatSection";
     grid-area: homeTeamGameArea;
+    color: red;
     border: 3px solid yellow;
   }
   
@@ -52,21 +55,30 @@
       "hTgITeamLogoTile"
       "hTgITeamMascotTile";
     grid-area: hTgIndentitySection;
+    font-size: 50;
     border: 2px solid purple;
   }
   
   .hTgITeamCityTile { grid-area: hTgITeamCityTile; 
-    border: 1px solid black;}
+    text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
+    border: 1px solid black;
+  }
   
-  .hTgITeamLogoTile { grid-area: hTgITeamLogoTile; 
+  .hTgITeamLogoTile { grid-area: hTgITeamLogoTile;
+    font-size: 20; 
     border: 1px solid black;}
   
   .hTgITeamMascotTile { grid-area: hTgITeamMascotTile; 
-    border: 1px solid black;}
+    color: white;
+	  font-size: 47px;
+	  -webkit-text-stroke: 1px #f8a8a8;
+	  text-shadow: 0px 2px 4px red;
+    border: 1px solid black;
+  }
   
   .hTgStatSection {  display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1.25fr .75fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -77,36 +89,51 @@
   }
   
   .hTgSTeamScoreTile {  display: grid;
-    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.5fr 1.5fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      ". hTgStScoreHeader"
-      "hTgStScoreDisplay hTgStScoreDisplay";
+      "hTgStScoreHeader hTgStScoreDisplay"
+      ". hTgStScoreDisplay";
     grid-area: hTgSTeamScoreTile;
     border: 1px solid black;
   }
   
-  .hTgStScoreHeader { grid-area: hTgStScoreHeader; }
+  .hTgStScoreHeader { grid-area: hTgStScoreHeader; 
+    font-size: 20;
+    text-align: left;
+  }
   
-  .hTgStScoreDisplay { grid-area: hTgStScoreDisplay; }
+  .hTgStScoreDisplay { grid-area: hTgStScoreDisplay; 
+    font-size: 80;
+    text-shadow: 0px 3px 0px #b2a98f,
+             0px 14px 10px rgba(0,0,0,0.15),
+             0px 24px 2px rgba(0,0,0,0.1),
+             0px 24px 30px rgba(0,0,0,0.1);
+  }
   
   .hTgSTeamFoulTile {  display: grid;
-    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1.3fr 0.7fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "hTgStFoulDisplay hTgStFoulDisplay"
-      ". hTgStFoulFooter";
+      ". hTgStFoulDisplay"
+      "hTgStFoulFooter hTgStFoulDisplay";
     grid-area: hTgSTeamFoulTile;
     border: 1px solid black;
   }
   
-  .hTgStFoulDisplay { grid-area: hTgStFoulDisplay; }
+  .hTgStFoulDisplay { grid-area: hTgStFoulDisplay;
+    font-size: 50;
+    text-shadow: 5px 5px 0px rgba(0,0,0,0.2);
+  }
   
-  .hTgStFoulFooter { grid-area: hTgStFoulFooter; }
+  .hTgStFoulFooter { grid-area: hTgStFoulFooter;
+    font-size: 20;
+    text-align: left;
+  }
   
   .homeTeamAthleteIdentityArea {  display: grid;
     grid-template-columns: 1fr;
@@ -292,6 +319,7 @@
       "gIgTcDHeader"
       "gIgTcClockDisplay";
     grid-area: gIgTcDisplayTile;
+    border: 1px solid black;
   }
   
   .gIgTcDHeader { grid-area: gIgTcDHeader; }
@@ -525,7 +553,7 @@
   
   .gILbPointsSection {  display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: .7fr 1.1fr 1.1fr 1.1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -550,7 +578,7 @@
   
   .gILbRebSection {  display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: .7fr 1.1fr 1.1fr 1.1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -575,7 +603,7 @@
   
   .gILbAssistSection {  display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: .7fr 1.1fr 1.1fr 1.1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -618,12 +646,13 @@
     grid-template-areas:
       "aTgStatSection aTgIdentitySection";
     grid-area: awayTeamGameArea;
+    color: blue;
     border: 3px solid yellow;
   }
   
   .aTgStatSection {  display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1.25fr .75fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -634,36 +663,49 @@
   }
   
   .aTgSTeamScoreTile {  display: grid;
-    grid-template-columns: 1.5fr 0.5fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.5fr 1.5fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "aTgStScoreHeader ."
-      "aTgStScoreDisplay aTgStScoreDisplay";
+      "aTgStScoreDisplay aTgStScoreHeader"
+      "aTgStScoreDisplay .";
     grid-area: aTgSTeamScoreTile;
     border: 1px solid black;
   }
   
-  .aTgStScoreHeader { grid-area: aTgStScoreHeader; }
+  .aTgStScoreHeader { grid-area: aTgStScoreHeader; 
+    font-size: 20;
+  }
   
-  .aTgStScoreDisplay { grid-area: aTgStScoreDisplay; }
+  .aTgStScoreDisplay { grid-area: aTgStScoreDisplay;
+    font-size: 80;
+    text-shadow: 0px 3px 0px #b2a98f,
+             0px 14px 10px rgba(0,0,0,0.15),
+             0px 24px 2px rgba(0,0,0,0.1),
+             0px 24px 30px rgba(0,0,0,0.1);
+  }
   
   .aTgSTeamFoulTile {  display: grid;
-    grid-template-columns: 1.5fr 0.5fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1.3fr 0.7fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "aTgStFoulDisplay aTgStFoulDisplay"
-      "aTgStFoulFooter .";
+      "aTgStFoulDisplay ."
+      "aTgStFoulDisplay aTgStFoulFooter";
     grid-area: aTgSTeamFoulTile;
     border: 1px solid black;
   }
   
-  .aTgStFoulDisplay { grid-area: aTgStFoulDisplay; }
+  .aTgStFoulDisplay { grid-area: aTgStFoulDisplay; 
+    font-size: 50;
+    text-shadow: 5px 5px 0px rgba(0,0,0,0.2);
+  }
   
-  .aTgStFoulFooter { grid-area: aTgStFoulFooter; }
+  .aTgStFoulFooter { grid-area: aTgStFoulFooter; 
+    font-size: 20;
+  }
   
   .aTgIdentitySection {  display: grid;
     grid-template-columns: 1fr;
@@ -675,17 +717,27 @@
       "aTgITeamLogoTile"
       "aTgITeamMascotTile";
     grid-area: aTgIdentitySection;
+    font-size: 50;
     border: 2px solid purple;
   }
   
   .aTgITeamCityTile { grid-area: aTgITeamCityTile; 
-    border: 1px solid black;}
+    color: blue;
+    text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
+    border: 1px solid black;
+  }
   
-  .aTgITeamLogoTile { grid-area: aTgITeamLogoTile; 
+  .aTgITeamLogoTile { grid-area: aTgITeamLogoTile;
+    font-size: 20; 
     border: 1px solid black;}
   
   .aTgITeamMascotTile { grid-area: aTgITeamMascotTile; 
-    border: 1px solid black;}
+    color: white;
+	  font-size: 47px;
+	  -webkit-text-stroke: 1px #a1a3f7;
+	  text-shadow: 0px 2px 4px blue;
+    border: 1px solid black;
+  }
   
   .awayTeamAthleteIdentityArea {  display: grid;
     grid-template-columns: 1fr;

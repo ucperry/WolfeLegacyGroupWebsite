@@ -1,5 +1,8 @@
 <html>
     <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="index.css">
     </head>
     <body>
@@ -8,131 +11,175 @@
               <div class="homeTeamColumn">
                 <div class="homeTeamGameArea">
                   <div class="hTgIndentitySection">
-                    <div class="hTgITeamCityTile"></div>
-                    <div class="hTgITeamLogoTile"></div>
-                    <div class="hTgITeamMascotTile"></div>
+                    <div class="hTgITeamCityTile">Cincinnati</div>
+                    <div class="hTgITeamLogoTile">*logo image*</div>
+                    <div class="hTgITeamMascotTile">Bearcats</div>
                   </div>
                   <div class="hTgStatSection">
                     <div class="hTgSTeamScoreTile">
-                      <div class="hTgStScoreHeader"></div>
-                      <div class="hTgStScoreDisplay"></div>
+                      <div class="hTgStScoreHeader">Team Score</div>
+                      <div class="hTgStScoreDisplay">
+                        <output class="homeTeamScoreOp">87</output>
+                      </div>
                     </div>
                     <div class="hTgSTeamFoulTile">
-                      <div class="hTgStFoulDisplay"></div>
-                      <div class="hTgStFoulFooter"></div>
+                      <div class="hTgStFoulDisplay">
+                        <output class="homeTeamFoulOp">0</output>
+                      </div>
+                      <div class="hTgStFoulFooter">Team Fouls</div>
                     </div>
                   </div>
                 </div>
                 <div class="homeTeamAthleteIdentityArea">
                   <div class="hTaIStarterSection">
-                    <div class="hTaIsPlayer1Tile"></div>
-                    <div class="hTaIsPlayer2Tile"></div>
-                    <div class="hTaIsPlayer3Tile"></div>
-                    <div class="hTaIsPlayer4Tile"></div>
-                    <div class="hTaIsPlayer5Tile"></div>
+                    <div class="hTaIsPlayer1Tile">Player 1</div>
+                    <div class="hTaIsPlayer2Tile">Player 2</div>
+                    <div class="hTaIsPlayer3Tile">Player 3</div>
+                    <div class="hTaIsPlayer4Tile">Player 4</div>
+                    <div class="hTaIsPlayer5Tile">Player 5</div>
                   </div>
                   <div class="hTaIReserveSection">
-                    <div class="hTaIsPlayer6Tile"></div>
-                    <div class="hTaIsPlayer7Tile"></div>
-                    <div class="hTaIsPlayer8Tile"></div>
-                    <div class="hTaIsPlayer9Tile"></div>
-                    <div class="hTaIsPlayer10Tile"></div>
+                    <div class="hTaIsPlayer6Tile">Player 6</div>
+                    <div class="hTaIsPlayer7Tile">Player 7</div>
+                    <div class="hTaIsPlayer8Tile">Player 8</div>
+                    <div class="hTaIsPlayer9Tile">Player 9</div>
+                    <div class="hTaIsPlayer10Tile">Player 10</div>
                   </div>
                 </div>
               </div>
               <div class="gameInfoColumn">
                 <div class="gameInfoSponsPossArea">
                   <div class="gIspSponsorSection">
-                    <div class="gIsPsHomeAdTile"></div>
-                    <div class="gIsPsAwayAdTile"></div>
+                    <div class="gIsPsHomeAdTile">Home Sponsor Img</div>
+                    <div class="gIsPsAwayAdTile">Away Sponsor Img</div>
                   </div>
                   <div class="gIspPossessionSection">
-                    <div class="gIsPHomeArrowTile"></div>
-                    <div class="gIsPPossSymTile"></div>
-                    <div class="gIsPAwayArrowTile"></div>
+                    <div class="gIsPHomeArrowTile">
+                      <button class="possArrowbtn">&lt-- &#40img&#41</button>
+                    </div>
+                    <div class="gIsPPossSymTile">POSS</div>
+                    <div class="gIsPAwayArrowTile">
+                      <button class="possArrowbtn">&#40img&#41 --&gt</button>
+                    </div>
                   </div>
                 </div>
                 <div class="gameInfoGameTimeArea">
                   <div class="gIgTClockSection">
                     <div class="gIgTcTOLHomeTile">
-                      <div class="gIgTcThHeader"></div>
-                      <div class="gIgTcThDisplay"></div>
+                      <div class="gIgTcThHeader">Timeouts Left</div>
+                      <div class="gIgTcThDisplay">
+                        <output class="timeoutsLeftOp">5</output>
+                      </div>
                     </div>
                     <div class="gIgTcDisplayTile">
-                      <div class="gIgTcDHeader"></div>
-                      <div class="gIgTcClockDisplay"></div>
+                      <div class="gIgTcDHeader">Game Clock</div>
+                      <div class="gIgTcClockDisplay">
+                        <output class="gameClockCounterOp">10:00</output>
+                      </div>
                     </div>
                     <div class="gIgTcTOLAwayTile">
-                      <div class="gIgTcTAHeader"></div>
-                      <div class="gIgTcTADisplay"></div>
+                      <div class="gIgTcTAHeader">Timeouts Left</div>
+                      <div class="gIgTcTADisplay">
+                        <output class="timeoutsLeftOp">5</output>
+                      </div>
                     </div>
                   </div>
                   <div class="gIgTPeriodSection">
-                    <div class="gIgTpHeader"></div>
-                    <div class="gIgTp1Tile"></div>
-                    <div class="gIgTp2Tile"></div>
-                    <div class="gIgTp3Tile"></div>
-                    <div class="gIgTp4Tile"></div>
+                    <div class="gIgTpHeader">Game Period</div>
+                    <div class="gIgTp1Tile">
+                      <button class="gamePeriodBtn">1st</button>
+                    </div>
+                    <div class="gIgTp2Tile">
+                      <button class="gamePeriodBtn">2nd</button>
+                    </div>
+                    <div class="gIgTp3Tile">
+                      <button class="gamePeriodBtn">3rd</button>
+                    </div>
+                    <div class="gIgTp4Tile">
+                      <button class="gamePeriodBtn">4th</button>
+                    </div>
                   </div>
                   <div class="gIgTClockControlsSection">
                     <div class="gIgTcCTimeIncTile">
-                      <div class="gIgTcCTimeIncHeader"></div>
-                      <div class="gIgTcCTimeIncBtn"></div>
+                      <div class="gIgTcCTimeIncHeader">Time Increase</div>
+                      <div class="gIgTcCTimeIncBtn">
+                        <button class="timeIncreasebtn">+ 1min</button>
+                      </div>
                     </div>
                     <div class="gIgTcCTimeDecTile">
-                      <div class="gIgTcCTimeDecHeader"></div>
-                      <div class="gIgTcCTimeDecBtn"></div>
+                      <div class="gIgTcCTimeDecHeader">Time Decrease</div>
+                      <div class="gIgTcCTimeDecBtn">
+                        <button class="timeDecreaseBtn">- 1min</button>
+                      </div>
                     </div>
                     <div class="gIgTcCStartTile">
-                      <div class="gIgTcCStartHeader"></div>
-                      <div class="gIgTcCStartBtn"></div>
+                      <div class="gIgTcCStartHeader">Start</div>
+                      <div class="gIgTcCStartBtn">
+                        <button class="startButton">Green triangle img</button>
+                      </div>
                     </div>
                     <div class="gIgTcCStopTile">
-                      <div class="gIgTcCStopHeader"></div>
-                      <div class="gIgTcCStopBtn"></div>
+                      <div class="gIgTcCStopHeader">Stop</div>
+                      <div class="gIgTcCStopBtn">
+                        <button class="stopButton"> red square img</button>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="gameInfoTimeoutArea">
                   <div class="gIToHomeTeamSection">
                     <div class="gItOh60sTile">
-                      <div class="gItOh60sHeader"></div>
-                      <div class="gItOh60sBtns"></div>
+                      <div class="gItOh60sHeader">Full Timeouts</div>
+                      <div class="gItOh60sBtns">
+                        <button class="60secTO">1</button>
+                        <button class="60secTO">2</button>
+                        <button class="60secTO">3</button>
+                      </div>
                     </div>
                     <div class="gItOh30sTile">
-                      <div class="gItOh30sHeader"></div>
-                      <div class="gItOh30sBtns"></div>
+                      <div class="gItOh30sHeader">30sec Timeouts</div>
+                      <div class="gItOh30sBtns">
+                        <button class="30secTO">1</button>
+                        <button class="30secTO">2</button>
+                      </div>
                     </div>
                   </div>
                   <div class="gIToAwayTeamSection">
                     <div class="gItOa60sTile">
-                      <div class="gItOa60sHeader"></div>
-                      <div class="gItOa60sBtns"></div>
+                      <div class="gItOa60sHeader">Full Timeouts</div>
+                      <div class="gItOa60sBtns">
+                        <button class="60secTO">1</button>
+                        <button class="60secTO">2</button>
+                        <button class="60secTO">3</button>
+                      </div>
                     </div>
                     <div class="gItOa30sTile">
-                      <div class="gItOa30sHeader"></div>
-                      <div class="gItOa30sBtns"></div>
+                      <div class="gItOa30sHeader">30sec Timeouts</div>
+                      <div class="gItOa30sBtns">
+                        <button class="30secTO">1</button>
+                        <button class="30secTO">2</button>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="gameInfoLeaderBoardArea">
                   <div class="gILbPointsSection">
-                    <div class="gIlBpHeader"></div>
-                    <div class="gIlBpLeader1Tile"></div>
-                    <div class="gIlBpLeader2Tile"></div>
-                    <div class="gIlBpLeader3Tile"></div>
+                    <div class="gIlBpHeader">Scoring Leaders</div>
+                    <div class="gIlBpLeader1Tile">Scoring Leader 1</div>
+                    <div class="gIlBpLeader2Tile">Scoring Leader 2</div>
+                    <div class="gIlBpLeader3Tile">Scoring Leader 3</div>
                   </div>
                   <div class="gILbRebSection">
-                    <div class="gIlBrHeader"></div>
-                    <div class="gIlBrLeader1Tile"></div>
-                    <div class="gIlBrLeader2Tile"></div>
-                    <div class="gIlBrLeader3Tile"></div>
+                    <div class="gIlBrHeader">Rebounding Leaders</div>
+                    <div class="gIlBrLeader1Tile">Rebound Leader 1</div>
+                    <div class="gIlBrLeader2Tile">Rebound Leader 2</div>
+                    <div class="gIlBrLeader3Tile">Rebound Leader 3</div>
                   </div>
                   <div class="gILbAssistSection">
-                    <div class="gIlBaHeader"></div>
-                    <div class="gIlBaLeader1Tile"></div>
-                    <div class="gIlBaLeader2Tile"></div>
-                    <div class="gIlBaLeader3Tile"></div>
+                    <div class="gIlBaHeader">Assist Leaders</div>
+                    <div class="gIlBaLeader1Tile">Assist Leader 1</div>
+                    <div class="gIlBaLeader2Tile">Assist Leader 2</div>
+                    <div class="gIlBaLeader3Tile">Assist Leader 3</div>
                   </div>
                 </div>
               </div>
@@ -140,34 +187,38 @@
                 <div class="awayTeamGameArea">
                   <div class="aTgStatSection">
                     <div class="aTgSTeamScoreTile">
-                      <div class="aTgStScoreHeader"></div>
-                      <div class="aTgStScoreDisplay"></div>
+                      <div class="aTgStScoreHeader">Team Score</div>
+                      <div class="aTgStScoreDisplay">
+                        <output class="awayTeamScoreOp">58</output>
+                      </div>
                     </div>
                     <div class="aTgSTeamFoulTile">
-                      <div class="aTgStFoulDisplay"></div>
-                      <div class="aTgStFoulFooter"></div>
+                      <div class="aTgStFoulDisplay">
+                        <output class="awayTeamFoulOp">0</output>
+                      </div>
+                      <div class="aTgStFoulFooter">Team Fouls</div>
                     </div>
                   </div>
                   <div class="aTgIdentitySection">
-                    <div class="aTgITeamCityTile"></div>
-                    <div class="aTgITeamLogoTile"></div>
-                    <div class="aTgITeamMascotTile"></div>
+                    <div class="aTgITeamCityTile">Twinsburg</div>
+                    <div class="aTgITeamLogoTile">*logo Image*</div>
+                    <div class="aTgITeamMascotTile">Tigers</div>
                   </div>
                 </div>
                 <div class="awayTeamAthleteIdentityArea">
                   <div class="aTaIStarterSection">
-                    <div class="aTaIsPlayer1Tile"></div>
-                    <div class="aTaIsPlayer2Tile"></div>
-                    <div class="aTaIsPlayer3Tile"></div>
-                    <div class="aTaIsPlayer4Tile"></div>
-                    <div class="aTaIsPlayer5Tile"></div>
+                    <div class="aTaIsPlayer1Tile">Player 1</div>
+                    <div class="aTaIsPlayer2Tile">Player 2</div>
+                    <div class="aTaIsPlayer3Tile">Player 3</div>
+                    <div class="aTaIsPlayer4Tile">Player 4</div>
+                    <div class="aTaIsPlayer5Tile">Player 5</div>
                   </div>
                   <div class="aTaIReserveSection">
-                    <div class="aTaIsPlayer6Tile"></div>
-                    <div class="aTaIsPlayer7Tile"></div>
-                    <div class="aTaIsPlayer8Tile"></div>
-                    <div class="aTaIsPlayer9Tile"></div>
-                    <div class="aTaIsPlayer10Tile"></div>
+                    <div class="aTaIsPlayer6Tile">Player 6</div>
+                    <div class="aTaIsPlayer7Tile">Player 7</div>
+                    <div class="aTaIsPlayer8Tile">Player 8</div>
+                    <div class="aTaIsPlayer9Tile">Player 9</div>
+                    <div class="aTaIsPlayer10Tile">Player 10</div>
                   </div>
                 </div>
               </div>
