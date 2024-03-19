@@ -76,6 +76,7 @@
 	  font-size: 50;
 	  -webkit-text-stroke: 1px #f8a8a8;
 	  text-shadow: 0px 2px 4px red;
+    padding-bottom: 10;
     border: 1px solid grey;
   }
   
@@ -105,7 +106,7 @@
   
   .hTgStScoreHeader { grid-area: hTgStScoreHeader; 
     font-size: 20;
-    text-align: left;
+    
   }
   
   .hTgStScoreDisplay { grid-area: hTgStScoreDisplay; 
@@ -114,6 +115,7 @@
              0px 14px 10px rgba(0,0,0,0.15),
              0px 24px 2px rgba(0,0,0,0.1),
              0px 24px 30px rgba(0,0,0,0.1);
+    padding-top: 10;
   }
   
   .hTgSTeamFoulTile {  display: grid;
@@ -135,7 +137,7 @@
   
   .hTgStFoulFooter { grid-area: hTgStFoulFooter;
     font-size: 20;
-    text-align: left;
+    
   }
   
   .homeTeamAthleteIdentityArea {  display: grid;
@@ -247,6 +249,7 @@
     grid-template-areas:
       "gIsAPossesionHomeTile gIsAPossesionHeaderTile gIsAPossesionAwayTile";
     grid-area: gIsAPossessionSection;
+    font-size: 25;
     border: 2px solid purple;
   }
   
@@ -264,7 +267,7 @@
   
   .gameInfoGameClockArea {  display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1.5fr 0.5fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -275,7 +278,7 @@
   }
   
   .gIgCDisplaySection {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 0.75fr 1.5fr 0.75fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -287,7 +290,7 @@
   
   .gIgCdHomeTOLTile {  display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 0.5fr 1.5fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -299,11 +302,13 @@
   
   .gIgCdHomeTOLHeader { grid-area: gIgCdHomeTOLHeader; }
   
-  .gIgCdHomeTOLoutput { grid-area: gIgCdHomeTOLoutput; }
+  .gIgCdHomeTOLoutput { grid-area: gIgCdHomeTOLoutput; 
+    font-size: 50px;
+  }
   
   .gIgCdCounterTile {  display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 0.5fr 1.5fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -315,11 +320,14 @@
   
   .gIgCdCHeader { grid-area: gIgCdCHeader; }
   
-  .gIgCdCOutput { grid-area: gIgCdCOutput; }
+  .gIgCdCOutput { grid-area: gIgCdCOutput;
+    font-size: 50px;
+    border: 2px solid black;
+  }
   
   .gIgCdAwayTOLTile {  display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 0.5fr 1.5fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -331,7 +339,9 @@
   
   .gIgCdAwayTOLHeader { grid-area: gIgCdAwayTOLHeader; }
   
-  .gIgCdAwayTOLOutput { grid-area: gIgCdAwayTOLOutput; }
+  .gIgCdAwayTOLOutput { grid-area: gIgCdAwayTOLOutput; 
+    font-size: 50px;
+  }
   
   .gIgCControlsSection {  display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -547,7 +557,7 @@
   .gameInfoLeaderBoardsArea {
     display: grid; 
     grid-template-columns: 1fr; 
-    grid-template-rows: .5fr 1.5fr; 
+    grid-template-rows: .25fr 1.75fr; 
     gap: 0px 0px; 
     grid-template-areas: 
       "gIlBHeaderSection"
@@ -574,7 +584,7 @@
   .gIlBhAssistsTile { grid-area: gIlBhAssistsTile; 
     border: 1px solid grey
   }
-  
+
   .gIlBPlayersSection {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
@@ -681,6 +691,7 @@
   
   .aTgStScoreHeader { grid-area: aTgStScoreHeader; 
     font-size: 20;
+    
   }
   
   .aTgStScoreDisplay { grid-area: aTgStScoreDisplay;
@@ -689,6 +700,7 @@
              0px 14px 10px rgba(0,0,0,0.15),
              0px 24px 2px rgba(0,0,0,0.1),
              0px 24px 30px rgba(0,0,0,0.1);
+    padding-top: 10;
   }
   
   .aTgSTeamFoulTile {  display: grid;
@@ -710,6 +722,7 @@
   
   .aTgStFoulFooter { grid-area: aTgStFoulFooter; 
     font-size: 20;
+    
   }
   
   .aTgIdentitySection {  display: grid;
@@ -744,6 +757,7 @@
 	  font-size: 50;
 	  -webkit-text-stroke: 1px #a1a3f7;
 	  text-shadow: 0px 2px 4px blue;
+    padding-bottom: 10;
     border: 1px solid grey;
   }
   
