@@ -304,14 +304,14 @@
     grid-auto-flow: row;
     grid-template-areas:
       "gIgCdHomeTOLHeader"
-      "gIgCdHomeTOLoutput";
+      "gIgCdHomeTOLdisplay";
     grid-area: gIgCdHomeTOLTile;
     border: 1px solid grey;
   }
   
   .gIgCdHomeTOLHeader { grid-area: gIgCdHomeTOLHeader; }
   
-  .gIgCdHomeTOLoutput { grid-area: gIgCdHomeTOLoutput; 
+  .gIgCdHomeTOLdisplay { grid-area: gIgCdHomeTOLdisplay; 
     font-size: 40px;
   }
   
@@ -322,14 +322,14 @@
     grid-auto-flow: row;
     grid-template-areas:
       "gIgCdCHeader"
-      "gIgCdCOutput";
+      "gIgCdCdisplay";
     grid-area: gIgCdCounterTile;
     border: 1px solid grey;
   }
   
   .gIgCdCHeader { grid-area: gIgCdCHeader; }
   
-  .gIgCdCOutput { grid-area: gIgCdCOutput;
+  .gIgCdCdisplay { grid-area: gIgCdCdisplay;
     font-size: 60px;
     border: 2px solid black;
     margin-left: 30;
@@ -345,14 +345,14 @@
     grid-auto-flow: row;
     grid-template-areas:
       "gIgCdAwayTOLHeader"
-      "gIgCdAwayTOLOutput";
+      "gIgCdAwayTOLdisplay";
     grid-area: gIgCdAwayTOLTile;
     border: 1px solid grey;
   }
   
   .gIgCdAwayTOLHeader { grid-area: gIgCdAwayTOLHeader; }
   
-  .gIgCdAwayTOLOutput { grid-area: gIgCdAwayTOLOutput; 
+  .gIgCdAwayTOLdisplay { grid-area: gIgCdAwayTOLdisplay; 
     font-size: 40px;
   }
   
