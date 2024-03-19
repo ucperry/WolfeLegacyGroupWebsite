@@ -121,7 +121,7 @@
   }
   
   .hTgSTeamFoulTile {  display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.25fr 0.75fr;
     grid-template-rows: 1.3fr 0.7fr;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -139,7 +139,8 @@
   
   .hTgStFoulFooter { grid-area: hTgStFoulFooter;
     font-size: 20;
-    
+    text-align: left;
+    padding-left: 15;
   }
   
   .homeTeamAthleteIdentityArea {  display: grid;
@@ -328,6 +329,7 @@
     margin-left: 30;
     margin-right: 30;
     margin-bottom: 15;
+    margin-top: 5;
   }
   
   .gIgCdAwayTOLTile {  display: grid;
@@ -425,7 +427,7 @@
   
   .gameInfoGamePeriodArea {  display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 0.75fr 1.25fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -735,7 +737,7 @@
   }
   
   .aTgSTeamFoulTile {  display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: .75fr 1.25fr;
     grid-template-rows: 1.3fr 0.7fr;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -753,7 +755,8 @@
   
   .aTgStFoulFooter { grid-area: aTgStFoulFooter; 
     font-size: 20;
-    
+    text-align: right;
+    padding-right: 15;
   }
   
   .aTgIdentitySection {  display: grid;
