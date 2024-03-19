@@ -9,7 +9,7 @@
   }
   
   .Scoreboard {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1.1fr 0.8fr 1.1fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -126,7 +126,7 @@
   
   .hTgSTeamFoulTile {  display: grid;
     grid-template-columns: 1.5fr 0.5fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1.5fr .05fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -140,6 +140,7 @@
     font-size: 50;
     text-shadow: 5px 5px 0px rgba(0,0,0,0.2);
     text-align: center;
+    padding-right: 5;
   }
   
   .hTgStFoulFooter { grid-area: hTgStFoulFooter;
@@ -380,7 +381,9 @@
   
   .gIgCcTimeIncHeader { grid-area: gIgCcTimeIncHeader; }
   
-  .gIgCcTimeIncBtn { grid-area: gIgCcTimeIncBtn; }
+  .gIgCcTimeIncBtn { grid-area: gIgCcTimeIncBtn;
+    padding-bottom: 5
+  ; }
   
   .gIgCcTimeDecTile {  display: grid;
     grid-template-columns: 1fr;
@@ -396,7 +399,9 @@
   
   .gIgCcTimeDecHeader { grid-area: gIgCcTimeDecHeader; }
   
-  .gIgCcTimeDecBtn { grid-area: gIgCcTimeDecBtn; }
+  .gIgCcTimeDecBtn { grid-area: gIgCcTimeDecBtn; 
+    padding-bottom: 5
+  }
   
   .gIgCcTimeStartTile {  display: grid;
     grid-template-columns: 1fr;
@@ -412,7 +417,9 @@
   
   .gIgCcTimeStartHeader { grid-area: gIgCcTimeStartHeader; }
   
-  .gIgCcTimeStartBtn { grid-area: gIgCcTimeStartBtn; }
+  .gIgCcTimeStartBtn { grid-area: gIgCcTimeStartBtn; 
+    padding-bottom: 5
+  }
   
   .gIgCcTimeStopTile {  display: grid;
     grid-template-columns: 1fr;
@@ -428,7 +435,9 @@
   
   .gIgCcTimeStopHeader { grid-area: gIgCcTimeStopHeader; }
   
-  .gIgCcTimeStopBtn { grid-area: gIgCcTimeStopBtn; }
+  .gIgCcTimeStopBtn { grid-area: gIgCcTimeStopBtn; 
+    padding-bottom: 5
+  }
   
   .gameInfoGamePeriodArea {  display: grid;
     grid-template-columns: 1fr;
@@ -510,10 +519,15 @@
   }
   
   .gItThomeFullHeader { grid-area: gItThomeFullHeader; 
-  text-align: right;}
+  text-align: right;
+  padding-top: 5;
+  padding-bottom: 5;
+}
   
   .gItThomeFullBtns { grid-area: gItThomeFullBtns; 
   text-align: left;
+  padding-top: 5;
+  padding-bottom: 5;
   padding-left: 30;
   }
   
@@ -530,10 +544,14 @@
   
   .gItThome30sHeader { grid-area: gItThome30sHeader; 
     text-align: right;
+    padding-top: 5;
+    padding-bottom: 5;
   }
   
   .gItThome30sBtns { grid-area: gItThome30sBtns; 
   text-align: left;
+  padding-top: 5;
+  padding-bottom: 5;
   padding-left: 30;
   }
   
@@ -562,11 +580,15 @@
   
   .gItTAwayFullBtns { grid-area: gItTAwayFullBtns; 
   text-align: left;
+  padding-top: 5;
+  padding-bottom: 5;
   padding-left: 30;
   }
   
   .gItTAwayFullHeader { grid-area: gItTAwayFullHeader; 
     text-align: left;
+    padding-top: 5;
+    padding-bottom: 5;
   }
   
   .gItTAway30sTile {  display: grid;
@@ -582,11 +604,15 @@
   
   .gItTAway30sBtns { grid-area: gItTAway30sBtns; 
     text-align: left;
+    padding-top: 5;
+    padding-bottom: 5;
     padding-left: 30;
   }
   
   .gItTAway30sHeader { grid-area: gItTAway30sHeader; 
   text-align: left;
+  padding-top: 5;
+  padding-bottom: 5;
   }
   
   .gameInfoLeaderBoardsArea {
@@ -608,6 +634,8 @@
     grid-template-areas: 
       "gIlBhPointsTile gIlBhRebsTile gIlBhAssistsTile"; 
     grid-area: gIlBHeaderSection; 
+    font-size: 25;
+    font-weight: 700;
     border: 2px solid purple
   }
   .gIlBhPointsTile { grid-area: gIlBhPointsTile; 
@@ -743,7 +771,7 @@
   
   .aTgSTeamFoulTile {  display: grid;
     grid-template-columns: 0.5fr 1.5fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1.5fr .05fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -757,6 +785,7 @@
     font-size: 50;
     text-shadow: 5px 5px 0px rgba(0,0,0,0.2);
     text-align: center;
+    padding-left: 5;
   }
   
   .aTgStFoulFooter { grid-area: aTgStFoulFooter; 
