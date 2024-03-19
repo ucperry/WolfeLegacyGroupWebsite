@@ -75,7 +75,7 @@
                 <div class="gIgCdAwayTOLTile">
                   <div class="gIgCdAwayTOLHeader">Away T.O.L.</div>
                   <div class="gIgCdAwayTOLdisplay">
-                    <output class="awayTimeoutsLeft">5</output>
+                    <output class="awayTimeoutsLeft" id="awayTimeoutsLeft-el">5</output>
                   </div>
                 </div>
               </div>
@@ -130,7 +130,7 @@
                   <div class="gItThomeFullBtns">
                     <button class="homeTeamFullTimeoutBtns" id="homeFullTimeout1-btn" onclick="lessHomeTimeouts()">1</button>
                     <button class="homeTeamFullTimeoutBtns" id="homeFullTimeout2-btn" onclick="lessHomeTimeouts()">2</button>
-                    <button class="homeTeamFullTimeoutBtns"id="homeFullTimeout3-btn" onclick="lessHomeTimeouts()">3</button>
+                    <button class="homeTeamFullTimeoutBtns" id="homeFullTimeout3-btn" onclick="lessHomeTimeouts()">3</button>
                   </div>
                 </div>
                 <div class="gItTHome30sTile">
@@ -144,16 +144,16 @@
               <div class="gItTAwaySection">
                 <div class="gItTAwayFullTile">
                   <div class="gItTAwayFullBtns">
-                    <button class="awayTeamFullTimeoutBtns">1</button>
-                    <button class="awayTeamFullTimeoutBtns">2</button>
-                    <button class="awayTeamFullTimeoutBtns">3</button>
+                    <button class="awayTeamFullTimeoutBtns" id="awayFullTimeout1-btn" onclick="lessAwayTimeouts()">1</button>
+                    <button class="awayTeamFullTimeoutBtns" id="awayFullTimeout2-btn" onclick="lessAwayTimeouts()">2</button>
+                    <button class="awayTeamFullTimeoutBtns" id="awayFullTimeout3-btn" onclick="lessAwayTimeouts()">3</button>
                   </div>
                   <div class="gItTAwayFullHeader">Full Timeouts</div>
                 </div>
                 <div class="gItTAway30sTile">
                   <div class="gItTAway30sBtns">
-                    <button class="awayTeam30sTimeoutBtns">1</button>
-                    <button class="awayTeam30sTimeoutBtns">2</button>
+                    <button class="awayTeam30sTimeoutBtns" id="away30sTimeout1-btn" onclick="lessAwayTimeouts()">1</button>
+                    <button class="awayTeam30sTimeoutBtns" id="away30sTimeout2-btn" onclick="lessAwayTimeouts()">2</button>
                   </div>
                   <div class="gItTAway30sHeader">30sec Timeouts</div>
                 </div>
