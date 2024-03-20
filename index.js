@@ -5,11 +5,13 @@ let homeTOL = 5
 let awayTOL = 5
 
 function lessHomeTimeouts() {
-    homeTOL = homeTOL - 1
+   if (homeTOL > 0) {
+    homeTOL = homeTOL - 1} else {homeTOL=0}
     homeTimeoutsLeftEl.innerText = homeTOL
 }
 
 function lessAwayTimeouts() {
-    awayTOL = awayTOL - 1
+   if (awayTOL > 0) {
+    awayTOL = awayTOL - 1} else {awayTOL=0}
     awayTimeoutsLeftEl.innerText = awayTOL
 }

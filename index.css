@@ -530,6 +530,26 @@
   padding-bottom: 5;
   padding-left: 30;
   }
+
+  .fullTimeoutBtns {
+    background-color: darkgreen;
+    color: white;
+    font-style: bold;
+    font-size: 20;
+  }
+
+  .fullTimeoutBtns:focus {
+    color: Maroon;
+    font-style: bold;
+    text-decoration: line-through;
+  }
+
+  .thirtysecTimeoutBtns {
+    background-color: lightgreen;
+    font-size: 15;
+  }
+
+
   
   .gItTHome30sTile {  display: grid;
     grid-template-columns: 1fr 1fr;
@@ -582,7 +602,7 @@
   text-align: left;
   padding-top: 5;
   padding-bottom: 5;
-  padding-left: 30;
+  padding-left: 5;
   }
   
   .gItTAwayFullHeader { grid-area: gItTAwayFullHeader; 
@@ -606,7 +626,7 @@
     text-align: left;
     padding-top: 5;
     padding-bottom: 5;
-    padding-left: 30;
+    padding-left: 5;
   }
   
   .gItTAway30sHeader { grid-area: gItTAway30sHeader; 
