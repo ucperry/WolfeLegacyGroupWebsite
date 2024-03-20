@@ -330,7 +330,7 @@
   .gIgCdCHeader { grid-area: gIgCdCHeader; }
   
   .gIgCdCdisplay { grid-area: gIgCdCdisplay;
-    font-size: 60px;
+    font-size: 40px;
     border: 2px solid black;
     margin-left: 30;
     margin-right: 30;
@@ -403,40 +403,30 @@
     padding-bottom: 5
   }
   
-  .gIgCcTimeStartTile {  display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "gIgCcTimeStartHeader"
-      "gIgCcTimeStartBtn";
-    grid-area: gIgCcTimeStartTile;
+  .gIgCcTimeStartTile {  grid-area: gIgCcTimeStartTile;
     border: 1px solid grey;
   }
   
-  .gIgCcTimeStartHeader { grid-area: gIgCcTimeStartHeader; }
-  
-  .gIgCcTimeStartBtn { grid-area: gIgCcTimeStartBtn; 
-    padding-bottom: 5
-  }
-  
-  .gIgCcTimeStopTile {  display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "gIgCcTimeStopHeader"
-      "gIgCcTimeStopBtn";
-    grid-area: gIgCcTimeStopTile;
+.timer__btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  background: purple;
+  cursor: pointer;
+}
+
+.timer__btn--start {
+  background: green
+}
+
+.timer__btn--stop {
+  background: red
+}
+
+  .gIgCcTimeStopTile { grid-area: gIgCcTimeStopTile;
     border: 1px solid grey;
-  }
-  
-  .gIgCcTimeStopHeader { grid-area: gIgCcTimeStopHeader; }
-  
-  .gIgCcTimeStopBtn { grid-area: gIgCcTimeStopBtn; 
-    padding-bottom: 5
   }
   
   .gameInfoGamePeriodArea {  display: grid;
@@ -546,10 +536,8 @@
 
   .thirtysecTimeoutBtns {
     background-color: lightgreen;
-    font-size: 15;
+    font-size: 20;
   }
-
-
   
   .gItTHome30sTile {  display: grid;
     grid-template-columns: 1fr 1fr;

@@ -3,12 +3,13 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
       <link rel="stylesheet" href="index.css">
     </head>
     <body>
       <div class="container">
         <div class="Scoreboard">
-          <!--Home Team Column -->
+<!--Home Team Column -->
           <div class="homeTeamColumn">
             <div class="homeTeamGameArea">
               <div class="hTgIndentitySection">
@@ -48,7 +49,7 @@
               </div>
             </div>
           </div>
-          <!--Game Information Column -->
+<!--Game Information Column -->
           <div class="gameInfoColumn">
             <div class="gameInfoSponsorArea">
               <div class="gIsAAdvertSection">Images of local vendors placed here</div>
@@ -69,7 +70,9 @@
                 <div class="gIgCdCounterTile">
                   <div class="gIgCdCHeader">Game Clock</div>
                   <div class="gIgCdCdisplay">
-                    <output class="gameClockCounter">00:00</output>
+                    <span class="timer__part timer__part--minutes">00</span>
+                    <span class="timer__part">:</span>
+                    <span class="timer__part timer__part--seconds">00</span>
                   </div>
                 </div>
                 <div class="gIgCdAwayTOLTile">
@@ -82,7 +85,7 @@
               <div class="gIgCControlsSection">
                 <div class="gIgCcTimeIncTile">
                   <div class="gIgCcTimeIncHeader">+ Time</div>
-                  <div class="gIgCcTimeIncBtn">
+                  <div class="gIgCcTimeIncBtn" id="gameClockTimeIncrease-btn" onclick="increaseGameClock()">
                     <button class="gcIncreaseTimeBtn">+1 min</button>
                   </div>
                 </div>
@@ -93,16 +96,14 @@
                   </div>
                 </div>
                 <div class="gIgCcTimeStartTile">
-                  <div class="gIgCcTimeStartHeader">Start</div>
-                  <div class="gIgCcTimeStartBtn">
-                    <button class="gcStartTimeBtn">Green Triangle</button>
-                  </div>
+                  <button type="button" class="timer__btn timer__btn--control timer__btn--start">
+                    <span class="material-symbols-outlined">play_circle</span>
+                  </button>
                 </div>
                 <div class="gIgCcTimeStopTile">
-                  <div class="gIgCcTimeStopHeader">Stop</div>
-                  <div class="gIgCcTimeStopBtn">
-                    <button class="gcStopTimeBtn">Red Square</button>
-                  </div>
+                  <button type="button" class="timer__btn timer__btn--reset">
+                    <span class="material-symbols-outlined">timer</span>
+                  </button>
                 </div>
               </div>
             </div>
@@ -185,7 +186,7 @@
       
             </div>
           </div>
-          <!--Away Team Column -->
+<!--Away Team Column -->
           <div class="awayTeamColumn">
             <div class="awayTeamGameArea">
               <div class="aTgStatSection">
