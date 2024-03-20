@@ -50,138 +50,142 @@
             </div>
           </div>
 <!--Game Information Column -->
-          <div class="gameInfoColumn">
-            <div class="gameInfoSponsorArea">
-              <div class="gIsAAdvertSection">Images of local vendors placed here</div>
-              <div class="gIsAPossessionSection">
-                <div class="gIsAPossesionHomeTile">&lt--</div>
-                <div class="gIsAPossesionHeaderTile">&ltPoss&gt</div>
-                <div class="gIsAPossesionAwayTile">--&gt</div>
+          <div class="gameInfo-Column">
+            <div class="giSPONSOR-Area">
+              <div class="gisADS-Section">Images of local vendors placed here</div>
+              <div class="gisPOSSESSION-Section">
+                <div class="gispHOME-Tile">&lt--</div>
+                <div class="gispHEADER-Tile">&ltPoss&gt</div>
+                <div class="gispAWAY-Tile">--&gt</div>
               </div>
             </div>
-            <div class="gameInfoGamePeriodArea">
-              <div class="gIgPHeaderSection">Game Period</div>
-              <div class="gIgPSelectorsSection">
-                <div class="gIgPBtn1Tile">
-                  <button class="gamePeriodBtns">1st</button>
+            <div class="giPERIOD-Area">
+              <div class="gipTITLE-Section">Game Period</div>
+              <div class="gipHALFS-Section">
+                <div class="giphFIRSTHALF-Tile">
+                  <button>1st Half</button>
                 </div>
-                <div class="gIgPBtn2Tile">
-                  <button class="gamePeriodBtns">2nd</button>
+                <div class="giphSECONDHALF-Tile">
+                  <button>2nd Half</button>
                 </div>
-                <div class="gIgPBtn3Tile">
-                  <button class="gamePeriodBtns">3rd</button>
+                <div class="giphOVERTIME-Tile">
+                  <button>Overtime</button>
                 </div>
-                <div class="gIgPBtn4Tile">
-                  <button class="gamePeriodBtns">4th</button>
+              </div>
+              <div class="gipQUARTERS-Section">
+                <div class="gipqFIRSTQUARTER-Tile">
+                  <button class="gamePeriodBtns">Period 1</button>
+                </div>
+                <div class="gipqSECONDQUARTER-Tile">
+                  <button class="gamePeriodBtns">Period 2</button>
+                </div>
+                <div class="gipqTHIRDQUARTER-Tile">
+                  <button class="gamePeriodBtns">Period 3</button>
+                </div>
+                <div class="gipqFOURTHQUARTER-Tile">
+                  <button class="gamePeriodBtns">Period 4</button>
+                </div>
+                <div class="gipqOVERTIME-Tile">
+                  <button class="gamePeriodBtns">Overtime</button>
                 </div>
               </div>
             </div>
-            <div class="gameInfoGameClockArea">
-              <div class="gIgCControlsSection">
-                <div class="gIgCcTimeIncTile">
-                  <button type="button" class="timer__btn timer__btn--control timer__btn--start">
-                    <span class="material-symbols-outlined">add</span>
-                  </button>
-                </div>
-                <div class="gIgCcTimeDecTile">
-                  <button type="button" class="timer__btn timer__btn--control timer__btn--start">
-                    <span class="material-symbols-outlined">remove</span>
-                  </button>
-                </div>
-                <div class="gIgCcTimeStartTile">
+            <div class="giCLOCK-Area">
+              <div class="gicCONTROLS-Section">
+                <div class="giccOPEN1-Tile"></div>
+                <div class="giccSTARTSTOP-Tile">
                   <button type="button" class="timer__btn timer__btn--control timer__btn--start">
                     <span class="material-symbols-outlined">play_circle</span>
                   </button>
                 </div>
-                <div class="gIgCcTimeStopTile">
+                <div class="giccRESET-Tile">
                   <button type="button" class="timer__btn timer__btn--reset">
                     <span class="material-symbols-outlined">timer</span>
                   </button>
                 </div>
-              </div>
-              <div class="gIgCDisplaySection">
-                <div class="gIgCdHomeTOLTile">
-                  <div class="gIgCdHomeTOLHeader">Home T.O.L.</div>
-                  <div class="gIgCdHomeTOLdisplay">
+                <div class="giccOPEN2-Tile"></div></div>
+              <div class="gicVISUAL-Section">
+                <div class="gicHOMETOL-Tile">
+                  <div class="gicHOMETOL-Header">Home T.O.L.</div>
+                  <div class="gicHOMETOL-Display">
                     <output class="homeTimeoutsLeft" id="homeTimeoutsLeft-el">5</output>
                   </div>
                 </div>
-                <div class="gIgCdCounterTile">
-                  <div class="gIgCdCHeader">Game Clock</div>
-                  <div class="gIgCdCdisplay">
+                <div class="gicCOUNTER-Tile">
+                  <div class="gicCOUNTER-Header">Game Clock</div>
+                  <div class="gicCOUNTER-Display">
                     <span class="timer__part timer__part--minutes">00</span>
                     <span class="timer__part">:</span>
                     <span class="timer__part timer__part--seconds">00</span>
                   </div>
                 </div>
-                <div class="gIgCdAwayTOLTile">
-                  <div class="gIgCdAwayTOLHeader">Away T.O.L.</div>
-                  <div class="gIgCdAwayTOLdisplay">
+                <div class="gicAWAYTOL-Tile">
+                  <div class="gicAWAYTOL-Header">Away T.O.L.</div>
+                  <div class="gicAWAYTOL-display">
                     <output class="awayTimeoutsLeft" id="awayTimeoutsLeft-el">5</output>
                   </div>
                 </div>
               </div> 
             </div>
-            <div class="gameInfoTeamTimeoutArea">
-              <div class="gItTHomeSection">
-                <div class="gItTHomeFullTile">
-                  <div class="gItThomeFullHeader">Full Timouts</div>
-                  <div class="gItThomeFullBtns">
+            <div class="giTIMEOUTS-Area">
+              <div class="gitHOME-Section">
+                <div class="githFULL-Tile">
+                  <div class="githFULL-Header">60 sec</div>
+                  <div class="githFULL-Btns">
                     <button class="fullTimeoutBtns" id="homeFullTimeout1-btn" onclick="lessHomeTimeouts()">1</button>
                     <button class="fullTimeoutBtns" id="homeFullTimeout2-btn" onclick="lessHomeTimeouts()">2</button>
                     <button class="fullTimeoutBtns" id="homeFullTimeout3-btn" onclick="lessHomeTimeouts()">3</button>
                   </div>
                 </div>
-                <div class="gItTHome30sTile">
-                  <div class="gItThome30sHeader">30sec Timouts</div>
-                  <div class="gItThome30sBtns">
+                <div class="gith30s-Tile">
+                  <div class="gith30s-Header">30 sec </div>
+                  <div class="gith30s-Btns">
                     <button class="thirtysecTimeoutBtns" id="home30sTimeout1-btn" onclick="lessHomeTimeouts()">1</button>
                     <button class="thirtysecTimeoutBtns" id="home30sTimeout2-btn" onclick="lessHomeTimeouts()">2</button>
                   </div>
                 </div>
               </div>
-              <div class="gItTAwaySection">
-                <div class="gItTAwayFullTile">
-                  <div class="gItTAwayFullBtns">
-                    <button class="fullTimeoutBtns" id="awayFullTimeout1-btn" onclick="lessAwayTimeouts()">1</button>
+              <div class="gitAWAY-Section">
+                <div class="gitaFULL-Tile">
+                  <div class="gitaFULL-Btns">
+                    <button class="fullTimeoutBtns" id="awayFullTimeout1-btn" onclick="lessAwayTimeouts()">3</button>
                     <button class="fullTimeoutBtns" id="awayFullTimeout2-btn" onclick="lessAwayTimeouts()">2</button>
-                    <button class="fullTimeoutBtns" id="awayFullTimeout3-btn" onclick="lessAwayTimeouts()">3</button>
+                    <button class="fullTimeoutBtns" id="awayFullTimeout3-btn" onclick="lessAwayTimeouts()">1</button>
                   </div>
-                  <div class="gItTAwayFullHeader">Full Timeouts</div>
+                  <div class="gitaFULL-Header">60 sec</div>
                 </div>
-                <div class="gItTAway30sTile">
-                  <div class="gItTAway30sBtns">
-                    <button class="thirtysecTimeoutBtns" id="away30sTimeout1-btn" onclick="lessAwayTimeouts()">1</button>
-                    <button class="thirtysecTimeoutBtns" id="away30sTimeout2-btn" onclick="lessAwayTimeouts()">2</button>
+                <div class="gita30s-Tile">
+                  <div class="gita30s-Btns">
+                    <button class="thirtysecTimeoutBtns" id="away30sTimeout1-btn" onclick="lessAwayTimeouts()">2</button>
+                    <button class="thirtysecTimeoutBtns" id="away30sTimeout2-btn" onclick="lessAwayTimeouts()">1</button>
                   </div>
-                  <div class="gItTAway30sHeader">30sec Timeouts</div>
+                  <div class="gita30s-Header">30 sec</div>
                 </div>
               </div>
             </div>
-            <div class="gameInfoLeaderBoardsArea">
-              <div class="gIlBHeaderSection">
-                <div class="gIlBhPointsTile">Points Leaders</div>
-                <div class="gIlBhRebsTile">Rebound Leaders</div>
-                <div class="gIlBhAssistsTile">Assist Leaders</div>
+            <div class="giLEADERS-Area">
+              <div class="gilTITLE-Section">
+                <div class="giltPOINTS-Header">Points Leaders</div>
+                <div class="giltREBS-Header">Rebound Leaders</div>
+                <div class="giltASSISTS-Header">Assist Leaders</div>
               </div>
-              <div class="gIlBPlayersSection">
-                <div class="gIlBpLeaderlistTile">
+              <div class="gilPLAYERINFO-Section">
+                <div class="gilpPOINTS-Tile">
                   <div class="gIlBpLplayer1">Points Leader1</div>
                   <div class="gIlBpLplayer2">Points Leader2</div>
                   <div class="gIlBpLplayer3">Points Leader3</div>
                 </div>
-                <div class="gIlBrLeaderlistTile">
+                <div class="gilpREBS-Tile">
                   <div class="gIlBrLplayer1">Rebs Leader1</div>
                   <div class="gIlBrLplayer2">Rebs Leader2</div>
                   <div class="gIlBrLplayer3">Rebs Leader3</div>
                 </div>
-                <div class="gIlBaLeaderlistTile">
+                <div class="gilpASSISTS-Tile">
                   <div class="gIlBaLplayer1">Assists Leader1</div>
                   <div class="gIlBaLplayer2">Assists Leader2</div>
                   <div class="gIlBaLplayer3">Assists Leader3</div>
                 </div>
               </div>
-      
             </div>
           </div>
 <!--Away Team Column -->
