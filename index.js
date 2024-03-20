@@ -1,3 +1,4 @@
+import Timer from "./Timer.js";
 
 let homeTimeoutsLeftEl = document.getElementById("homeTimeoutsLeft-el")
 let awayTimeoutsLeftEl = document.getElementById("awayTimeoutsLeft-el")

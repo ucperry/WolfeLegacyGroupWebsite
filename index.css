@@ -398,8 +398,8 @@
             }
         
               .timer__btn {
-                width: 40px;
-                height: 40px;
+                width: 50px;
+                height: 50px;
                 border-radius: 50%;
                 border: none;
                 color: white;
@@ -459,13 +459,17 @@
         
               .gicCOUNTER-Header { grid-area: gicCOUNTER-Header; }
               
-              .gicCOUNTER-Display { grid-area: gicCOUNTER-Display;
-                font-size: 45px;
+              .timer { grid-area: gicCOUNTER-Display;
                 border: 2px solid black;
                 margin-left: 30;
                 margin-right: 30;
                 margin-bottom: 15;
-                margin-top: 5;
+                margin-top: 10;
+              }
+
+              .timer__part {
+              font-size: 45;
+              font-weight: 500px;
               }
         
             .gicAWAYTOL-Tile {  display: grid;
@@ -729,30 +733,30 @@
             .gIlBaLplayer2 { grid-area: gIlBaLplayer2; }
             .gIlBaLplayer3 { grid-area: gIlBaLplayer3; }
 
-        .awayTeam-Column {  display: grid;
-          grid-template-columns: 1fr;
-          grid-template-rows: 0.5fr 1.5fr;
-          gap: 0px 0px;
-          grid-auto-flow: row;
-          grid-template-areas:
-            "atGAME-Area"
-            "atATHLETE-Area";
-          grid-area: awayTeam-Column;
-          text-align: left;
-          border: 4px solid blue;
-        }
+    .awayTeam-Column {  display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.5fr 1.5fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "atGAME-Area"
+        "atATHLETE-Area";
+      grid-area: awayTeam-Column;
+      text-align: left;
+      border: 4px solid blue;
+    }
         
-        .atGAME-Area {  display: grid;
-          grid-template-columns: .75fr 1.25fr;
-          grid-template-rows: 1fr;
-          gap: 0px 0px;
-          grid-auto-flow: row;
-          grid-template-areas:
-            "atgSTAT-Section atgIDENTITY-Section";
-          grid-area: atGAME-Area;
-          color: blue;
-          border: 3px solid yellow;
-        }
+      .atGAME-Area {  display: grid;
+        grid-template-columns: .75fr 1.25fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "atgSTAT-Section atgIDENTITY-Section";
+        grid-area: atGAME-Area;
+        color: blue;
+        border: 3px solid yellow;
+      }
         
         .atgSTAT-Section {  display: grid;
           grid-template-columns: 1fr;
@@ -766,58 +770,58 @@
           border: 2px solid purple;
         }
         
-        .atgsSCORE-Tile {  display: grid;
-          grid-template-columns: 1fr 1fr;
-          grid-template-rows: 0.4fr 1.6fr;
-          gap: 0px 0px;
-          grid-auto-flow: row;
-          grid-template-areas:
-            "atgsSCORE-Header atgsSCORE-Header"
-            "atgsSCORE-Display atgsSCORE-Display";
-          grid-area: atgsSCORE-Tile;
-          border: 1px solid grey;
-        }
+          .atgsSCORE-Tile {  display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 0.4fr 1.6fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+              "atgsSCORE-Header atgsSCORE-Header"
+              "atgsSCORE-Display atgsSCORE-Display";
+            grid-area: atgsSCORE-Tile;
+            border: 1px solid grey;
+          }
         
-        .atgsSCORE-Header { grid-area: atgsSCORE-Header; 
-          font-size: 20;
-          text-align: right;
-          padding-right: 10;
-        }
+            .atgsSCORE-Header { grid-area: atgsSCORE-Header; 
+              font-size: 20;
+              text-align: right;
+              padding-right: 10;
+            }
+            
+            .atgsSCORE-Display { grid-area: atgsSCORE-Display;
+              font-size: 80;
+              text-shadow: 0px 3px 0px #b2a98f,
+                      0px 14px 10px rgba(0,0,0,0.15),
+                      7px 24px 2px rgba(0,0,0,0.1),
+                      0px 24px 30px rgba(0,0,0,0.1);
+              padding-left: 10;
+              text-align: left;
+            }
         
-        .atgsSCORE-Display { grid-area: atgsSCORE-Display;
-          font-size: 80;
-          text-shadow: 0px 3px 0px #b2a98f,
-                  0px 14px 10px rgba(0,0,0,0.15),
-                  7px 24px 2px rgba(0,0,0,0.1),
-                  0px 24px 30px rgba(0,0,0,0.1);
-          padding-left: 10;
-          text-align: left;
-        }
+          .atgsFOULS-Tile {  display: grid;
+            grid-template-columns: 0.5fr 1.5fr;
+            grid-template-rows: 1.5fr .05fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+              "atgstFOULS-Display ."
+              "atgstFOULS-Display atgsFOULS-Footer";
+            grid-area: atgsFOULS-Tile;
+            border: 1px solid grey;
+          }
         
-        .atgsFOULS-Tile {  display: grid;
-          grid-template-columns: 0.5fr 1.5fr;
-          grid-template-rows: 1.5fr .05fr;
-          gap: 0px 0px;
-          grid-auto-flow: row;
-          grid-template-areas:
-            "atgstFOULS-Display ."
-            "atgstFOULS-Display atgsFOULS-Footer";
-          grid-area: atgsFOULS-Tile;
-          border: 1px solid grey;
-        }
-        
-        .atgstFOULS-Display { grid-area: atgstFOULS-Display; 
-          font-size: 50;
-          text-shadow: 5px 5px 0px rgba(0,0,0,0.2);
-          text-align: center;
-          padding-left: 5;
-        }
-        
-        .atgsFOULS-Footer { grid-area: atgsFOULS-Footer; 
-          font-size: 20;
-          text-align: right;
-          padding-right: 10;
-        }
+            .atgstFOULS-Display { grid-area: atgstFOULS-Display; 
+              font-size: 50;
+              text-shadow: 5px 5px 0px rgba(0,0,0,0.2);
+              text-align: center;
+              padding-left: 5;
+            }
+            
+            .atgsFOULS-Footer { grid-area: atgsFOULS-Footer; 
+              font-size: 20;
+              text-align: right;
+              padding-right: 10;
+            }
         
         .atgIDENTITY-Section {  display: grid;
           grid-template-columns: 1fr;
@@ -833,42 +837,42 @@
           border: 2px solid purple;
         }
         
-        .atgiCITY-Tile { grid-area: atgiCITY-Tile; 
-          color: blue;
-          text-shadow: 0px 0px 6px rgba(255,255,255,0.7),
-                1px 1px 2px #000,
-                1px -1px 0 #000,
-                -1px -1px 0 #000;
-          text-align: center;
-          border: 1px solid grey;
-        }
+          .atgiCITY-Tile { grid-area: atgiCITY-Tile; 
+            color: blue;
+            text-shadow: 0px 0px 6px rgba(255,255,255,0.7),
+                  1px 1px 2px #000,
+                  1px -1px 0 #000,
+                  -1px -1px 0 #000;
+            text-align: center;
+            border: 1px solid grey;
+          }
         
-        .atgiLOGO-Tile { grid-area: atgiLOGO-Tile;
-          font-size: 20; 
-          text-align: center;
-          border: 1px solid grey;}
+          .atgiLOGO-Tile { grid-area: atgiLOGO-Tile;
+            font-size: 20; 
+            text-align: center;
+            border: 1px solid grey;}
+          
+          .atgiMASCOT-Tile { grid-area: atgiMASCOT-Tile; 
+            color: white;
+            font-size: 50;
+            -webkit-text-stroke: 1px #a1a3f7;
+            text-shadow: 0px 3px 4px blue;
+            padding-bottom: 10;
+            text-align: center;
+            border: 1px solid grey;
+          }
         
-        .atgiMASCOT-Tile { grid-area: atgiMASCOT-Tile; 
-          color: white;
-          font-size: 50;
-          -webkit-text-stroke: 1px #a1a3f7;
-          text-shadow: 0px 3px 4px blue;
-          padding-bottom: 10;
-          text-align: center;
-          border: 1px solid grey;
-        }
-        
-        .atATHLETE-Area {  display: grid;
-          grid-template-columns: 1fr;
-          grid-template-rows: 1fr 1fr;
-          gap: 0px 0px;
-          grid-auto-flow: row;
-          grid-template-areas:
-            "ataSTARTER-Section"
-            "ataRESERVE-Section";
-          grid-area: atATHLETE-Area;
-          border: 3px solid yellow;
-        }
+      .atATHLETE-Area {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "ataSTARTER-Section"
+          "ataRESERVE-Section";
+        grid-area: atATHLETE-Area;
+        border: 3px solid yellow;
+      }
         
         .ataSTARTER-Section {  display: grid;
           grid-template-columns: 1fr;
@@ -885,20 +889,20 @@
           border: 2px solid purple;
         }
         
-        .atasPLAYER1-Tile { grid-area: atasPLAYER1-Tile; 
-          border: 1px solid grey;}
-        
-        .atasPLAYER2-Tile { grid-area: atasPLAYER2-Tile; 
-          border: 1px solid grey;}
-        
-        .atasPLAYER3-Tile { grid-area: atasPLAYER3-Tile; 
-          border: 1px solid grey;}
-        
-        .atasPLAYER4-Tile { grid-area: atasPLAYER4-Tile; 
-          border: 1px solid grey;}
-        
-        .atasPLAYER5-Tile { grid-area: atasPLAYER5-Tile; 
-          border: 1px solid grey;}
+          .atasPLAYER1-Tile { grid-area: atasPLAYER1-Tile; 
+            border: 1px solid grey;}
+          
+          .atasPLAYER2-Tile { grid-area: atasPLAYER2-Tile; 
+            border: 1px solid grey;}
+          
+          .atasPLAYER3-Tile { grid-area: atasPLAYER3-Tile; 
+            border: 1px solid grey;}
+          
+          .atasPLAYER4-Tile { grid-area: atasPLAYER4-Tile; 
+            border: 1px solid grey;}
+          
+          .atasPLAYER5-Tile { grid-area: atasPLAYER5-Tile; 
+            border: 1px solid grey;}
         
         .ataRESERVE-Section {  display: grid;
           grid-template-columns: 1fr;
@@ -915,18 +919,18 @@
           border: 2px solid purple;
         }
         
-        .atarPLAYER6-Tile { grid-area: atarPLAYER6-Tile; 
-          border: 1px solid grey;}
-        
-        .atarPLAYER7-Tile { grid-area: atarPLAYER7-Tile; 
-          border: 1px solid grey;}
-        
-        .atarPLAYER8-Tile { grid-area: atarPLAYER8-Tile; 
-          border: 1px solid grey;}
-        
-        .atarPLAYER9-Tile { grid-area: atarPLAYER9-Tile; 
-          border: 1px solid grey;}
-        
-        .atarPLAYER10-Tile { grid-area: atarPLAYER10-Tile;
-          border: 1px solid grey; }
-    
+          .atarPLAYER6-Tile { grid-area: atarPLAYER6-Tile; 
+            border: 1px solid grey;}
+          
+          .atarPLAYER7-Tile { grid-area: atarPLAYER7-Tile; 
+            border: 1px solid grey;}
+          
+          .atarPLAYER8-Tile { grid-area: atarPLAYER8-Tile; 
+            border: 1px solid grey;}
+          
+          .atarPLAYER9-Tile { grid-area: atarPLAYER9-Tile; 
+            border: 1px solid grey;}
+          
+          .atarPLAYER10-Tile { grid-area: atarPLAYER10-Tile;
+            border: 1px solid grey; }
+      
