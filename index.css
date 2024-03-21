@@ -539,27 +539,29 @@
           }
         
           .githFULL-Tile {  display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 0.75fr 1.25fr;
             grid-template-rows: 1fr;
             gap: 0px 0px;
             grid-auto-flow: row;
             grid-template-areas:
               "githFULL-Header githFULL-Btns";
             grid-area: githFULL-Tile;
+            text-align: left;
             border: 1px solid grey;
           }
         
             .githFULL-Header { grid-area: githFULL-Header; 
-            text-align: right;
+            text-align: left;
             padding-top: 5;
             padding-bottom: 5;
+            padding-left: 5;
             }
           
             .githFULL-Btns { grid-area: githFULL-Btns; 
             text-align: left;
             padding-top: 5;
             padding-bottom: 5;
-            padding-left: 30;
+            padding-left: 10;
             }
 
             .fullTimeoutBtns {
@@ -569,27 +571,29 @@
             }
         
           .gith30s-Tile {  display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 0.75fr 1.25fr;
             grid-template-rows: 1fr;
             gap: 0px 0px;
             grid-auto-flow: row;
             grid-template-areas:
               "gith30s-Header gith30s-Btns";
             grid-area: gith30s-Tile;
+            text-align: left;
             border: 1px solid grey;
           }
           
             .gith30s-Header { grid-area: gith30s-Header; 
-              text-align: right;
+              text-align: left;
               padding-top: 5;
               padding-bottom: 5;
+              padding-left: 5;
             }
           
             .gith30s-Btns { grid-area: gith30s-Btns; 
             text-align: left;
             padding-top: 5;
             padding-bottom: 5;
-            padding-left: 30;
+            padding-left: 10;
             }
 
             .thirtysecTimeoutBtns {
@@ -610,51 +614,55 @@
         }
         
           .gitaFULL-Tile {  display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 0.75fr 1.25fr;
             grid-template-rows: 1fr;
             gap: 0px 0px;
             grid-auto-flow: row;
             grid-template-areas:
-              "gitaFULL-Btns gitaFULL-Header";
+              "gitaFULL-Header gitaFULL-Btns";
             grid-area: gitaFULL-Tile;
+            text-align: left;
             border: 1px solid grey;
           }
           
             .gitaFULL-Btns { grid-area: gitaFULL-Btns; 
-            text-align: right;
+            text-align: left;
             padding-top: 5;
             padding-bottom: 5;
-            padding-right: 30;
+            padding-left: 5;
             }
             
             .gitaFULL-Header { grid-area: gitaFULL-Header; 
               text-align: left;
               padding-top: 5;
               padding-bottom: 5;
+              padding-left: 10;
             }
         
           .gita30s-Tile {  display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 0.75fr 1.25fr;
             grid-template-rows: 1fr;
             gap: 0px 0px;
             grid-auto-flow: row;
             grid-template-areas:
-              "gita30s-Btns gita30s-Header";
+              "gita30s-Header gita30s-Btns";
             grid-area: gita30s-Tile;
+            text-align: left;
             border: 1px solid grey;
           }
           
             .gita30s-Btns { grid-area: gita30s-Btns; 
-              text-align: right;
+              text-align: left;
               padding-top: 5;
               padding-bottom: 5;
-              padding-right: 30;
+              padding-left: 5;
             }
             
             .gita30s-Header { grid-area: gita30s-Header; 
             text-align: left;
             padding-top: 5;
             padding-bottom: 5;
+            padding-left: 10;
             }
         
       .giLEADERS-Area {
