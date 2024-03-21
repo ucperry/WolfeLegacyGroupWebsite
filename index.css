@@ -202,7 +202,7 @@
                 "htasp2STATCATPOINTS-Btns htasp2STATCATREBS-Btns htasp2STATCATASSISTS-Btns htasp2STATCATFOULS-Btns htasp2STATCATPLAYER-Btns";
               grid-area: htasPLAYER2-Tile; 
               text-align: center;
-              border: 2px solid grey;}
+              border: 1px solid grey;}
             
             .htasPLAYER3-Tile { display: grid;
               grid-template-columns: 1.5fr 0.9fr 0.9fr 0.9fr .8fr;
@@ -215,7 +215,7 @@
                 "htasp3STATCATPOINTS-Btns htasp3STATCATREBS-Btns htasp3STATCATASSISTS-Btns htasp3STATCATFOULS-Btns htasp3STATCATPLAYER-Btns";
               grid-area: htasPLAYER3-Tile; 
               text-align: center;
-              border: 3px solid grey;}
+              border: 1px solid grey;}
             
             .htasPLAYER4-Tile { display: grid;
               grid-template-columns: 1.5fr 0.9fr 0.9fr 0.9fr .8fr;
@@ -228,7 +228,7 @@
                 "htasp4STATCATPOINTS-Btns htasp4STATCATREBS-Btns htasp4STATCATASSISTS-Btns htasp4STATCATFOULS-Btns htasp4STATCATPLAYER-Btns";
               grid-area: htasPLAYER4-Tile; 
               text-align: center;
-              border: 4px solid grey;}
+              border: 1px solid grey;}
             
             .htasPLAYER5-Tile { display: grid;
               grid-template-columns: 1.5fr 0.9fr 0.9fr 0.9fr .8fr;
@@ -241,7 +241,7 @@
                 "htasp5STATCATPOINTS-Btns htasp5STATCATREBS-Btns htasp5STATCATASSISTS-Btns htasp5STATCATFOULS-Btns htasp5STATCATPLAYER-Btns";
               grid-area: htasPLAYER5-Tile; 
               text-align: center;
-              border: 5px solid grey;}
+              border: 1px solid grey;}
             
           .htaRESERVE-Section {  display: grid;
             grid-template-columns: 1fr;
@@ -463,10 +463,12 @@
             }
           
             .giccSTARTSTOP-Tile { grid-area: giccSTARTSTOP-Tile;
+              padding-top: 15;
               border: 1px solid grey;
             }
 
             .giccRESET-Tile {  grid-area: giccRESET-Tile;
+              padding-top: 15;
               border: 1px solid grey;
             }
 
@@ -475,8 +477,8 @@
             }
         
               .timer__btn {
-                width: 35px;
-                height: 35px;
+                width: 60px;
+                height: 60px;
                 border-radius: 50%;
                 border: none;
                 color: white;
