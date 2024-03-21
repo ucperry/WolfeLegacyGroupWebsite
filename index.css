@@ -542,17 +542,6 @@
               font-style: bold;
               font-size: 20;
             }
-
-            .fullTimeoutBtns:focus {
-              color: Maroon;
-              font-style: bold;
-              text-decoration: line-through;
-            }
-
-            .thirtysecTimeoutBtns {
-              background-color: lightgreen;
-              font-size: 20;
-            }
         
           .gith30s-Tile {  display: grid;
             grid-template-columns: 1fr 1fr;
@@ -576,6 +565,11 @@
             padding-top: 5;
             padding-bottom: 5;
             padding-left: 30;
+            }
+
+            .thirtysecTimeoutBtns {
+              background-color: lightgreen;
+              font-size: 20;
             }
         
         .gitAWAY-Section {  display: grid;

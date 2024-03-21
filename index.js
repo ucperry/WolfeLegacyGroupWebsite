@@ -1,11 +1,10 @@
-import Timer from "./Timer.js";
 
 let homeTimeoutsLeftEl = document.getElementById("homeTimeoutsLeft-el")
 let awayTimeoutsLeftEl = document.getElementById("awayTimeoutsLeft-el")
 
 let homeTOL = 5
 let awayTOL = 5
-let gametime = 
+
 
 function lessHomeTimeouts() {
    if (homeTOL > 0) {
@@ -19,3 +18,8 @@ function lessAwayTimeouts() {
     awayTimeoutsLeftEl.innerText = awayTOL
 }
 
+import Timer from "./Timer.js";
+
+new Timer(
+    document.querySelector(".timer")
+);
