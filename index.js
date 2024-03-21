@@ -17,9 +17,3 @@ function lessAwayTimeouts() {
     awayTOL = awayTOL - 1} else {awayTOL=0}
     awayTimeoutsLeftEl.innerText = awayTOL
 }
-
-import Timer from "./Timer.js";
-
-new Timer(
-    document.querySelector(".timer")
-);
