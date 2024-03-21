@@ -52,11 +52,18 @@
 <!--Game Information Column -->
           <div class="gameInfo-Column">
             <div class="giSPONSOR-Area">
-              <div class="gisADS-Section">Images of local vendors placed here</div>
+              <div class="gisADS-Section">
+                <div class="gisaHOME-Tile">Home Team Advertisement</div>
+                <div class="gisaAWAY-Tile">Away Team Advertisement</div>
+              </div>
               <div class="gisPOSSESSION-Section">
-                <div class="gispHOME-Tile">&lt--</div>
+                <div class="gispHOME-Tile">
+                  <span class="material-symbols-outlined">West</span>
+                </div>
                 <div class="gispHEADER-Tile">&ltPoss&gt</div>
-                <div class="gispAWAY-Tile">--&gt</div>
+                <div class="gispAWAY-Tile">
+                  <span class="material-symbols-outlined">East</span>
+                </div>
               </div>
             </div>
             <div class="giPERIOD-Area">
@@ -91,19 +98,6 @@
               </div>
             </div>
             <div class="giCLOCK-Area">
-              <div class="gicCONTROLS-Section">
-                <div class="giccOPEN1-Tile"></div>
-                <div class="giccSTARTSTOP-Tile">
-                  <button type="button" class="timer__btn timer__btn--control timer__btn--start">
-                    <span class="material-symbols-outlined">play_circle</span>
-                  </button>
-                </div>
-                <div class="giccRESET-Tile">
-                  <button type="button" class="timer__btn timer__btn--reset">
-                    <span class="material-symbols-outlined">timer</span>
-                  </button>
-                </div>
-                <div class="giccOPEN2-Tile"></div></div>
               <div class="gicVISUAL-Section">
                 <div class="gicHOMETOL-Tile">
                   <div class="gicHOMETOL-Header">Home T.O.L.</div>
@@ -118,6 +112,9 @@
                     <span class="timer__part">:</span>
                     <span class="timer__part timer__part--seconds">00</span> -->
                   </div>
+                  <div class="gicCOUNTER-Footer">
+                    <output class="activeGamePeriod" id="activeGamePeriod-el">Selected Game Period</output>
+                  </div>
                 </div>
                 <div class="gicAWAYTOL-Tile">
                   <div class="gicAWAYTOL-Header">Away T.O.L.</div>
@@ -125,7 +122,22 @@
                     <output class="awayTimeoutsLeft" id="awayTimeoutsLeft-el">5</output>
                   </div>
                 </div>
-              </div> 
+              </div>
+              <div class="gicCONTROLS-Section">
+                <div class="giccOPEN1-Tile"></div>
+                <div class="giccSTARTSTOP-Tile">
+                  <button type="button" class="timer__btn timer__btn--control timer__btn--start">
+                    <span class="material-symbols-outlined">play_circle</span>
+                  </button>
+                </div>
+                <div class="giccRESET-Tile">
+                  <button type="button" class="timer__btn timer__btn--reset">
+                    <span class="material-symbols-outlined">timer</span>
+                  </button>
+                </div>
+                <div class="giccOPEN2-Tile"></div>
+              </div>
+              
             </div>
             <div class="giTIMEOUTS-Area">
               <div class="gitHOME-Section">

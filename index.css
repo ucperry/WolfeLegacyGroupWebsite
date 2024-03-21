@@ -249,8 +249,23 @@
           border: 3px solid yellow
         }
         
-          .gisADS-Section { grid-area: gisADS-Section; 
+          .gisADS-Section { display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+              "gisaHOME-Tile gisaAWAY-Tile";
+            grid-area: gisADS-Section; 
             border: 2px solid purple; 
+          }
+
+          .gisaHOME-Tile { grid-area: gisaHOME-Tile; 
+            border: 1px solid grey; 
+          }
+
+          .gisaAWAY-Tile { grid-area: gisaAWAY-Tile; 
+            border: 1px solid grey; 
           }
         
           .gisPOSSESSION-Section {  display: grid;
@@ -266,6 +281,7 @@
           }
         
             .gispHOME-Tile { grid-area: gispHOME-Tile; 
+              font-weight:700 ;
               border: 1px solid grey; 
             }
             
@@ -358,12 +374,12 @@
         
         .giCLOCK-Area {  display: grid;
           grid-template-columns: 1fr;
-          grid-template-rows: 0.8fr 1.2fr;
+          grid-template-rows: 1.3fr 0.7fr;
           gap: 0px 0px;
           grid-auto-flow: row;
           grid-template-areas:
-          "gicCONTROLS-Section"  
-          "gicVISUAL-Section";
+          "gicVISUAL-Section"
+          "gicCONTROLS-Section";
           grid-area: giCLOCK-Area;
           border: 3px solid yellow
         }
@@ -382,13 +398,11 @@
             .giccOPEN1-Tile {  grid-area: giccOPEN1-Tile;
               border: 1px solid grey;
             }
-            
-            
+          
             .giccSTARTSTOP-Tile { grid-area: giccSTARTSTOP-Tile;
               border: 1px solid grey;
             }
 
-            
             .giccRESET-Tile {  grid-area: giccRESET-Tile;
               border: 1px solid grey;
             }
@@ -398,14 +412,14 @@
             }
         
               .timer__btn {
-                width: 50px;
-                height: 50px;
+                width: 35px;
+                height: 35px;
                 border-radius: 50%;
                 border: none;
                 color: white;
                 background: purple;
                 cursor: pointer;
-                margin: 10;
+                margin: 5;
               }
 
               .timer__btn--start {
@@ -447,19 +461,20 @@
         
             .gicCOUNTER-Tile {  display: grid;
               grid-template-columns: 1fr;
-              grid-template-rows: 0.5fr 1.5fr;
+              grid-template-rows: 0.75fr 1.75fr 0.5fr;
               gap: 0px 0px;
               grid-auto-flow: row;
               grid-template-areas:
                 "gicCOUNTER-Header"
-                "gicCOUNTER-Display";
+                "timer"
+                "gicCOUNTER-Footer";
               grid-area: gicCOUNTER-Tile;
               border: 1px solid grey;
             }
         
               .gicCOUNTER-Header { grid-area: gicCOUNTER-Header; }
               
-              .timer { grid-area: gicCOUNTER-Display;
+              .timer { grid-area: timer;
                 border: 2px solid black;
                 margin-left: 30;
                 margin-right: 30;
@@ -467,9 +482,13 @@
                 margin-top: 10;
               }
 
-              .timer__part {
-              font-size: 45;
-              font-weight: 500px;
+                .timer__part {
+                font-size: 45;
+                font-weight: 500px;
+                }
+
+              .gicCOUNTER-Footer { grid-area: gicCOUNTER-Footer;
+              border: 1px solid black;
               }
         
             .gicAWAYTOL-Tile {  display: grid;
@@ -834,9 +853,9 @@
           .atgiCITY-Tile { grid-area: atgiCITY-Tile; 
             color: blue;
             text-shadow: 0px 0px 6px rgba(255,255,255,0.7),
-                  1px 1px 2px #000,
-                  1px -1px 0 #000,
-                  -1px -1px 0 #000;
+                         1px 1px 2px #000,
+                         1px -1px 0 #000,
+                        -1px -1px 0 #000;
             text-align: center;
             border: 1px solid grey;
           }
