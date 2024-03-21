@@ -61,10 +61,9 @@
           }
       
             .htgiCITY-Tile { grid-area: htgiCITY-Tile; 
-              text-shadow:  0px 0px 6px rgba(255,255,255,0.7),
-                            1px 1px 2px #000,
-                            1px -1px 0 #000,
-                            -1px -1px 0 #000;
+              color: white;
+              -webkit-text-stroke: 1px #f8a8a8;
+              text-shadow: 0px 4px 4px red;
               text-align: center;
               border: 1px solid grey;
             }
@@ -112,6 +111,7 @@
               .htgsSCORE-Header { grid-area: htgsSCORE-Header; 
                 font-size: 20;
                 text-align: left;
+                text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
                 padding-left: 10;
               }
               
@@ -147,6 +147,7 @@
               .htgsFOULS-Footer { grid-area: htgsFOULS-Footer;
                 font-size: 20;
                 text-align: left;
+                text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
                 padding-left: 10;
               }
       
@@ -488,8 +489,13 @@
                 }
 
               .gicCOUNTER-Footer { grid-area: gicCOUNTER-Footer;
-              border: 1px solid black;
+                margin-bottom: 5;
               }
+
+                .activeGamePeriod {
+                  padding: 0 5;
+                  border: 1px solid black;
+                }
         
             .gicAWAYTOL-Tile {  display: grid;
               grid-template-columns: 1fr;
@@ -798,6 +804,7 @@
             .atgsSCORE-Header { grid-area: atgsSCORE-Header; 
               font-size: 20;
               text-align: right;
+              text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
               padding-right: 10;
             }
             
@@ -833,6 +840,7 @@
             .atgsFOULS-Footer { grid-area: atgsFOULS-Footer; 
               font-size: 20;
               text-align: right;
+              text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
               padding-right: 10;
             }
         
@@ -851,11 +859,9 @@
         }
         
           .atgiCITY-Tile { grid-area: atgiCITY-Tile; 
-            color: blue;
-            text-shadow: 0px 0px 6px rgba(255,255,255,0.7),
-                         1px 1px 2px #000,
-                         1px -1px 0 #000,
-                        -1px -1px 0 #000;
+            color: white;
+            -webkit-text-stroke: 1px #a1a3f7;
+            text-shadow: 0px 4px 4px blue;
             text-align: center;
             border: 1px solid grey;
           }
