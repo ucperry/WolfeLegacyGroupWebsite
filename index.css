@@ -131,16 +131,15 @@
               gap: 0px 0px;
               grid-auto-flow: row;
               grid-template-areas:
-                ". htgsFOULS-Display"
-                "htgsFOULS-Footer htgsFOULS-Display";
-              grid-area: htgsFOULS-Tile;
+                "htgsFOULS-Display htgsFOULS-Display"
+                "htgsFOULS-Footer htgsFOULS-Footer";
               border: 1px solid grey;
             }
       
               .htgsFOULS-Display { grid-area: htgsFOULS-Display;
                 font-size: 50;
                 text-shadow: 5px 5px 0px rgba(0,0,0,0.2);
-                text-align: center;
+                text-align: right;
                 padding-right: 5;
               }
               
@@ -896,8 +895,8 @@
             gap: 0px 0px;
             grid-auto-flow: row;
             grid-template-areas:
-              "atgstFOULS-Display ."
-              "atgstFOULS-Display atgsFOULS-Footer";
+              "atgstFOULS-Display atgstFOULS-Display"
+              "atgsFOULS-Footer atgsFOULS-Footer";
             grid-area: atgsFOULS-Tile;
             border: 1px solid grey;
           }
@@ -905,7 +904,7 @@
             .atgstFOULS-Display { grid-area: atgstFOULS-Display; 
               font-size: 50;
               text-shadow: 5px 5px 0px rgba(0,0,0,0.2);
-              text-align: center;
+              text-align: left;
               padding-left: 5;
             }
             

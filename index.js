@@ -25,7 +25,8 @@ let awayTimeoutsLeftEl = document.getElementById("awayTimeoutsLeft-el")
     let totalHomeTeamGameFouls = 0
     let homeTeamFoulsEl=document.getElementById("homeTeamFouls-el")
         function homeTeamGameFouls() {
-            totalHomeTeamGameFouls = homeP1Fouls + homeP2Fouls + homeP3Fouls + homeP4Fouls + homeP5Fouls
+            if (totalHomeTeamGameFouls < 4) {
+                totalHomeTeamGameFouls = homeP1Fouls + homeP2Fouls + homeP3Fouls + homeP4Fouls + homeP5Fouls} else {totalHomeTeamGameFouls="Bonus"}
             homeTeamFoulsEl.innerText = totalHomeTeamGameFouls
         }        
 
@@ -375,7 +376,8 @@ let awayTimeoutsLeftEl = document.getElementById("awayTimeoutsLeft-el")
     let totalAwayTeamGameFouls = 0
     let awayTeamFoulsEl=document.getElementById("awayTeamFouls-el")
         function awayTeamGameFouls() {
-            totalAwayTeamGameFouls = awayP1Fouls + awayP2Fouls + awayP3Fouls + awayP4Fouls + awayP5Fouls
+            if (totalAwayTeamGameFouls <4) {
+                totalAwayTeamGameFouls = awayP1Fouls + awayP2Fouls + awayP3Fouls + awayP4Fouls + awayP5Fouls} else {totalAwayTeamGameFouls = "Bonus"}
             awayTeamFoulsEl.innerText = totalAwayTeamGameFouls
         }        
 
