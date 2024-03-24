@@ -411,12 +411,12 @@
                 <div class="atgsSCORE-Tile">
                   <div class="atgsSCORE-Header">Team Score</div>
                   <div class="atgsSCORE-Display">
-                    <output class="awayTeamScore">101</output>
+                    <output class="awayTeamScore" id="awayTeamPoints-el">0</output>
                   </div>
                 </div>
                 <div class="atgsFOULS-Tile">
                   <div class="atgstFOULS-Display">
-                    <output class="awayTeamFoul">0</output>
+                    <output class="awayTeamFoul" id="awayTeamFouls-el">0</output>
                   </div>
                   <div class="atgsFOULS-Footer">Team Fouls</div>
                 </div>
@@ -436,30 +436,38 @@
                   <div class="atasp1STATCATASSISTS-Header">Assists</div>
                   <div class="atasp1STATCATFOULS-Header">Fouls</div>
                   <div class="atasp1STATCATPLAYERID-Number">01</div>
-                  <div class="atasp1STATCATPOINTS-Total">0</div>
-                  <div class="atasp1STATCATREBS-Total">0</div>
-                  <div class="atasp1STATCATASSISTS-Total">0</div>
-                  <div class="atasp1STATCATFOULS-Total">0</div>
+                  <div class="atasp1STATCATPOINTS-Total">
+                    <output id="awayPlayer1Points-el">0</output>
+                  </div>
+                  <div class="atasp1STATCATREBS-Total">
+                    <output id="awayPlayer1Rebs-el">0</output>
+                  </div>
+                  <div class="atasp1STATCATASSISTS-Total">
+                    <output id="awayPlayer1Assists-el">0</output>
+                  </div>
+                  <div class="atasp1STATCATFOULS-Total">
+                    <output id="awayPlayer1Fouls-el">0</output>
+                  </div>
                   <div class="atasp1STATCATPLAYER-Btns">
                     <button>Reset</button>
                   </div>
                   <div class="atasp1STATCATPOINTS-Btns">
-                    <button>+1</button>
-                    <button>+2</button>
-                    <button>+3</button> |
-                    <button>-1</button>
+                    <button id="atP1onePoint-btn" onclick="awayPlayer1PointsOneTally(); awayTeamGamePoints()">+1</button>
+                    <button id="atP1twoPoint-btn" onclick="awayPlayer1PointsTwoTally(); awayTeamGamePoints()">+2</button>
+                    <button id="atP1threePoint-btn" onclick="awayPlayer1PointsThreeTally(); awayTeamGamePoints()">+3</button> |
+                    <button id="atP1LessOnePoint-btn" onclick="awayPlayer1PointsLessOneTally(); awayTeamGamePoints()">-1</button>
                   </div>
                   <div class="atasp1STATCATREBS-Btns">
-                    <button>+1</button> |
-                    <button>-1</button>
+                    <button id="atP1oneReb-btn" onclick="awayPlayer1RebsOneTally()">+1</button> |
+                      <button id="atP1LessOneReb-btn" onclick="awayPlayer1RebsLessOneTally()">-1</button>
                   </div>
                   <div class="atasp1STATCATASSISTS-Btns">
-                    <button>+1</button> |
-                    <button>-1</button>
+                    <button id="atP1oneAssist-btn" onclick="awayPlayer1AssistsOneTally()">+1</button> |
+                      <button id="atP1LessOneAssist-btn" onclick="awayPlayer1AssistsLessOneTally()">-1</button>
                   </div>
                   <div class="atasp1STATCATFOULS-Btns">
-                    <button>+1</button> |
-                    <button>-1</button>
+                    <button id="atP1oneFouls-btn" onclick="awayPlayer1FoulsOneTally(); awayTeamGameFouls()">+1</button> |
+                      <button id="atP1LessOneFouls-btn" onclick="awayPlayer1FoulsLessOneTally(); awayTeamGameFouls()">-1</button>
                   </div>
                 </div>
                 <div class="atasPLAYER2-Tile">
@@ -469,30 +477,38 @@
                   <div class="atasp2STATCATASSISTS-Header">Assists</div>
                   <div class="atasp2STATCATFOULS-Header">Fouls</div>
                   <div class="atasp2STATCATPLAYERID-Number">02</div>
-                  <div class="atasp2STATCATPOINTS-Total">0</div>
-                  <div class="atasp2STATCATREBS-Total">0</div>
-                  <div class="atasp2STATCATASSISTS-Total">0</div>
-                  <div class="atasp2STATCATFOULS-Total">0</div>
+                  <div class="atasp2STATCATPOINTS-Total">
+                    <output id="awayPlayer2Points-el">0</output>
+                  </div>
+                  <div class="atasp2STATCATREBS-Total">
+                    <output id="awayPlayer2Rebs-el">0</output>
+                  </div>
+                  <div class="atasp2STATCATASSISTS-Total">
+                    <output id="awayPlayer2Assists-el">0</output>
+                  </div>
+                  <div class="atasp2STATCATFOULS-Total">
+                    <output id="awayPlayer2Fouls-el">0</output>
+                  </div>
                   <div class="atasp2STATCATPLAYER-Btns">
                     <button>Reset</button>
                   </div>
                   <div class="atasp2STATCATPOINTS-Btns">
-                    <button>+1</button>
-                    <button>+2</button>
-                    <button>+3</button> |
-                    <button>-1</button>
+                    <button id="atP2onePoint-btn" onclick="awayPlayer2PointsOneTally(); awayTeamGamePoints()">+1</button>
+                    <button id="atP2twoPoint-btn" onclick="awayPlayer2PointsTwoTally(); awayTeamGamePoints()">+2</button>
+                    <button id="atP2threePoint-btn" onclick="awayPlayer2PointsThreeTally(); awayTeamGamePoints()">+3</button> |
+                    <button id="atP2LessOnePoint-btn" onclick="awayPlayer2PointsLessOneTally(); awayTeamGamePoints()">-1</button>
                   </div>
                   <div class="atasp2STATCATREBS-Btns">
-                    <button>+1</button> |
-                    <button>-1</button>
+                    <button id="atP2oneReb-btn" onclick="awayPlayer2RebsOneTally()">+1</button> |
+                      <button id="atP2LessOneReb-btn" onclick="awayPlayer2RebsLessOneTally()">-1</button>
                   </div>
                   <div class="atasp2STATCATASSISTS-Btns">
-                    <button>+1</button> |
-                    <button>-1</button>
+                    <button id="atP2oneAssist-btn" onclick="awayPlayer2AssistsOneTally()">+1</button> |
+                      <button id="atP2LessOneAssist-btn" onclick="awayPlayer2AssistsLessOneTally()">-1</button>
                   </div>
                   <div class="atasp2STATCATFOULS-Btns">
-                    <button>+1</button> |
-                    <button>-1</button>
+                    <button id="atP2oneFouls-btn" onclick="awayPlayer2FoulsOneTally(); awayTeamGameFouls()">+1</button> |
+                      <button id="atP2LessOneFouls-btn" onclick="awayPlayer2FoulsLessOneTally(); awayTeamGameFouls()">-1</button>
                   </div>
                 </div>
                 <div class="atasPLAYER3-Tile">
@@ -502,30 +518,38 @@
                   <div class="atasp3STATCATASSISTS-Header">Assists</div>
                   <div class="atasp3STATCATFOULS-Header">Fouls</div>
                   <div class="atasp3STATCATPLAYERID-Number">03</div>
-                  <div class="atasp3STATCATPOINTS-Total">0</div>
-                  <div class="atasp3STATCATREBS-Total">0</div>
-                  <div class="atasp3STATCATASSISTS-Total">0</div>
-                  <div class="atasp3STATCATFOULS-Total">0</div>
+                  <div class="atasp3STATCATPOINTS-Total">
+                    <output id="awayPlayer3Points-el">0</output>
+                  </div>
+                  <div class="atasp3STATCATREBS-Total">
+                    <output id="awayPlayer3Rebs-el">0</output>
+                  </div>
+                  <div class="atasp3STATCATASSISTS-Total">
+                    <output id="awayPlayer3Assists-el">0</output>
+                  </div>
+                  <div class="atasp3STATCATFOULS-Total">
+                    <output id="awayPlayer3Fouls-el">0</output>
+                  </div>
                   <div class="atasp3STATCATPLAYER-Btns">
                     <button>Reset</button>
                   </div>
                   <div class="atasp3STATCATPOINTS-Btns">
-                    <button>+1</button>
-                    <button>+2</button>
-                    <button>+3</button> |
-                    <button>-1</button>
+                    <button id="atP3onePoint-btn" onclick="awayPlayer3PointsOneTally(); awayTeamGamePoints()">+1</button>
+                    <button id="atP3twoPoint-btn" onclick="awayPlayer3PointsTwoTally(); awayTeamGamePoints()">+2</button>
+                    <button id="atP3threePoint-btn" onclick="awayPlayer3PointsThreeTally(); awayTeamGamePoints()">+3</button> |
+                    <button id="atP3LessOnePoint-btn" onclick="awayPlayer3PointsLessOneTally(); awayTeamGamePoints()">-1</button>
                   </div>
                   <div class="atasp3STATCATREBS-Btns">
-                    <button>+1</button> |
-                    <button>-1</button>
+                    <button id="atP3oneReb-btn" onclick="awayPlayer3RebsOneTally()">+1</button> |
+                      <button id="atP3LessOneReb-btn" onclick="awayPlayer3RebsLessOneTally()">-1</button>
                   </div>
                   <div class="atasp3STATCATASSISTS-Btns">
-                    <button>+1</button> |
-                    <button>-1</button>
+                    <button id="atP3oneAssist-btn" onclick="awayPlayer3AssistsOneTally()">+1</button> |
+                      <button id="atP3LessOneAssist-btn" onclick="awayPlayer3AssistsLessOneTally()">-1</button>
                   </div>
                   <div class="atasp3STATCATFOULS-Btns">
-                    <button>+1</button> |
-                    <button>-1</button>
+                    <button id="atP3oneFouls-btn" onclick="awayPlayer3FoulsOneTally(); awayTeamGameFouls()">+1</button> |
+                      <button id="atP3LessOneFouls-btn" onclick="awayPlayer3FoulsLessOneTally(); awayTeamGameFouls()">-1</button>
                   </div>
                 </div>
                 <div class="atasPLAYER4-Tile">
@@ -535,30 +559,38 @@
                   <div class="atasp4STATCATASSISTS-Header">Assists</div>
                   <div class="atasp4STATCATFOULS-Header">Fouls</div>
                   <div class="atasp4STATCATPLAYERID-Number">04</div>
-                  <div class="atasp4STATCATPOINTS-Total">0</div>
-                  <div class="atasp4STATCATREBS-Total">0</div>
-                  <div class="atasp4STATCATASSISTS-Total">0</div>
-                  <div class="atasp4STATCATFOULS-Total">0</div>
+                  <div class="atasp4STATCATPOINTS-Total">
+                    <output id="awayPlayer4Points-el">0</output>
+                  </div>
+                  <div class="atasp4STATCATREBS-Total">
+                    <output id="awayPlayer4Rebs-el">0</output>
+                  </div>
+                  <div class="atasp4STATCATASSISTS-Total">
+                    <output id="awayPlayer4Assists-el">0</output>
+                  </div>
+                  <div class="atasp4STATCATFOULS-Total">
+                    <output id="awayPlayer4Fouls-el">0</output>
+                  </div>
                   <div class="atasp4STATCATPLAYER-Btns">
                     <button>Reset</button>
                   </div>
                   <div class="atasp4STATCATPOINTS-Btns">
-                    <button>+1</button>
-                    <button>+2</button>
-                    <button>+3</button> |
-                    <button>-1</button>
+                    <button id="atP4onePoint-btn" onclick="awayPlayer4PointsOneTally(); awayTeamGamePoints()">+1</button>
+                    <button id="atP4twoPoint-btn" onclick="awayPlayer4PointsTwoTally(); awayTeamGamePoints()">+2</button>
+                    <button id="atP4threePoint-btn" onclick="awayPlayer4PointsThreeTally(); awayTeamGamePoints()">+3</button> |
+                    <button id="atP4LessOnePoint-btn" onclick="awayPlayer4PointsLessOneTally(); awayTeamGamePoints()">-1</button>
                   </div>
                   <div class="atasp4STATCATREBS-Btns">
-                    <button>+1</button> |
-                    <button>-1</button>
+                    <button id="atP4oneReb-btn" onclick="awayPlayer4RebsOneTally()">+1</button> |
+                      <button id="atP4LessOneReb-btn" onclick="awayPlayer4RebsLessOneTally()">-1</button>
                   </div>
                   <div class="atasp4STATCATASSISTS-Btns">
-                    <button>+1</button> |
-                    <button>-1</button>
+                    <button id="atP4oneAssist-btn" onclick="awayPlayer4AssistsOneTally()">+1</button> |
+                      <button id="atP4LessOneAssist-btn" onclick="awayPlayer4AssistsLessOneTally()">-1</button>
                   </div>
                   <div class="atasp4STATCATFOULS-Btns">
-                    <button>+1</button> |
-                    <button>-1</button>
+                    <button id="atP4oneFouls-btn" onclick="awayPlayer4FoulsOneTally(); awayTeamGameFouls()">+1</button> |
+                      <button id="atP4LessOneFouls-btn" onclick="awayPlayer4FoulsLessOneTally(); awayTeamGameFouls()">-1</button>
                   </div>
                 </div>
                 <div class="atasPLAYER5-Tile">
@@ -568,30 +600,38 @@
                   <div class="atasp5STATCATASSISTS-Header">Assists</div>
                   <div class="atasp5STATCATFOULS-Header">Fouls</div>
                   <div class="atasp5STATCATPLAYERID-Number">05</div>
-                  <div class="atasp5STATCATPOINTS-Total">0</div>
-                  <div class="atasp5STATCATREBS-Total">0</div>
-                  <div class="atasp5STATCATASSISTS-Total">0</div>
-                  <div class="atasp5STATCATFOULS-Total">0</div>
+                  <div class="atasp5STATCATPOINTS-Total">
+                    <output id="awayPlayer5Points-el">0</output>
+                  </div>
+                  <div class="atasp5STATCATREBS-Total">
+                    <output id="awayPlayer5Rebs-el">0</output>
+                  </div>
+                  <div class="atasp5STATCATASSISTS-Total">
+                    <output id="awayPlayer5Assists-el">0</output>
+                  </div>
+                  <div class="atasp5STATCATFOULS-Total">
+                    <output id="awayPlayer5Fouls-el">0</output>
+                  </div>
                   <div class="atasp5STATCATPLAYER-Btns">
                     <button>Reset</button>
                   </div>
                   <div class="atasp5STATCATPOINTS-Btns">
-                    <button>+1</button>
-                    <button>+2</button>
-                    <button>+3</button> |
-                    <button>-1</button>
+                    <button id="atP5onePoint-btn" onclick="awayPlayer5PointsOneTally(); awayTeamGamePoints()">+1</button>
+                    <button id="atP5twoPoint-btn" onclick="awayPlayer5PointsTwoTally(); awayTeamGamePoints()">+2</button>
+                    <button id="atP5threePoint-btn" onclick="awayPlayer5PointsThreeTally(); awayTeamGamePoints()">+3</button> |
+                    <button id="atP5LessOnePoint-btn" onclick="awayPlayer5PointsLessOneTally(); awayTeamGamePoints()">-1</button>
                   </div>
                   <div class="atasp5STATCATREBS-Btns">
-                    <button>+1</button> |
-                    <button>-1</button>
+                    <button id="atP5oneReb-btn" onclick="awayPlayer5RebsOneTally()">+1</button> |
+                      <button id="atP5LessOneReb-btn" onclick="awayPlayer5RebsLessOneTally()">-1</button>
                   </div>
                   <div class="atasp5STATCATASSISTS-Btns">
-                    <button>+1</button> |
-                    <button>-1</button>
+                    <button id="atP5oneAssist-btn" onclick="awayPlayer5AssistsOneTally()">+1</button> |
+                      <button id="atP5LessOneAssist-btn" onclick="awayPlayer5AssistsLessOneTally()">-1</button>
                   </div>
                   <div class="atasp5STATCATFOULS-Btns">
-                    <button>+1</button> |
-                    <button>-1</button>
+                    <button id="atP5oneFouls-btn" onclick="awayPlayer5FoulsOneTally(); awayTeamGameFouls()">+1</button> |
+                      <button id="atP5LessOneFouls-btn" onclick="awayPlayer5FoulsLessOneTally(); awayTeamGameFouls()">-1</button>
                   </div>
                 </div>
               </div>

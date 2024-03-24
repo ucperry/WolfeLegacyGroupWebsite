@@ -362,4 +362,354 @@ let awayTimeoutsLeftEl = document.getElementById("awayTimeoutsLeft-el")
                         if (homeP5Fouls > 0) {
                             homeP5Fouls = homeP5Fouls - 1} else {homeP5Fouls = 0}
                             homePlayer5FoulsEl.innerText = homeP5Fouls
-                    }                                 
+                    }    
+                    
+    // away TEAM 
+    let totalAwayTeamGamePoints = 0
+    let awayTeamPointsEl=document.getElementById("awayTeamPoints-el")
+        function awayTeamGamePoints() {
+            totalAwayTeamGamePoints = awayP1Points + awayP2Points + awayP3Points + awayP4Points + awayP5Points
+            awayTeamPointsEl.innerText = totalAwayTeamGamePoints
+        }
+
+    let totalAwayTeamGameFouls = 0
+    let awayTeamFoulsEl=document.getElementById("awayTeamFouls-el")
+        function awayTeamGameFouls() {
+            totalAwayTeamGameFouls = awayP1Fouls + awayP2Fouls + awayP3Fouls + awayP4Fouls + awayP5Fouls
+            awayTeamFoulsEl.innerText = totalAwayTeamGameFouls
+        }        
+
+        //away TEAM PLAYER 1
+            // away TEAM PLAYER 1 POINTS FUNCTIONS
+                let awayP1Points = 0
+                let awayPlayer1PointsEl=document.getElementById("awayPlayer1Points-el")
+                    function awayPlayer1PointsOneTally() {
+                        awayP1Points = awayP1Points + 1
+                        awayPlayer1PointsEl.innerText = awayP1Points
+                    }
+
+                    function awayPlayer1PointsTwoTally() {
+                        awayP1Points = awayP1Points + 2
+                        awayPlayer1PointsEl.innerText = awayP1Points
+                    }
+
+                    function awayPlayer1PointsThreeTally() {
+                        awayP1Points = awayP1Points + 3
+                        awayPlayer1PointsEl.innerText = awayP1Points
+                    }
+
+                    function awayPlayer1PointsLessOneTally() {
+                        if (awayP1Points > 0) {
+                            awayP1Points = awayP1Points - 1} else {awayP1Points = 0}
+                            awayPlayer1PointsEl.innerText = awayP1Points
+                    }
+
+                // away TEAM PLAYER 1 REBOUNDS FUNCTIONS
+                let awayP1Rebs = 0
+                let awayPlayer1RebsEl=document.getElementById("awayPlayer1Rebs-el")
+                    function awayPlayer1RebsOneTally() {
+                        awayP1Rebs = awayP1Rebs + 1
+                        awayPlayer1RebsEl.innerText = awayP1Rebs
+                    }
+
+                    function awayPlayer1RebsLessOneTally() {
+                        if (awayP1Rebs > 0) {
+                            awayP1Rebs = awayP1Rebs - 1} else {awayP1Rebs = 0}
+                            awayPlayer1RebsEl.innerText = awayP1Rebs
+                    }
+
+                // away TEAM PLAYER 1 ASSISTS FUNCTIONS
+                let awayP1Assists = 0    
+                let awayPlayer1AssistsEl=document.getElementById("awayPlayer1Assists-el")
+                    function awayPlayer1AssistsOneTally() {
+                        awayP1Assists = awayP1Assists + 1
+                        awayPlayer1AssistsEl.innerText = awayP1Assists
+                    }
+
+                    function awayPlayer1AssistsLessOneTally() {
+                        if (awayP1Assists > 0) {
+                            awayP1Assists = awayP1Assists - 1} else {awayP1Assists = 0}
+                            awayPlayer1AssistsEl.innerText = awayP1Assists
+                    }
+
+                // away TEAM PLAYER 1 FOULS FUNCTIONS 
+                let awayP1Fouls = 0
+                let awayPlayer1FoulsEl=document.getElementById("awayPlayer1Fouls-el")
+                    function awayPlayer1FoulsOneTally() {
+                        awayP1Fouls = awayP1Fouls + 1
+                        awayPlayer1FoulsEl.innerText = awayP1Fouls
+                    }
+
+                    function awayPlayer1FoulsLessOneTally() {
+                        if (awayP1Fouls > 0) {
+                            awayP1Fouls = awayP1Fouls - 1} else {awayP1Fouls = 0}
+                            awayPlayer1FoulsEl.innerText = awayP1Fouls
+                    }
+        
+            // away TEAM PLAYER 2
+                // away TEAM PLAYER 2 POINTS FUNCTIONS
+                let awayP2Points = 0
+                let awayPlayer2PointsEl=document.getElementById("awayPlayer2Points-el")
+                    function awayPlayer2PointsOneTally() {
+                        awayP2Points = awayP2Points + 1
+                        awayPlayer2PointsEl.innerText = awayP2Points
+                    }
+
+                    function awayPlayer2PointsTwoTally() {
+                        awayP2Points = awayP2Points + 2
+                        awayPlayer2PointsEl.innerText = awayP2Points
+                    }
+
+                    function awayPlayer2PointsThreeTally() {
+                        awayP2Points = awayP2Points + 3
+                        awayPlayer2PointsEl.innerText = awayP2Points
+                    }
+
+                    function awayPlayer2PointsLessOneTally() {
+                        if (awayP2Points > 0) {
+                            awayP2Points = awayP2Points - 1} else {awayP2Points = 0}
+                            awayPlayer2PointsEl.innerText = awayP2Points
+                    }
+
+                // away TEAM PLAYER 2 REBOUNDS FUNCTIONS
+                let awayP2Rebs = 0
+                let awayPlayer2RebsEl=document.getElementById("awayPlayer2Rebs-el")
+                    function awayPlayer2RebsOneTally() {
+                        awayP2Rebs = awayP2Rebs + 1
+                        awayPlayer2RebsEl.innerText = awayP2Rebs
+                    }
+
+                    function awayPlayer2RebsLessOneTally() {
+                        if (awayP2Rebs > 0) {
+                            awayP2Rebs = awayP2Rebs - 1} else {awayP2Rebs = 0}
+                            awayPlayer2RebsEl.innerText = awayP2Rebs
+                    }
+
+                // away TEAM PLAYER 2 ASSISTS FUNCTIONS
+                let awayP2Assists = 0    
+                let awayPlayer2AssistsEl=document.getElementById("awayPlayer2Assists-el")
+                    function awayPlayer2AssistsOneTally() {
+                        awayP2Assists = awayP2Assists + 1
+                        awayPlayer2AssistsEl.innerText = awayP2Assists
+                    }
+
+                    function awayPlayer2AssistsLessOneTally() {
+                        if (awayP2Assists > 0) {
+                            awayP2Assists = awayP2Assists - 1} else {awayP2Assists = 0}
+                            awayPlayer2AssistsEl.innerText = awayP2Assists
+                    }
+
+                // away TEAM PLAYER 2 FOULS FUNCTIONS 
+                let awayP2Fouls = 0
+                let awayPlayer2FoulsEl=document.getElementById("awayPlayer2Fouls-el")
+                    function awayPlayer2FoulsOneTally() {
+                        awayP2Fouls = awayP2Fouls + 1
+                        awayPlayer2FoulsEl.innerText = awayP2Fouls
+                    }
+
+                    function awayPlayer2FoulsLessOneTally() {
+                        if (awayP2Fouls > 0) {
+                            awayP2Fouls = awayP2Fouls - 1} else {awayP2Fouls = 0}
+                            awayPlayer2FoulsEl.innerText = awayP2Fouls
+                    }
+
+            // away TEAM PLAYER 3
+                // away TEAM PLAYER 3 POINTS FUNCTIONS
+                let awayP3Points = 0
+                let awayPlayer3PointsEl=document.getElementById("awayPlayer3Points-el")
+                    function awayPlayer3PointsOneTally() {
+                        awayP3Points = awayP3Points + 1
+                        awayPlayer3PointsEl.innerText = awayP3Points
+                    }
+
+                    function awayPlayer3PointsTwoTally() {
+                        awayP3Points = awayP3Points + 2
+                        awayPlayer3PointsEl.innerText = awayP3Points
+                    }
+
+                    function awayPlayer3PointsThreeTally() {
+                        awayP3Points = awayP3Points + 3
+                        awayPlayer3PointsEl.innerText = awayP3Points
+                    }
+
+                    function awayPlayer3PointsLessOneTally() {
+                        if (awayP3Points > 0) {
+                            awayP3Points = awayP3Points - 1} else {awayP3Points = 0}
+                            awayPlayer3PointsEl.innerText = awayP3Points
+                    }
+
+                // away TEAM PLAYER 3 REBOUNDS FUNCTIONS
+                let awayP3Rebs = 0
+                let awayPlayer3RebsEl=document.getElementById("awayPlayer3Rebs-el")
+                    function awayPlayer3RebsOneTally() {
+                        awayP3Rebs = awayP3Rebs + 1
+                        awayPlayer3RebsEl.innerText = awayP3Rebs
+                    }
+
+                    function awayPlayer3RebsLessOneTally() {
+                        if (awayP3Rebs > 0) {
+                            awayP3Rebs = awayP3Rebs - 1} else {awayP3Rebs = 0}
+                            awayPlayer3RebsEl.innerText = awayP3Rebs
+                    }
+
+                // away TEAM PLAYER 3 ASSISTS FUNCTIONS
+                let awayP3Assists = 0    
+                let awayPlayer3AssistsEl=document.getElementById("awayPlayer3Assists-el")
+                    function awayPlayer3AssistsOneTally() {
+                        awayP3Assists = awayP3Assists + 1
+                        awayPlayer3AssistsEl.innerText = awayP3Assists
+                    }
+
+                    function awayPlayer3AssistsLessOneTally() {
+                        if (awayP3Assists > 0) {
+                            awayP3Assists = awayP3Assists - 1} else {awayP3Assists = 0}
+                            awayPlayer3AssistsEl.innerText = awayP3Assists
+                    }
+
+                // away TEAM PLAYER 3 FOULS FUNCTIONS 
+                let awayP3Fouls = 0
+                let awayPlayer3FoulsEl=document.getElementById("awayPlayer3Fouls-el")
+                    function awayPlayer3FoulsOneTally() {
+                        awayP3Fouls = awayP3Fouls + 1
+                        awayPlayer3FoulsEl.innerText = awayP3Fouls
+                    }
+
+                    function awayPlayer3FoulsLessOneTally() {
+                        if (awayP3Fouls > 0) {
+                            awayP3Fouls = awayP3Fouls - 1} else {awayP3Fouls = 0}
+                            awayPlayer3FoulsEl.innerText = awayP3Fouls
+                    }
+
+        // away TEAM PLAYER 4
+                // away TEAM PLAYER 4 POINTS FUNCTIONS
+                let awayP4Points = 0
+                let awayPlayer4PointsEl=document.getElementById("awayPlayer4Points-el")
+                    function awayPlayer4PointsOneTally() {
+                        awayP4Points = awayP4Points + 1
+                        awayPlayer4PointsEl.innerText = awayP4Points
+                    }
+
+                    function awayPlayer4PointsTwoTally() {
+                        awayP4Points = awayP4Points + 2
+                        awayPlayer4PointsEl.innerText = awayP4Points
+                    }
+
+                    function awayPlayer4PointsThreeTally() {
+                        awayP4Points = awayP4Points + 3
+                        awayPlayer4PointsEl.innerText = awayP4Points
+                    }
+
+                    function awayPlayer4PointsLessOneTally() {
+                        if (awayP4Points > 0) {
+                            awayP4Points = awayP4Points - 1} else {awayP4Points = 0}
+                            awayPlayer4PointsEl.innerText = awayP4Points
+                    }
+
+                // away TEAM PLAYER 4 REBOUNDS FUNCTIONS
+                let awayP4Rebs = 0
+                let awayPlayer4RebsEl=document.getElementById("awayPlayer4Rebs-el")
+                    function awayPlayer4RebsOneTally() {
+                        awayP4Rebs = awayP4Rebs + 1
+                        awayPlayer4RebsEl.innerText = awayP4Rebs
+                    }
+
+                    function awayPlayer4RebsLessOneTally() {
+                        if (awayP4Rebs > 0) {
+                            awayP4Rebs = awayP4Rebs - 1} else {awayP4Rebs = 0}
+                            awayPlayer4RebsEl.innerText = awayP4Rebs
+                    }
+
+                // away TEAM PLAYER 4 ASSISTS FUNCTIONS
+                let awayP4Assists = 0    
+                let awayPlayer4AssistsEl=document.getElementById("awayPlayer4Assists-el")
+                    function awayPlayer4AssistsOneTally() {
+                        awayP4Assists = awayP4Assists + 1
+                        awayPlayer4AssistsEl.innerText = awayP4Assists
+                    }
+
+                    function awayPlayer4AssistsLessOneTally() {
+                        if (awayP4Assists > 0) {
+                            awayP4Assists = awayP4Assists - 1} else {awayP4Assists = 0}
+                            awayPlayer4AssistsEl.innerText = awayP4Assists
+                    }
+
+                // away TEAM PLAYER 4 FOULS FUNCTIONS 
+                let awayP4Fouls = 0
+                let awayPlayer4FoulsEl=document.getElementById("awayPlayer4Fouls-el")
+                    function awayPlayer4FoulsOneTally() {
+                        awayP4Fouls = awayP4Fouls + 1
+                        awayPlayer4FoulsEl.innerText = awayP4Fouls
+                    }
+
+                    function awayPlayer4FoulsLessOneTally() {
+                        if (awayP4Fouls > 0) {
+                            awayP4Fouls = awayP4Fouls - 1} else {awayP4Fouls = 0}
+                            awayPlayer4FoulsEl.innerText = awayP4Fouls
+                    } 
+
+        // away TEAM PLAYER 5
+                // away TEAM PLAYER 5 POINTS FUNCTIONS
+                let awayP5Points = 0
+                let awayPlayer5PointsEl=document.getElementById("awayPlayer5Points-el")
+                    function awayPlayer5PointsOneTally() {
+                        awayP5Points = awayP5Points + 1
+                        awayPlayer5PointsEl.innerText = awayP5Points
+                    }
+
+                    function awayPlayer5PointsTwoTally() {
+                        awayP5Points = awayP5Points + 2
+                        awayPlayer5PointsEl.innerText = awayP5Points
+                    }
+
+                    function awayPlayer5PointsThreeTally() {
+                        awayP5Points = awayP5Points + 3
+                        awayPlayer5PointsEl.innerText = awayP5Points
+                    }
+
+                    function awayPlayer5PointsLessOneTally() {
+                        if (awayP5Points > 0) {
+                            awayP5Points = awayP5Points - 1} else {awayP5Points = 0}
+                            awayPlayer5PointsEl.innerText = awayP5Points
+                    }
+
+                // away TEAM PLAYER 5 REBOUNDS FUNCTIONS
+                let awayP5Rebs = 0
+                let awayPlayer5RebsEl=document.getElementById("awayPlayer5Rebs-el")
+                    function awayPlayer5RebsOneTally() {
+                        awayP5Rebs = awayP5Rebs + 1
+                        awayPlayer5RebsEl.innerText = awayP5Rebs
+                    }
+
+                    function awayPlayer5RebsLessOneTally() {
+                        if (awayP5Rebs > 0) {
+                            awayP5Rebs = awayP5Rebs - 1} else {awayP5Rebs = 0}
+                            awayPlayer5RebsEl.innerText = awayP5Rebs
+                    }
+
+                // away TEAM PLAYER 5 ASSISTS FUNCTIONS
+                let awayP5Assists = 0    
+                let awayPlayer5AssistsEl=document.getElementById("awayPlayer5Assists-el")
+                    function awayPlayer5AssistsOneTally() {
+                        awayP5Assists = awayP5Assists + 1
+                        awayPlayer5AssistsEl.innerText = awayP5Assists
+                    }
+
+                    function awayPlayer5AssistsLessOneTally() {
+                        if (awayP5Assists > 0) {
+                            awayP5Assists = awayP5Assists - 1} else {awayP5Assists = 0}
+                            awayPlayer5AssistsEl.innerText = awayP5Assists
+                    }
+
+                // away TEAM PLAYER 5 FOULS FUNCTIONS 
+                let awayP5Fouls = 0
+                let awayPlayer5FoulsEl=document.getElementById("awayPlayer5Fouls-el")
+                    function awayPlayer5FoulsOneTally() {
+                        awayP5Fouls = awayP5Fouls + 1
+                        awayPlayer5FoulsEl.innerText = awayP5Fouls
+                    }
+
+                    function awayPlayer5FoulsLessOneTally() {
+                        if (awayP5Fouls > 0) {
+                            awayP5Fouls = awayP5Fouls - 1} else {awayP5Fouls = 0}
+                            awayPlayer5FoulsEl.innerText = awayP5Fouls
+                    }  
