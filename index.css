@@ -137,7 +137,7 @@
             }
       
               .htgsFOULS-Display { grid-area: htgsFOULS-Display;
-                font-size: 50;
+                font-size: 40;
                 text-shadow: 5px 5px 0px rgba(0,0,0,0.2);
                 text-align: right;
                 padding-right: 5;
@@ -902,7 +902,7 @@
           }
         
             .atgstFOULS-Display { grid-area: atgstFOULS-Display; 
-              font-size: 50;
+              font-size: 40;
               text-shadow: 5px 5px 0px rgba(0,0,0,0.2);
               text-align: left;
               padding-left: 5;
