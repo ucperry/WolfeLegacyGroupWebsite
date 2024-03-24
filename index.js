@@ -1,19 +1,365 @@
-
-let homeTimeoutsLeftEl = document.getElementById("homeTimeoutsLeft-el")
-let awayTimeoutsLeftEl = document.getElementById("awayTimeoutsLeft-el")
-
 let homeTOL = 5
-let awayTOL = 5
+let homeTimeoutsLeftEl = document.getElementById("homeTimeoutsLeft-el")
+    function lessHomeTimeouts() {
+    if (homeTOL > 0) {
+        homeTOL = homeTOL - 1} else {homeTOL=0}
+        homeTimeoutsLeftEl.innerText = homeTOL
+    }
 
+let awayTOL = 5    
+let awayTimeoutsLeftEl = document.getElementById("awayTimeoutsLeft-el")
+    function lessAwayTimeouts() {
+    if (awayTOL > 0) {
+        awayTOL = awayTOL - 1} else {awayTOL=0}
+        awayTimeoutsLeftEl.innerText = awayTOL
+    }
 
-function lessHomeTimeouts() {
-   if (homeTOL > 0) {
-    homeTOL = homeTOL - 1} else {homeTOL=0}
-    homeTimeoutsLeftEl.innerText = homeTOL
-}
+// HOME TEAM 
+    let totalHomeTeamGamePoints = 0
+    let homeTeamPointsEl=document.getElementById("homeTeamPoints-el")
+        function homeTeamGamePoints() {
+            totalHomeTeamGamePoints = homeP1Points + homeP2Points + homeP3Points + homeP4Points + homeP5Points
+            homeTeamPointsEl.innerText = totalHomeTeamGamePoints
+        }
 
-function lessAwayTimeouts() {
-   if (awayTOL > 0) {
-    awayTOL = awayTOL - 1} else {awayTOL=0}
-    awayTimeoutsLeftEl.innerText = awayTOL
-}
+    let totalHomeTeamGameFouls = 0
+    let homeTeamFoulsEl=document.getElementById("homeTeamFouls-el")
+        function homeTeamGameFouls() {
+            totalHomeTeamGameFouls = homeP1Fouls + homeP2Fouls + homeP3Fouls + homeP4Fouls + homeP5Fouls
+            homeTeamFoulsEl.innerText = totalHomeTeamGameFouls
+        }        
+
+        //HOME TEAM PLAYER 1
+            // HOME TEAM PLAYER 1 POINTS FUNCTIONS
+                let homeP1Points = 0
+                let homePlayer1PointsEl=document.getElementById("homePlayer1Points-el")
+                    function homePlayer1PointsOneTally() {
+                        homeP1Points = homeP1Points + 1
+                        homePlayer1PointsEl.innerText = homeP1Points
+                    }
+
+                    function homePlayer1PointsTwoTally() {
+                        homeP1Points = homeP1Points + 2
+                        homePlayer1PointsEl.innerText = homeP1Points
+                    }
+
+                    function homePlayer1PointsThreeTally() {
+                        homeP1Points = homeP1Points + 3
+                        homePlayer1PointsEl.innerText = homeP1Points
+                    }
+
+                    function homePlayer1PointsLessOneTally() {
+                        if (homeP1Points > 0) {
+                            homeP1Points = homeP1Points - 1} else {homeP1Points = 0}
+                            homePlayer1PointsEl.innerText = homeP1Points
+                    }
+
+                // HOME TEAM PLAYER 1 REBOUNDS FUNCTIONS
+                let homeP1Rebs = 0
+                let homePlayer1RebsEl=document.getElementById("homePlayer1Rebs-el")
+                    function homePlayer1RebsOneTally() {
+                        homeP1Rebs = homeP1Rebs + 1
+                        homePlayer1RebsEl.innerText = homeP1Rebs
+                    }
+
+                    function homePlayer1RebsLessOneTally() {
+                        if (homeP1Rebs > 0) {
+                            homeP1Rebs = homeP1Rebs - 1} else {homeP1Rebs = 0}
+                            homePlayer1RebsEl.innerText = homeP1Rebs
+                    }
+
+                // HOME TEAM PLAYER 1 ASSISTS FUNCTIONS
+                let homeP1Assists = 0    
+                let homePlayer1AssistsEl=document.getElementById("homePlayer1Assists-el")
+                    function homePlayer1AssistsOneTally() {
+                        homeP1Assists = homeP1Assists + 1
+                        homePlayer1AssistsEl.innerText = homeP1Assists
+                    }
+
+                    function homePlayer1AssistsLessOneTally() {
+                        if (homeP1Assists > 0) {
+                            homeP1Assists = homeP1Assists - 1} else {homeP1Assists = 0}
+                            homePlayer1AssistsEl.innerText = homeP1Assists
+                    }
+
+                // HOME TEAM PLAYER 1 FOULS FUNCTIONS 
+                let homeP1Fouls = 0
+                let homePlayer1FoulsEl=document.getElementById("homePlayer1Fouls-el")
+                    function homePlayer1FoulsOneTally() {
+                        homeP1Fouls = homeP1Fouls + 1
+                        homePlayer1FoulsEl.innerText = homeP1Fouls
+                    }
+
+                    function homePlayer1FoulsLessOneTally() {
+                        if (homeP1Fouls > 0) {
+                            homeP1Fouls = homeP1Fouls - 1} else {homeP1Fouls = 0}
+                            homePlayer1FoulsEl.innerText = homeP1Fouls
+                    }
+        
+            // HOME TEAM PLAYER 2
+                // HOME TEAM PLAYER 2 POINTS FUNCTIONS
+                let homeP2Points = 0
+                let homePlayer2PointsEl=document.getElementById("homePlayer2Points-el")
+                    function homePlayer2PointsOneTally() {
+                        homeP2Points = homeP2Points + 1
+                        homePlayer2PointsEl.innerText = homeP2Points
+                    }
+
+                    function homePlayer2PointsTwoTally() {
+                        homeP2Points = homeP2Points + 2
+                        homePlayer2PointsEl.innerText = homeP2Points
+                    }
+
+                    function homePlayer2PointsThreeTally() {
+                        homeP2Points = homeP2Points + 3
+                        homePlayer2PointsEl.innerText = homeP2Points
+                    }
+
+                    function homePlayer2PointsLessOneTally() {
+                        if (homeP2Points > 0) {
+                            homeP2Points = homeP2Points - 1} else {homeP2Points = 0}
+                            homePlayer2PointsEl.innerText = homeP2Points
+                    }
+
+                // HOME TEAM PLAYER 2 REBOUNDS FUNCTIONS
+                let homeP2Rebs = 0
+                let homePlayer2RebsEl=document.getElementById("homePlayer2Rebs-el")
+                    function homePlayer2RebsOneTally() {
+                        homeP2Rebs = homeP2Rebs + 1
+                        homePlayer2RebsEl.innerText = homeP2Rebs
+                    }
+
+                    function homePlayer2RebsLessOneTally() {
+                        if (homeP2Rebs > 0) {
+                            homeP2Rebs = homeP2Rebs - 1} else {homeP2Rebs = 0}
+                            homePlayer2RebsEl.innerText = homeP2Rebs
+                    }
+
+                // HOME TEAM PLAYER 2 ASSISTS FUNCTIONS
+                let homeP2Assists = 0    
+                let homePlayer2AssistsEl=document.getElementById("homePlayer2Assists-el")
+                    function homePlayer2AssistsOneTally() {
+                        homeP2Assists = homeP2Assists + 1
+                        homePlayer2AssistsEl.innerText = homeP2Assists
+                    }
+
+                    function homePlayer2AssistsLessOneTally() {
+                        if (homeP2Assists > 0) {
+                            homeP2Assists = homeP2Assists - 1} else {homeP2Assists = 0}
+                            homePlayer2AssistsEl.innerText = homeP2Assists
+                    }
+
+                // HOME TEAM PLAYER 2 FOULS FUNCTIONS 
+                let homeP2Fouls = 0
+                let homePlayer2FoulsEl=document.getElementById("homePlayer2Fouls-el")
+                    function homePlayer2FoulsOneTally() {
+                        homeP2Fouls = homeP2Fouls + 1
+                        homePlayer2FoulsEl.innerText = homeP2Fouls
+                    }
+
+                    function homePlayer2FoulsLessOneTally() {
+                        if (homeP2Fouls > 0) {
+                            homeP2Fouls = homeP2Fouls - 1} else {homeP2Fouls = 0}
+                            homePlayer2FoulsEl.innerText = homeP2Fouls
+                    }
+
+            // HOME TEAM PLAYER 3
+                // HOME TEAM PLAYER 3 POINTS FUNCTIONS
+                let homeP3Points = 0
+                let homePlayer3PointsEl=document.getElementById("homePlayer3Points-el")
+                    function homePlayer3PointsOneTally() {
+                        homeP3Points = homeP3Points + 1
+                        homePlayer3PointsEl.innerText = homeP3Points
+                    }
+
+                    function homePlayer3PointsTwoTally() {
+                        homeP3Points = homeP3Points + 2
+                        homePlayer3PointsEl.innerText = homeP3Points
+                    }
+
+                    function homePlayer3PointsThreeTally() {
+                        homeP3Points = homeP3Points + 3
+                        homePlayer3PointsEl.innerText = homeP3Points
+                    }
+
+                    function homePlayer3PointsLessOneTally() {
+                        if (homeP3Points > 0) {
+                            homeP3Points = homeP3Points - 1} else {homeP3Points = 0}
+                            homePlayer3PointsEl.innerText = homeP3Points
+                    }
+
+                // HOME TEAM PLAYER 3 REBOUNDS FUNCTIONS
+                let homeP3Rebs = 0
+                let homePlayer3RebsEl=document.getElementById("homePlayer3Rebs-el")
+                    function homePlayer3RebsOneTally() {
+                        homeP3Rebs = homeP3Rebs + 1
+                        homePlayer3RebsEl.innerText = homeP3Rebs
+                    }
+
+                    function homePlayer3RebsLessOneTally() {
+                        if (homeP3Rebs > 0) {
+                            homeP3Rebs = homeP3Rebs - 1} else {homeP3Rebs = 0}
+                            homePlayer3RebsEl.innerText = homeP3Rebs
+                    }
+
+                // HOME TEAM PLAYER 3 ASSISTS FUNCTIONS
+                let homeP3Assists = 0    
+                let homePlayer3AssistsEl=document.getElementById("homePlayer3Assists-el")
+                    function homePlayer3AssistsOneTally() {
+                        homeP3Assists = homeP3Assists + 1
+                        homePlayer3AssistsEl.innerText = homeP3Assists
+                    }
+
+                    function homePlayer3AssistsLessOneTally() {
+                        if (homeP3Assists > 0) {
+                            homeP3Assists = homeP3Assists - 1} else {homeP3Assists = 0}
+                            homePlayer3AssistsEl.innerText = homeP3Assists
+                    }
+
+                // HOME TEAM PLAYER 3 FOULS FUNCTIONS 
+                let homeP3Fouls = 0
+                let homePlayer3FoulsEl=document.getElementById("homePlayer3Fouls-el")
+                    function homePlayer3FoulsOneTally() {
+                        homeP3Fouls = homeP3Fouls + 1
+                        homePlayer3FoulsEl.innerText = homeP3Fouls
+                    }
+
+                    function homePlayer3FoulsLessOneTally() {
+                        if (homeP3Fouls > 0) {
+                            homeP3Fouls = homeP3Fouls - 1} else {homeP3Fouls = 0}
+                            homePlayer3FoulsEl.innerText = homeP3Fouls
+                    }
+
+        // HOME TEAM PLAYER 4
+                // HOME TEAM PLAYER 4 POINTS FUNCTIONS
+                let homeP4Points = 0
+                let homePlayer4PointsEl=document.getElementById("homePlayer4Points-el")
+                    function homePlayer4PointsOneTally() {
+                        homeP4Points = homeP4Points + 1
+                        homePlayer4PointsEl.innerText = homeP4Points
+                    }
+
+                    function homePlayer4PointsTwoTally() {
+                        homeP4Points = homeP4Points + 2
+                        homePlayer4PointsEl.innerText = homeP4Points
+                    }
+
+                    function homePlayer4PointsThreeTally() {
+                        homeP4Points = homeP4Points + 3
+                        homePlayer4PointsEl.innerText = homeP4Points
+                    }
+
+                    function homePlayer4PointsLessOneTally() {
+                        if (homeP4Points > 0) {
+                            homeP4Points = homeP4Points - 1} else {homeP4Points = 0}
+                            homePlayer4PointsEl.innerText = homeP4Points
+                    }
+
+                // HOME TEAM PLAYER 4 REBOUNDS FUNCTIONS
+                let homeP4Rebs = 0
+                let homePlayer4RebsEl=document.getElementById("homePlayer4Rebs-el")
+                    function homePlayer4RebsOneTally() {
+                        homeP4Rebs = homeP4Rebs + 1
+                        homePlayer4RebsEl.innerText = homeP4Rebs
+                    }
+
+                    function homePlayer4RebsLessOneTally() {
+                        if (homeP4Rebs > 0) {
+                            homeP4Rebs = homeP4Rebs - 1} else {homeP4Rebs = 0}
+                            homePlayer4RebsEl.innerText = homeP4Rebs
+                    }
+
+                // HOME TEAM PLAYER 4 ASSISTS FUNCTIONS
+                let homeP4Assists = 0    
+                let homePlayer4AssistsEl=document.getElementById("homePlayer4Assists-el")
+                    function homePlayer4AssistsOneTally() {
+                        homeP4Assists = homeP4Assists + 1
+                        homePlayer4AssistsEl.innerText = homeP4Assists
+                    }
+
+                    function homePlayer4AssistsLessOneTally() {
+                        if (homeP4Assists > 0) {
+                            homeP4Assists = homeP4Assists - 1} else {homeP4Assists = 0}
+                            homePlayer4AssistsEl.innerText = homeP4Assists
+                    }
+
+                // HOME TEAM PLAYER 4 FOULS FUNCTIONS 
+                let homeP4Fouls = 0
+                let homePlayer4FoulsEl=document.getElementById("homePlayer4Fouls-el")
+                    function homePlayer4FoulsOneTally() {
+                        homeP4Fouls = homeP4Fouls + 1
+                        homePlayer4FoulsEl.innerText = homeP4Fouls
+                    }
+
+                    function homePlayer4FoulsLessOneTally() {
+                        if (homeP4Fouls > 0) {
+                            homeP4Fouls = homeP4Fouls - 1} else {homeP4Fouls = 0}
+                            homePlayer4FoulsEl.innerText = homeP4Fouls
+                    } 
+
+        // HOME TEAM PLAYER 5
+                // HOME TEAM PLAYER 5 POINTS FUNCTIONS
+                let homeP5Points = 0
+                let homePlayer5PointsEl=document.getElementById("homePlayer5Points-el")
+                    function homePlayer5PointsOneTally() {
+                        homeP5Points = homeP5Points + 1
+                        homePlayer5PointsEl.innerText = homeP5Points
+                    }
+
+                    function homePlayer5PointsTwoTally() {
+                        homeP5Points = homeP5Points + 2
+                        homePlayer5PointsEl.innerText = homeP5Points
+                    }
+
+                    function homePlayer5PointsThreeTally() {
+                        homeP5Points = homeP5Points + 3
+                        homePlayer5PointsEl.innerText = homeP5Points
+                    }
+
+                    function homePlayer5PointsLessOneTally() {
+                        if (homeP5Points > 0) {
+                            homeP5Points = homeP5Points - 1} else {homeP5Points = 0}
+                            homePlayer5PointsEl.innerText = homeP5Points
+                    }
+
+                // HOME TEAM PLAYER 5 REBOUNDS FUNCTIONS
+                let homeP5Rebs = 0
+                let homePlayer5RebsEl=document.getElementById("homePlayer5Rebs-el")
+                    function homePlayer5RebsOneTally() {
+                        homeP5Rebs = homeP5Rebs + 1
+                        homePlayer5RebsEl.innerText = homeP5Rebs
+                    }
+
+                    function homePlayer5RebsLessOneTally() {
+                        if (homeP5Rebs > 0) {
+                            homeP5Rebs = homeP5Rebs - 1} else {homeP5Rebs = 0}
+                            homePlayer5RebsEl.innerText = homeP5Rebs
+                    }
+
+                // HOME TEAM PLAYER 5 ASSISTS FUNCTIONS
+                let homeP5Assists = 0    
+                let homePlayer5AssistsEl=document.getElementById("homePlayer5Assists-el")
+                    function homePlayer5AssistsOneTally() {
+                        homeP5Assists = homeP5Assists + 1
+                        homePlayer5AssistsEl.innerText = homeP5Assists
+                    }
+
+                    function homePlayer5AssistsLessOneTally() {
+                        if (homeP5Assists > 0) {
+                            homeP5Assists = homeP5Assists - 1} else {homeP5Assists = 0}
+                            homePlayer5AssistsEl.innerText = homeP5Assists
+                    }
+
+                // HOME TEAM PLAYER 5 FOULS FUNCTIONS 
+                let homeP5Fouls = 0
+                let homePlayer5FoulsEl=document.getElementById("homePlayer5Fouls-el")
+                    function homePlayer5FoulsOneTally() {
+                        homeP5Fouls = homeP5Fouls + 1
+                        homePlayer5FoulsEl.innerText = homeP5Fouls
+                    }
+
+                    function homePlayer5FoulsLessOneTally() {
+                        if (homeP5Fouls > 0) {
+                            homeP5Fouls = homeP5Fouls - 1} else {homeP5Fouls = 0}
+                            homePlayer5FoulsEl.innerText = homeP5Fouls
+                    }                                 

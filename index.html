@@ -21,12 +21,12 @@
                 <div class="htgsSCORE-Tile">
                   <div class="htgsSCORE-Header">Team Score</div>
                   <div class="htgsSCORE-Display">
-                    <output class="homeTeamScore">100</output>
+                    <output class="homeTeamScore" id="homeTeamPoints-el">0</output>
                   </div>
                 </div>
                 <div class="htgsFOULS-Tile">
                   <div class="htgsFOULS-Display">
-                    <output class="homeTeamFouls">0</output>
+                    <output class="homeTeamFouls" id="homeTeamFouls-el">0</output>
                   </div>
                   <div class="htgsFOULS-Footer">Team Fouls</div>
                 </div>
@@ -40,61 +40,77 @@
                   <div class="htasp1STATCATASSISTS-Header">Assists</div>
                   <div class="htasp1STATCATFOULS-Header">Fouls</div>
                   <div class="htasp1STATCATPLAYERID-Name">Wolfe</div>
-                  <div class="htasp1STATCATPOINTS-Total">0</div>
-                  <div class="htasp1STATCATREBS-Total">0</div>
-                  <div class="htasp1STATCATASSISTS-Total">0</div>
-                  <div class="htasp1STATCATFOULS-Total">0</div>
+                  <div class="htasp1STATCATPOINTS-Total">
+                    <output id="homePlayer1Points-el">0</output>
+                  </div>
+                  <div class="htasp1STATCATREBS-Total">
+                    <output id="homePlayer1Rebs-el">0</output>
+                  </div>
+                  <div class="htasp1STATCATASSISTS-Total">
+                    <output id="homePlayer1Assists-el">0</output>
+                  </div>
+                  <div class="htasp1STATCATFOULS-Total">
+                    <output id="homePlayer1Fouls-el">0</output>
+                  </div>
                   <div class="htasp1STATCATPLAYERID-Number">01</div>
-                  <div class="htasp1STATCATPOINTS-Btns">
-                    <button>+1</button>
-                    <button>+2</button>
-                    <button>+3</button> |
-                    <button>-1</button>
+                    <div class="htasp1STATCATPOINTS-Btns">
+                      <button id="htP1onePoint-btn" onclick="homePlayer1PointsOneTally(); homeTeamGamePoints()">+1</button>
+                      <button id="htP1twoPoint-btn" onclick="homePlayer1PointsTwoTally(); homeTeamGamePoints()">+2</button>
+                      <button id="htP1threePoint-btn" onclick="homePlayer1PointsThreeTally(); homeTeamGamePoints()">+3</button> |
+                      <button id="htP1LessOnePoint-btn" onclick="homePlayer1PointsLessOneTally(); homeTeamGamePoints()">-1</button>
+                    </div>
+                    <div class="htasp1STATCATREBS-Btns">
+                      <button id="htP1oneReb-btn" onclick="homePlayer1RebsOneTally()">+1</button> |
+                      <button id="htP1LessOneReb-btn" onclick="homePlayer1RebsLessOneTally()">-1</button>
+                    </div>
+                    <div class="htasp1STATCATASSISTS-Btns">
+                      <button id="htP1oneAssist-btn" onclick="homePlayer1AssistsOneTally()">+1</button> |
+                      <button id="htP1LessOneAssist-btn" onclick="homePlayer1AssistsLessOneTally()">-1</button>
+                    </div>
+                    <div class="htasp1STATCATFOULS-Btns">
+                      <button id="htP1oneFouls-btn" onclick="homePlayer1FoulsOneTally(); homeTeamGameFouls()">+1</button> |
+                      <button id="htP1LessOneFouls-btn" onclick="homePlayer1FoulsLessOneTally(); homeTeamGameFouls()">-1</button>
+                    </div>
+                    <div class="htasp1STATCATPLAYER-Btns">
+                      <button>Reset</button>
+                    </div>  
                   </div>
-                  <div class="htasp1STATCATREBS-Btns">
-                    <button>+1</button> |
-                    <button>-1</button>
-                  </div>
-                  <div class="htasp1STATCATASSISTS-Btns">
-                    <button>+1</button> |
-                    <button>-1</button>
-                  </div>
-                  <div class="htasp1STATCATFOULS-Btns">
-                    <button>+1</button> |
-                    <button>-1</button>
-                  </div>
-                  <div class="htasp1STATCATPLAYER-Btns">
-                    <button>Reset</button>
-                  </div>
-                </div>
                 <div class="htasPLAYER2-Tile">
                   <div class="htasp2STATCATPOINTS-Header">Points</div>
                   <div class="htasp2STATCATREBS-Header">Rebounds</div>
                   <div class="htasp2STATCATASSISTS-Header">Assists</div>
                   <div class="htasp2STATCATFOULS-Header">Fouls</div>
                   <div class="htasp2STATCATPLAYERID-Name">Wolfe</div>
-                  <div class="htasp2STATCATPOINTS-Total">0</div>
-                  <div class="htasp2STATCATREBS-Total">0</div>
-                  <div class="htasp2STATCATASSISTS-Total">0</div>
-                  <div class="htasp2STATCATFOULS-Total">0</div>
+                  <div class="htasp2STATCATPOINTS-Total">
+                    <output id="homePlayer2Points-el">0</output>
+                  </div>
+                  <div class="htasp2STATCATREBS-Total">
+                    <output id="homePlayer2Rebs-el">0</output>
+                  </div>
+                  <div class="htasp2STATCATASSISTS-Total">
+                    <output id="homePlayer2Assists-el">0</output>
+                  </div>
+                  <div class="htasp2STATCATFOULS-Total">
+                    <output id="homePlayer2Fouls-el">0</output>
+                  </div>
                   <div class="htasp2STATCATPLAYERID-Number">02</div>
                   <div class="htasp2STATCATPOINTS-Btns">
-                    <button>+1</button>
-                    <button>+2</button>
-                    <button>+3</button> |
-                    <button>-1</button>
+                    <button id="htP2onePoint-btn" onclick="homePlayer2PointsOneTally(); homeTeamGamePoints()">+1</button>
+                    <button id="htP2twoPoint-btn" onclick="homePlayer2PointsTwoTally(); homeTeamGamePoints()">+2</button>
+                    <button id="htP2threePoint-btn" onclick="homePlayer2PointsThreeTally(); homeTeamGamePoints()">+3</button> |
+                    <button id="htP2LessOnePoint-btn" onclick="homePlayer2PointsLessOneTally(); homeTeamGamePoints()">-1</button>
                   </div>
                   <div class="htasp2STATCATREBS-Btns">
-                    <button>+1</button> |
-                    <button>-1</button>
+                    <button id="htP2oneReb-btn" onclick="homePlayer2RebsOneTally()">+1</button> |
+                      <button id="htP2LessOneReb-btn" onclick="homePlayer2RebsLessOneTally()">-1</button>
                   </div>
                   <div class="htasp2STATCATASSISTS-Btns">
-                    <button>+1</button> |
-                    <button>-1</button>
+                    <button id="htP2oneAssist-btn" onclick="homePlayer2AssistsOneTally()">+1</button> |
+                      <button id="htP2LessOneAssist-btn" onclick="homePlayer2AssistsLessOneTally()">-1</button>
                   </div>
                   <div class="htasp2STATCATFOULS-Btns">
-                    <button>+1</button> |
-                    <button>-1</button>
+                    <button id="htP2oneFouls-btn" onclick="homePlayer2FoulsOneTally(); homeTeamGameFouls()">+1</button> |
+                      <button id="htP2LessOneFouls-btn" onclick="homePlayer2FoulsLessOneTally(); homeTeamGameFouls()">-1</button>
                   </div>
                   <div class="htasp2STATCATPLAYER-Btns">
                     <button>Reset</button>
@@ -106,28 +122,36 @@
                   <div class="htasp3STATCATASSISTS-Header">Assists</div>
                   <div class="htasp3STATCATFOULS-Header">Fouls</div>
                   <div class="htasp3STATCATPLAYERID-Name">Wolfe</div>
-                  <div class="htasp3STATCATPOINTS-Total">0</div>
-                  <div class="htasp3STATCATREBS-Total">0</div>
-                  <div class="htasp3STATCATASSISTS-Total">0</div>
-                  <div class="htasp3STATCATFOULS-Total">0</div>
+                  <div class="htasp3STATCATPOINTS-Total">
+                    <output id="homePlayer3Points-el">0</output>
+                  </div>
+                  <div class="htasp3STATCATREBS-Total">
+                    <output id="homePlayer3Rebs-el">0</output>
+                  </div>
+                  <div class="htasp3STATCATASSISTS-Total">
+                    <output id="homePlayer3Assists-el">0</output>
+                  </div>
+                  <div class="htasp3STATCATFOULS-Total">
+                    <output id="homePlayer3Fouls-el">0</output>
+                  </div>
                   <div class="htasp3STATCATPLAYERID-Number">03</div>
                   <div class="htasp3STATCATPOINTS-Btns">
-                    <button>+1</button>
-                    <button>+2</button>
-                    <button>+3</button> |
-                    <button>-1</button>
+                    <button id="htP3onePoint-btn" onclick="homePlayer3PointsOneTally(); homeTeamGamePoints()">+1</button>
+                    <button id="htP3twoPoint-btn" onclick="homePlayer3PointsTwoTally(); homeTeamGamePoints()">+2</button>
+                    <button id="htP3threePoint-btn" onclick="homePlayer3PointsThreeTally(); homeTeamGamePoints()">+3</button> |
+                    <button id="htP3LessOnePoint-btn" onclick="homePlayer3PointsLessOneTally(); homeTeamGamePoints()">-1</button>
                   </div>
                   <div class="htasp3STATCATREBS-Btns">
-                    <button>+1</button> |
-                    <button>-1</button>
+                    <button id="htP3oneReb-btn" onclick="homePlayer3RebsOneTally()">+1</button> |
+                      <button id="htP3LessOneReb-btn" onclick="homePlayer3RebsLessOneTally()">-1</button>
                   </div>
                   <div class="htasp3STATCATASSISTS-Btns">
-                    <button>+1</button> |
-                    <button>-1</button>
+                    <button id="htP3oneAssist-btn" onclick="homePlayer3AssistsOneTally()">+1</button> |
+                      <button id="htP3LessOneAssist-btn" onclick="homePlayer3AssistsLessOneTally()">-1</button>
                   </div>
                   <div class="htasp3STATCATFOULS-Btns">
-                    <button>+1</button> |
-                    <button>-1</button>
+                    <button id="htP3oneFouls-btn" onclick="homePlayer3FoulsOneTally(); homeTeamGameFouls()">+1</button> |
+                      <button id="htP3LessOneFouls-btn" onclick="homePlayer3FoulsLessOneTally(); homeTeamGameFouls()">-1</button>
                   </div>
                   <div class="htasp3STATCATPLAYER-Btns">
                     <button>Reset</button>
@@ -139,28 +163,36 @@
                   <div class="htasp4STATCATASSISTS-Header">Assists</div>
                   <div class="htasp4STATCATFOULS-Header">Fouls</div>
                   <div class="htasp4STATCATPLAYERID-Name">Wolfe</div>
-                  <div class="htasp4STATCATPOINTS-Total">0</div>
-                  <div class="htasp4STATCATREBS-Total">0</div>
-                  <div class="htasp4STATCATASSISTS-Total">0</div>
-                  <div class="htasp4STATCATFOULS-Total">0</div>
+                  <div class="htasp4STATCATPOINTS-Total">
+                    <output id="homePlayer4Points-el">0</output>
+                  </div>
+                  <div class="htasp4STATCATREBS-Total">
+                    <output id="homePlayer4Rebs-el">0</output>
+                  </div>
+                  <div class="htasp4STATCATASSISTS-Total">
+                    <output id="homePlayer4Assists-el">0</output>
+                  </div>
+                  <div class="htasp4STATCATFOULS-Total">
+                    <output id="homePlayer4Fouls-el">0</output>
+                  </div>
                   <div class="htasp4STATCATPLAYERID-Number">04</div>
                   <div class="htasp4STATCATPOINTS-Btns">
-                    <button>+1</button>
-                    <button>+2</button>
-                    <button>+3</button> |
-                    <button>-1</button>
+                    <button id="htP4onePoint-btn" onclick="homePlayer4PointsOneTally(); homeTeamGamePoints()">+1</button>
+                    <button id="htP4twoPoint-btn" onclick="homePlayer4PointsTwoTally(); homeTeamGamePoints()">+2</button>
+                    <button id="htP4threePoint-btn" onclick="homePlayer4PointsThreeTally(); homeTeamGamePoints()">+3</button> |
+                    <button id="htP4LessOnePoint-btn" onclick="homePlayer4PointsLessOneTally(); homeTeamGamePoints()">-1</button>
                   </div>
                   <div class="htasp4STATCATREBS-Btns">
-                    <button>+1</button> |
-                    <button>-1</button>
+                    <button id="htP4oneReb-btn" onclick="homePlayer4RebsOneTally()">+1</button> |
+                      <button id="htP4LessOneReb-btn" onclick="homePlayer4RebsLessOneTally()">-1</button>
                   </div>
                   <div class="htasp4STATCATASSISTS-Btns">
-                    <button>+1</button> |
-                    <button>-1</button>
+                    <button id="htP4oneAssist-btn" onclick="homePlayer4AssistsOneTally()">+1</button> |
+                      <button id="htP4LessOneAssist-btn" onclick="homePlayer4AssistsLessOneTally()">-1</button>
                   </div>
                   <div class="htasp4STATCATFOULS-Btns">
-                    <button>+1</button> |
-                    <button>-1</button>
+                    <button id="htP4oneFouls-btn" onclick="homePlayer4FoulsOneTally(); homeTeamGameFouls()">+1</button> |
+                      <button id="htP4LessOneFouls-btn" onclick="homePlayer4FoulsLessOneTally(); homeTeamGameFouls()">-1</button>
                   </div>
                   <div class="htasp4STATCATPLAYER-Btns">
                     <button>Reset</button>
@@ -172,28 +204,36 @@
                   <div class="htasp5STATCATASSISTS-Header">Assists</div>
                   <div class="htasp5STATCATFOULS-Header">Fouls</div>
                   <div class="htasp5STATCATPLAYERID-Name">Wolfe</div>
-                  <div class="htasp5STATCATPOINTS-Total">0</div>
-                  <div class="htasp5STATCATREBS-Total">0</div>
-                  <div class="htasp5STATCATASSISTS-Total">0</div>
-                  <div class="htasp5STATCATFOULS-Total">0</div>
+                  <div class="htasp5STATCATPOINTS-Total">
+                    <output id="homePlayer5Points-el">0</output>
+                  </div>
+                  <div class="htasp5STATCATREBS-Total">
+                    <output id="homePlayer5Rebs-el">0</output>
+                  </div>
+                  <div class="htasp5STATCATASSISTS-Total">
+                    <output id="homePlayer5Assists-el">0</output>
+                  </div>
+                  <div class="htasp5STATCATFOULS-Total">
+                    <output id="homePlayer5Fouls-el">0</output>
+                  </div>
                   <div class="htasp5STATCATPLAYERID-Number">05</div>
                   <div class="htasp5STATCATPOINTS-Btns">
-                    <button>+1</button>
-                    <button>+2</button>
-                    <button>+3</button> |
-                    <button>-1</button>
+                    <button id="htP5onePoint-btn" onclick="homePlayer5PointsOneTally(); homeTeamGamePoints()">+1</button>
+                    <button id="htP5twoPoint-btn" onclick="homePlayer5PointsTwoTally(); homeTeamGamePoints()">+2</button>
+                    <button id="htP5threePoint-btn" onclick="homePlayer5PointsThreeTally(); homeTeamGamePoints()">+3</button> |
+                    <button id="htP5LessOnePoint-btn" onclick="homePlayer5PointsLessOneTally(); homeTeamGamePoints()">-1</button>
                   </div>
                   <div class="htasp5STATCATREBS-Btns">
-                    <button>+1</button> |
-                    <button>-1</button>
+                    <button id="htP5oneReb-btn" onclick="homePlayer5RebsOneTally()">+1</button> |
+                      <button id="htP5LessOneReb-btn" onclick="homePlayer5RebsLessOneTally()">-1</button>
                   </div>
                   <div class="htasp5STATCATASSISTS-Btns">
-                    <button>+1</button> |
-                    <button>-1</button>
+                    <button id="htP5oneAssist-btn" onclick="homePlayer5AssistsOneTally()">+1</button> |
+                      <button id="htP5LessOneAssist-btn" onclick="homePlayer5AssistsLessOneTally()">-1</button>
                   </div>
                   <div class="htasp5STATCATFOULS-Btns">
-                    <button>+1</button> |
-                    <button>-1</button>
+                    <button id="htP5oneFouls-btn" onclick="homePlayer5FoulsOneTally(); homeTeamGameFouls()">+1</button> |
+                      <button id="htP5LessOneFouls-btn" onclick="homePlayer5FoulsLessOneTally(); homeTeamGameFouls()">-1</button>
                   </div>
                   <div class="htasp5STATCATPLAYER-Btns">
                     <button>Reset</button>
