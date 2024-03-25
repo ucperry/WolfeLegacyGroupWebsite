@@ -354,7 +354,7 @@
         
       .gameInfo-Column {  display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: .75fr 0.5fr 1.5fr .5fr 1.75fr;
+        grid-template-rows: 0.5fr 0.5fr 1fr 0.5fr 2.5fr;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
@@ -519,12 +519,11 @@
         
         .giCLOCK-Area {  display: grid;
           grid-template-columns: 1fr;
-          grid-template-rows: 1.5fr 0.5fr;
+          grid-template-rows: 1.0fr;
           gap: 0px 0px;
           grid-auto-flow: row;
           grid-template-areas:
-          "gicVISUAL-Section"
-          "gicCONTROLS-Section";
+          "gicVISUAL-Section";
           grid-area: giCLOCK-Area;
           border: 3px solid yellow
         }
@@ -576,6 +575,7 @@
             
             .timer { grid-area: timer;
               display: inline-block;
+              margin-bottom: 100px;
               padding: 24px 32px;
               border-radius: 30px;
               background: lightgrey;
@@ -589,6 +589,7 @@
             .timer__btn {
               width: 50px;
               height: 50px;
+              margin-left: 16px;
               border-radius: 50%;
               border: none;
               color: white;
@@ -612,36 +613,6 @@
                 padding: 0 5;
                 border: 1px solid black;
               }  
-
-          .gicCONTROLS-Section {  display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr;
-            gap: 0px 0px;
-            grid-auto-flow: row;
-            grid-template-areas:
-              "giccOPEN1-Tile giccSTARTSTOP-Tile giccRESET-Tile giccOPEN2-Tile";
-            grid-area: gicCONTROLS-Section;
-            border: 2px solid purple;
-          }
-        
-            .giccOPEN1-Tile {  grid-area: giccOPEN1-Tile;
-              padding-top: 15;
-              border: 1px solid grey;
-            }
-
-            .giccSTARTSTOP-Tile { grid-area: giccSTARTSTOP-Tile;
-              padding-top: 15;
-              border: 1px solid grey;
-            }
-
-            .giccRESET-Tile {  grid-area: giccRESET-Tile;
-              padding-top: 15;
-              border: 1px solid grey;
-            }
-            
-            .giccOPEN2-Tile { grid-area: giccOPEN2-Tile;
-              border: 1px solid grey;
-            }
         
             .gicAWAYTOL-Tile {  display: grid;
               grid-template-columns: 1fr;
