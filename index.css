@@ -178,7 +178,7 @@
           }
         
             .htasPLAYER1-Tile { display: grid;
-              grid-template-columns: 1.5fr 0.9fr 0.9fr 0.9fr .8fr;
+              grid-template-columns: 1.3fr 0.9fr 0.9fr 0.9fr 1fr;
               grid-template-rows: 1fr 1fr 1fr;
               gap: 0px 0px;
               grid-auto-flow: row;
@@ -201,9 +201,13 @@
                   font-weight: 600;
                   color: red;
                 }
+
+                .htasp1RESET{
+                  color: red;
+                }
             
             .htasPLAYER2-Tile { display: grid;
-              grid-template-columns: 1.5fr 0.9fr 0.9fr 0.9fr .8fr;
+              grid-template-columns: 1.3fr 0.9fr 0.9fr 0.9fr 1fr;
               grid-template-rows: 1fr 1fr 1fr;
               gap: 0px 0px;
               grid-auto-flow: row;
@@ -226,9 +230,13 @@
                 font-weight: 600;
                 color: red;
               }
+
+              .htasp2RESET{
+                color: red;
+              }
             
             .htasPLAYER3-Tile { display: grid;
-              grid-template-columns: 1.5fr 0.9fr 0.9fr 0.9fr .8fr;
+              grid-template-columns: 1.3fr 0.9fr 0.9fr 0.9fr 1fr;
               grid-template-rows: 1fr 1fr 1fr;
               gap: 0px 0px;
               grid-auto-flow: row;
@@ -251,9 +259,13 @@
                 font-weight: 600;
                 color: red;
               }
+
+              .htasp3RESET{
+                color: red;
+              }
             
             .htasPLAYER4-Tile { display: grid;
-              grid-template-columns: 1.5fr 0.9fr 0.9fr 0.9fr .8fr;
+              grid-template-columns: 1.3fr 0.9fr 0.9fr 0.9fr 1fr;
               grid-template-rows: 1fr 1fr 1fr;
               gap: 0px 0px;
               grid-auto-flow: row;
@@ -276,9 +288,13 @@
                 font-weight: 600;
                 color: red;
               }
+
+              .htasp4RESET{
+                color: red;
+              }
             
             .htasPLAYER5-Tile { display: grid;
-              grid-template-columns: 1.5fr 0.9fr 0.9fr 0.9fr .8fr;
+              grid-template-columns: 1.3fr 0.9fr 0.9fr 0.9fr 1fr;
               grid-template-rows: 1fr 1fr 1fr;
               gap: 0px 0px;
               grid-auto-flow: row;
@@ -299,6 +315,10 @@
               .htasp5STATCATPLAYERID-Number {
                 font-size: 20px;
                 font-weight: 600;
+                color: red;
+              }
+
+              .htasp5RESET{
                 color: red;
               }
             
@@ -392,6 +412,7 @@
         
             .gispHOME-Tile { grid-area: gispHOME-Tile; 
               font-weight:700 ;
+              padding: 10px 0px;
               border: 1px solid grey; 
             }
 
@@ -408,10 +429,12 @@
               }
             
             .gispHEADER-Tile { grid-area: gispHEADER-Tile; 
+              padding: 10px 0px;
               border: 1px solid grey;
             }
             
             .gispAWAY-Tile { grid-area: gispAWAY-Tile; 
+              padding: 10px 0px;
               border: 1px solid grey;
             }
 
@@ -496,7 +519,7 @@
         
         .giCLOCK-Area {  display: grid;
           grid-template-columns: 1fr;
-          grid-template-rows: 1.3fr 0.7fr;
+          grid-template-rows: 1.5fr 0.5fr;
           gap: 0px 0px;
           grid-auto-flow: row;
           grid-template-areas:
@@ -506,6 +529,90 @@
           border: 3px solid yellow
         }
         
+        .gicVISUAL-Section {  display: grid;
+          grid-template-columns: 0.75fr 1.5fr 0.75fr;
+          grid-template-rows: 1fr;
+          gap: 0px 0px;
+          grid-auto-flow: row;
+          grid-template-areas:
+            "gicHOMETOL-Tile gicTIMER-Tile gicAWAYTOL-Tile";
+          grid-area: gicVISUAL-Section;
+          border: 2px solid purple;
+        }
+      
+          .gicHOMETOL-Tile {  display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr 1.5fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+              "gicHOMETOL-Header"
+              "gicHOMETOL-Display";
+            grid-area: gicHOMETOL-Tile;
+            border: 1px solid grey;
+          }
+          
+            .gicHOMETOL-Header { grid-area: gicHOMETOL-Header; }
+            
+            .gicHOMETOL-Display { grid-area: gicHOMETOL-Display; 
+              font-size: 40px;
+            }
+      
+          .gicTIMER-Tile {  display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.75fr 1.75fr 0.5fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+              "gicTIMER-Header"
+              "timer"
+              "gicTIMER-Footer";
+            grid-area: gicTIMER-Tile;
+            text-align: center;
+            border: 1px solid grey;
+          }
+      
+            .gicTIMER-Header { grid-area: gicTIMER-Header; }
+            
+            .timer { grid-area: timer;
+              display: inline-block;
+              padding: 24px 32px;
+              border-radius: 30px;
+              background: lightgrey;
+            }
+
+            .timer__part {
+              font-size: 36px;
+              font-weight: bold;
+            }
+
+            .timer__btn {
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              border: none;
+              color: white;
+              cursor: pointer;
+              background: purple;
+            }
+
+            .timer__btn--start {
+              background-color: green;
+            }
+
+            .timer__btn--stop {
+              background-color: red;
+            }
+
+            .gicTIMER-Footer { grid-area: gicTIMER-Footer;
+              margin-bottom: 5;
+            }
+
+              .activeGamePeriod {
+                padding: 0 5;
+                border: 1px solid black;
+              }  
+
           .gicCONTROLS-Section {  display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-template-rows: 1fr;
@@ -517,138 +624,24 @@
             border: 2px solid purple;
           }
         
-            .giccSTART-Tile {  grid-area: giccOPEN1-Tile;
+            .giccOPEN1-Tile {  grid-area: giccOPEN1-Tile;
               padding-top: 15;
               border: 1px solid grey;
             }
 
-              .startBtn {
-                padding: 10px 20px;
-                font-weight: bold;
-                min-width: 100px;
-                border-radius: 10px;
-                color: white;
-                background-color: hsl(115, 100%, 40%);
-                border: none;
-              }
-
-              .startBtn:hover {
-                background-color: hsl(115, 100%, 30%);
-              }
-          
-            .giccSTOP-Tile { grid-area: giccSTARTSTOP-Tile;
+            .giccSTARTSTOP-Tile { grid-area: giccSTARTSTOP-Tile;
               padding-top: 15;
               border: 1px solid grey;
             }
-
-              .stopBtn {
-                padding: 10px 20px;
-                font-weight: bold;
-                min-width: 100px;
-                border-radius: 10px;
-                color: white;
-                background-color: hsl(10, 90%, 50%);
-                border: none;
-              }
-
-              .stopBtn:hover{
-                background-color: hsl(10, 90%, 40%);
-              }
 
             .giccRESET-Tile {  grid-area: giccRESET-Tile;
               padding-top: 15;
               border: 1px solid grey;
             }
             
-            .resetBtn {
-              padding: 10px 20px;
-              font-weight: bold;
-              min-width: 100px;
-              border-radius: 10px;
-              color: white;
-              background-color: hsl(205, 90%, 60%);
-              border: none;
-            }
-
-            .resetBtn:hover {
-              background-color: hsl(205, 90%, 50%);
-            }
-
             .giccOPEN2-Tile { grid-area: giccOPEN2-Tile;
               border: 1px solid grey;
             }
-        
-
-          .gicVISUAL-Section {  display: grid;
-            grid-template-columns: 0.75fr 1.5fr 0.75fr;
-            grid-template-rows: 1fr;
-            gap: 0px 0px;
-            grid-auto-flow: row;
-            grid-template-areas:
-              "gicHOMETOL-Tile gicTIMER-Tile gicAWAYTOL-Tile";
-            grid-area: gicVISUAL-Section;
-            border: 2px solid purple;
-          }
-        
-            .gicHOMETOL-Tile {  display: grid;
-              grid-template-columns: 1fr;
-              grid-template-rows: 0.5fr 1.5fr;
-              gap: 0px 0px;
-              grid-auto-flow: row;
-              grid-template-areas:
-                "gicHOMETOL-Header"
-                "gicHOMETOL-Display";
-              grid-area: gicHOMETOL-Tile;
-              border: 1px solid grey;
-            }
-            
-              .gicHOMETOL-Header { grid-area: gicHOMETOL-Header; }
-              
-              .gicHOMETOL-Display { grid-area: gicHOMETOL-Display; 
-                font-size: 40px;
-              }
-        
-            .gicTIMER-Tile {  display: grid;
-              grid-template-columns: 1fr;
-              grid-template-rows: 0.75fr 1.75fr 0.5fr;
-              gap: 0px 0px;
-              grid-auto-flow: row;
-              grid-template-areas:
-                "gicTIMER-Header"
-                "timer"
-                "gicTIMER-Footer";
-              grid-area: gicTIMER-Tile;
-              text-align: center;
-              border: 1px solid grey;
-            }
-        
-              .gicTIMER-Header { grid-area: gicTIMER-Header; }
-              
-              .gicTIMER { grid-area: timer;
-                margin: 0 10;
-                margin-bottom: 20; 
-                font-size: 45;
-                text-align: center;
-                border-radius: 75px;
-                text-shadow: 2px 2px 2px grey;
-                border: 2px solid black;
-                padding: 15;
-              }
-
-                .timer__part {
-                font-size: 45;
-                font-weight: 500px;
-                }
-
-              .gicTIMER-Footer { grid-area: gicTIMER-Footer;
-                margin-bottom: 5;
-              }
-
-                .activeGamePeriod {
-                  padding: 0 5;
-                  border: 1px solid black;
-                }
-
         
             .gicAWAYTOL-Tile {  display: grid;
               grid-template-columns: 1fr;
@@ -1070,7 +1063,7 @@
         }
         
           .atasPLAYER1-Tile { display: grid;
-            grid-template-columns: .8fr 1.5fr 0.9fr 0.9fr 0.9fr;
+            grid-template-columns: 1fr 1.3fr 0.9fr 0.9fr 0.9fr;
             grid-template-rows: 1fr 1fr 1fr;
             gap: 0px 0px;
             grid-auto-flow: row;
@@ -1093,9 +1086,13 @@
               font-weight: 600;
               color: blue;
             }
+
+            .atasp1RESET{
+              color: blue;
+            }
             
           .atasPLAYER2-Tile { display: grid;
-            grid-template-columns: .8fr 1.5fr 0.9fr 0.9fr 0.9fr;
+            grid-template-columns: 1fr 1.3fr 0.9fr 0.9fr 0.9fr;
             grid-template-rows: 1fr 1fr 1fr;
             gap: 0px 0px;
             grid-auto-flow: row;
@@ -1118,9 +1115,13 @@
               font-weight: 600;
               color: blue;
             }
+
+            .atasp2RESET{
+              color: blue;
+            }
           
           .atasPLAYER3-Tile { display: grid;
-            grid-template-columns: .8fr 1.5fr 0.9fr 0.9fr 0.9fr;
+            grid-template-columns: 1fr 1.3fr 0.9fr 0.9fr 0.9fr;
             grid-template-rows: 1fr 1fr 1fr;
             gap: 0px 0px;
             grid-auto-flow: row;
@@ -1143,9 +1144,13 @@
               font-weight: 600;
               color: blue;
             }
+
+            .atasp3RESET{
+              color: blue;
+            }
           
           .atasPLAYER4-Tile { display: grid;
-            grid-template-columns: .8fr 1.5fr 0.9fr 0.9fr 0.9fr;
+            grid-template-columns: 1fr 1.3fr 0.9fr 0.9fr 0.9fr;
             grid-template-rows: 1fr 1fr 1fr;
             gap: 0px 0px;
             grid-auto-flow: row;
@@ -1168,9 +1173,13 @@
               font-weight: 600;
               color: blue;
             }
+
+            .atasp4RESET{
+              color: blue;
+            }
           
           .atasPLAYER5-Tile { display: grid;
-            grid-template-columns: .8fr 1.5fr 0.9fr 0.9fr 0.9fr;
+            grid-template-columns: 1fr 1.3fr 0.9fr 0.9fr 0.9fr;
             grid-template-rows: 1fr 1fr 1fr;
             gap: 0px 0px;
             grid-auto-flow: row;
@@ -1191,6 +1200,10 @@
             .atasp5STATCATPLAYERID-Number {
               font-size: 20px;
               font-weight: 600;
+              color: blue;
+            }
+
+            .atasp5RESET{
               color: blue;
             }
         

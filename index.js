@@ -1,5 +1,9 @@
 // Game Information Functions
+import Timer from "./timer"
 
+new Timer(
+    document.querySelector(".timer")
+)
 
 let homeTOL = 5
 let homeTimeoutsLeftEl = document.getElementById("homeTimeoutsLeft-el")
