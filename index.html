@@ -309,14 +309,12 @@
                     <output class="homeTimeoutsLeft" id="homeTimeoutsLeft-el">5</output>
                   </div>
                 </div>
-                <div class="gicCOUNTER-Tile">
-                  <div class="gicCOUNTER-Header">Game Clock</div>
-                  <div class="timer">
-                    <!-- <span class="timer__part timer__part--minutes">00</span>
-                    <span class="timer__part">:</span>
-                    <span class="timer__part timer__part--seconds">00</span> -->
+                <div class="gicTIMER-Tile">
+                  <div class="gicTIMER-Header">Game Clock</div>
+                  <div class="gicTIMER">
+                    00:00:00
                   </div>
-                  <div class="gicCOUNTER-Footer">
+                  <div class="gicTIMER-Footer">
                     <output class="activeGamePeriod" id="activeGamePeriod-el">Selected Game Period</output>
                   </div>
                 </div>
@@ -328,16 +326,14 @@
                 </div>
               </div>
               <div class="gicCONTROLS-Section">
-                <div class="giccOPEN1-Tile"></div>
-                <div class="giccSTARTSTOP-Tile">
-                  <button type="button" class="timer__btn timer__btn--control timer__btn--start">
-                    <span class="material-symbols-outlined">play_circle</span>
-                  </button>
+                <div class="giccSTART-Tile">
+                  <button class="startBtn" id="startBtn" onclick="start()">Start</button>
+                </div>
+                <div class="giccSTOP-Tile">
+                  <button class="stopBtn" id="stopBtn" onclick="stop()">Stop</button>
                 </div>
                 <div class="giccRESET-Tile">
-                  <button type="button" class="timer__btn timer__btn--reset">
-                    <span class="material-symbols-outlined">timer</span>
-                  </button>
+                  <button class="resetBtn" id="resetBtn" onclick="reset">Reset</button>
                 </div>
                 <div class="giccOPEN2-Tile"></div>
               </div>

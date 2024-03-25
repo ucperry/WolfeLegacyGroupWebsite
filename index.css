@@ -189,6 +189,18 @@
               grid-area: htasPLAYER1-Tile; 
               text-align: center;
               border: 1px solid grey;}
+
+                .htasp1STATCATPLAYERID-Name {
+                  font-size: 20px;
+                  font-weight: 600;
+                  color: red;
+                }
+
+                .htasp1STATCATPLAYERID-Number {
+                  font-size: 20px;
+                  font-weight: 600;
+                  color: red;
+                }
             
             .htasPLAYER2-Tile { display: grid;
               grid-template-columns: 1.5fr 0.9fr 0.9fr 0.9fr .8fr;
@@ -202,6 +214,18 @@
               grid-area: htasPLAYER2-Tile; 
               text-align: center;
               border: 1px solid grey;}
+
+              .htasp2STATCATPLAYERID-Name {
+                font-size: 20px;
+                font-weight: 600;
+                color: red;
+              }
+
+              .htasp2STATCATPLAYERID-Number {
+                font-size: 20px;
+                font-weight: 600;
+                color: red;
+              }
             
             .htasPLAYER3-Tile { display: grid;
               grid-template-columns: 1.5fr 0.9fr 0.9fr 0.9fr .8fr;
@@ -215,6 +239,18 @@
               grid-area: htasPLAYER3-Tile; 
               text-align: center;
               border: 1px solid grey;}
+
+              .htasp3STATCATPLAYERID-Name {
+                font-size: 20px;
+                font-weight: 600;
+                color: red;
+              }
+
+              .htasp3STATCATPLAYERID-Number {
+                font-size: 20px;
+                font-weight: 600;
+                color: red;
+              }
             
             .htasPLAYER4-Tile { display: grid;
               grid-template-columns: 1.5fr 0.9fr 0.9fr 0.9fr .8fr;
@@ -228,6 +264,18 @@
               grid-area: htasPLAYER4-Tile; 
               text-align: center;
               border: 1px solid grey;}
+
+              .htasp4STATCATPLAYERID-Name {
+                font-size: 20px;
+                font-weight: 600;
+                color: red;
+              }
+
+              .htasp4STATCATPLAYERID-Number {
+                font-size: 20px;
+                font-weight: 600;
+                color: red;
+              }
             
             .htasPLAYER5-Tile { display: grid;
               grid-template-columns: 1.5fr 0.9fr 0.9fr 0.9fr .8fr;
@@ -241,6 +289,18 @@
               grid-area: htasPLAYER5-Tile; 
               text-align: center;
               border: 1px solid grey;}
+
+              .htasp5STATCATPLAYERID-Name {
+                font-size: 20px;
+                font-weight: 600;
+                color: red;
+              }
+
+              .htasp5STATCATPLAYERID-Number {
+                font-size: 20px;
+                font-weight: 600;
+                color: red;
+              }
             
           .htaRESERVE-Section {  display: grid;
             grid-template-columns: 1fr;
@@ -457,42 +517,67 @@
             border: 2px solid purple;
           }
         
-            .giccOPEN1-Tile {  grid-area: giccOPEN1-Tile;
-              border: 1px solid grey;
-            }
-          
-            .giccSTARTSTOP-Tile { grid-area: giccSTARTSTOP-Tile;
+            .giccSTART-Tile {  grid-area: giccOPEN1-Tile;
               padding-top: 15;
               border: 1px solid grey;
             }
 
+              .startBtn {
+                padding: 10px 20px;
+                font-weight: bold;
+                min-width: 100px;
+                border-radius: 10px;
+                color: white;
+                background-color: hsl(115, 100%, 40%);
+                border: none;
+              }
+
+              .startBtn:hover {
+                background-color: hsl(115, 100%, 30%);
+              }
+          
+            .giccSTOP-Tile { grid-area: giccSTARTSTOP-Tile;
+              padding-top: 15;
+              border: 1px solid grey;
+            }
+
+              .stopBtn {
+                padding: 10px 20px;
+                font-weight: bold;
+                min-width: 100px;
+                border-radius: 10px;
+                color: white;
+                background-color: hsl(10, 90%, 50%);
+                border: none;
+              }
+
+              .stopBtn:hover{
+                background-color: hsl(10, 90%, 40%);
+              }
+
             .giccRESET-Tile {  grid-area: giccRESET-Tile;
               padding-top: 15;
               border: 1px solid grey;
+            }
+            
+            .resetBtn {
+              padding: 10px 20px;
+              font-weight: bold;
+              min-width: 100px;
+              border-radius: 10px;
+              color: white;
+              background-color: hsl(205, 90%, 60%);
+              border: none;
+            }
+
+            .resetBtn:hover {
+              background-color: hsl(205, 90%, 50%);
             }
 
             .giccOPEN2-Tile { grid-area: giccOPEN2-Tile;
               border: 1px solid grey;
             }
         
-              .timer__btn {
-                width: 60px;
-                height: 60px;
-                border-radius: 50%;
-                border: none;
-                color: white;
-                background: purple;
-                cursor: pointer;
-                margin: 5;
-              }
-
-              .timer__btn--start {
-                background: green
-              }
-
-              .timer__btn--stop {
-                background: red
-              }
 
           .gicVISUAL-Section {  display: grid;
             grid-template-columns: 0.75fr 1.5fr 0.75fr;
@@ -500,7 +585,7 @@
             gap: 0px 0px;
             grid-auto-flow: row;
             grid-template-areas:
-              "gicHOMETOL-Tile gicCOUNTER-Tile gicAWAYTOL-Tile";
+              "gicHOMETOL-Tile gicTIMER-Tile gicAWAYTOL-Tile";
             grid-area: gicVISUAL-Section;
             border: 2px solid purple;
           }
@@ -523,27 +608,31 @@
                 font-size: 40px;
               }
         
-            .gicCOUNTER-Tile {  display: grid;
+            .gicTIMER-Tile {  display: grid;
               grid-template-columns: 1fr;
               grid-template-rows: 0.75fr 1.75fr 0.5fr;
               gap: 0px 0px;
               grid-auto-flow: row;
               grid-template-areas:
-                "gicCOUNTER-Header"
+                "gicTIMER-Header"
                 "timer"
-                "gicCOUNTER-Footer";
-              grid-area: gicCOUNTER-Tile;
+                "gicTIMER-Footer";
+              grid-area: gicTIMER-Tile;
+              text-align: center;
               border: 1px solid grey;
             }
         
-              .gicCOUNTER-Header { grid-area: gicCOUNTER-Header; }
+              .gicTIMER-Header { grid-area: gicTIMER-Header; }
               
-              .timer { grid-area: timer;
+              .gicTIMER { grid-area: timer;
+                margin: 0 10;
+                margin-bottom: 20; 
+                font-size: 45;
+                text-align: center;
+                border-radius: 75px;
+                text-shadow: 2px 2px 2px grey;
                 border: 2px solid black;
-                margin-left: 30;
-                margin-right: 30;
-                margin-bottom: 15;
-                margin-top: 10;
+                padding: 15;
               }
 
                 .timer__part {
@@ -551,7 +640,7 @@
                 font-weight: 500px;
                 }
 
-              .gicCOUNTER-Footer { grid-area: gicCOUNTER-Footer;
+              .gicTIMER-Footer { grid-area: gicTIMER-Footer;
                 margin-bottom: 5;
               }
 
@@ -559,6 +648,7 @@
                   padding: 0 5;
                   border: 1px solid black;
                 }
+
         
             .gicAWAYTOL-Tile {  display: grid;
               grid-template-columns: 1fr;
@@ -991,6 +1081,18 @@
             grid-area: atasPLAYER1-Tile; 
             text-align: center;
             border: 1px solid grey;}
+
+            .atasp1STATCATPLAYERID-Name {
+              font-size: 20px;
+              font-weight: 600;
+              color: blue;
+            }
+
+            .atasp1STATCATPLAYERID-Number {
+              font-size: 20px;
+              font-weight: 600;
+              color: blue;
+            }
             
           .atasPLAYER2-Tile { display: grid;
             grid-template-columns: .8fr 1.5fr 0.9fr 0.9fr 0.9fr;
@@ -1004,6 +1106,18 @@
             grid-area: atasPLAYER2-Tile; 
             text-align: center;
             border: 1px solid grey;}
+
+            .atasp2STATCATPLAYERID-Name {
+              font-size: 20px;
+              font-weight: 600;
+              color: blue;
+            }
+
+            .atasp2STATCATPLAYERID-Number {
+              font-size: 20px;
+              font-weight: 600;
+              color: blue;
+            }
           
           .atasPLAYER3-Tile { display: grid;
             grid-template-columns: .8fr 1.5fr 0.9fr 0.9fr 0.9fr;
@@ -1017,6 +1131,18 @@
             grid-area: atasPLAYER3-Tile; 
             text-align: center;
             border: 1px solid grey;}
+
+            .atasp3STATCATPLAYERID-Name {
+              font-size: 20px;
+              font-weight: 600;
+              color: blue;
+            }
+
+            .atasp3STATCATPLAYERID-Number {
+              font-size: 20px;
+              font-weight: 600;
+              color: blue;
+            }
           
           .atasPLAYER4-Tile { display: grid;
             grid-template-columns: .8fr 1.5fr 0.9fr 0.9fr 0.9fr;
@@ -1030,6 +1156,18 @@
             grid-area: atasPLAYER4-Tile; 
             text-align: center;
             border: 1px solid grey;}
+
+            .atasp4STATCATPLAYERID-Name {
+              font-size: 20px;
+              font-weight: 600;
+              color: blue;
+            }
+
+            .atasp4STATCATPLAYERID-Number {
+              font-size: 20px;
+              font-weight: 600;
+              color: blue;
+            }
           
           .atasPLAYER5-Tile { display: grid;
             grid-template-columns: .8fr 1.5fr 0.9fr 0.9fr 0.9fr;
@@ -1043,6 +1181,18 @@
             grid-area: atasPLAYER5-Tile; 
             text-align: center;
             border: 1px solid grey;}
+
+            .atasp5STATCATPLAYERID-Name {
+              font-size: 20px;
+              font-weight: 600;
+              color: blue;
+            }
+
+            .atasp5STATCATPLAYERID-Number {
+              font-size: 20px;
+              font-weight: 600;
+              color: blue;
+            }
         
         .ataRESERVE-Section {  display: grid;
           grid-template-columns: 1fr;

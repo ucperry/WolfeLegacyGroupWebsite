@@ -1,3 +1,6 @@
+// Game Information Functions
+
+
 let homeTOL = 5
 let homeTimeoutsLeftEl = document.getElementById("homeTimeoutsLeft-el")
     function lessHomeTimeouts() {
