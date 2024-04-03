@@ -1,0 +1,77 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: green;
+    text-align: center;
+    align-items: center;
+    color: orange;
+}
+
+.game {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.25fr 1.75fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "title title"
+      "dealer player";
+      border: 6px solid orange;
+  }
+
+  .title {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-area: title;
+    border-top: 6px solid white;
+    border-left: 6px solid white;
+    border-right: 6px solid white;
+    border-bottom: 3px solid white;
+  }
+
+  h1 {
+    color: goldenrod;
+    background: green
+}
+
+  .dealer {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-area: dealer;
+    border-top: 3px solid white;
+    border-left: 6px solid white;
+    border-right: 3px solid white;
+    border-bottom: 6px solid white;
+  }
+
+  .player {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-area: player;
+    align-items: center;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    border-right: 6px solid white;
+    border-bottom: 6px solid white;
+  }
+
+
+    #message-el {
+        font-weight: bolder;
+        font-style: italic;
+    }
+
+    button {
+        color: #016f32;
+        width: 150px;
+        margin-bottom: 5px;
+        font-weight: 600;
+        background-color: goldenrod;
+        border: none;
+        align-items: center;
+        border-radius: 5px;
+    }
