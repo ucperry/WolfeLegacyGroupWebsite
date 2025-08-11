@@ -358,3 +358,19 @@
             opacity: 1;
             transform: translateY(0);
         }
+
+        .navlogix {
+    background: linear-gradient(135deg, #38Bfef 0%, #154786 100%);
+}
+
+        .stitchedtrim {
+            background: linear-gradient(135deg, #431E4C 0%, #8B61A0 100%);
+        }
+
+        .whotreezy {
+             background: linear-gradient(135deg,#ED2991 0%, hsl(0, 0%, 0%) 100%);
+        }
+
+        .katalyst { 
+             background: linear-gradient(135deg, #eea437 0%, #060606 100%);
+        }

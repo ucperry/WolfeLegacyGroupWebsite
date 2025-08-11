@@ -288,3 +288,7 @@ body {
     line-height: 1.8;
     opacity: 0.95;
 }
+
+.navlogix {
+    background: linear-gradient(135deg, #38Bfef 0%, #154786 100%);
+}
