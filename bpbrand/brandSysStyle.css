@@ -252,7 +252,7 @@ body {
 }
 
 .mission-statement {
-    background: linear-gradient(135deg, #FFE066 0%, #FFE98C, #FFF2B3, #ffffff  100%);
+    background: linear-gradient(135deg, #6B8E23 0%, #ffffff 100%);
     color: #5C5C5C;
     padding: 40px;
     border-radius: 15px;
@@ -264,7 +264,7 @@ body {
 .mission-statement h3 {
     font-size: 1.8rem;
     margin-bottom: 20px;
-    color: #000000;
+    color: #333333;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
 }
@@ -273,7 +273,7 @@ body {
     font-size: 1.1rem;
     line-height: 1.8;
     opacity: 0.9;
-    color: #010101;
+    color: #333333;
 }
 
 .logo-placeholder {
