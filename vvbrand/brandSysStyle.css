@@ -20,8 +20,8 @@ body {
 .brand-header {
     text-align: center;
     padding: 40px 0;
-    background: linear-gradient(135deg, #00C2BA 0%, #5F2EEA 50%, #121212 100%);
-    color: #ffffff;
+    background: linear-gradient(135deg,#99E6E3, #00C2BA, #007B76 100%);
+    color: #5F2EEA; 
     margin-bottom: 40px;
     border-radius: 20px;
     position: relative;
@@ -55,8 +55,8 @@ body {
     position: relative;
     z-index: 1;
     font-family: 'Inter', sans-serif;
-    color: #ffffff;
-    font-weight: 300;
+    color:  #5F2EEA; 
+    font-weight: 500;
 }
 
 .section {
@@ -174,7 +174,7 @@ body {
 }
 
 .business-card {
-    background: linear-gradient(135deg, #00C2BA 0%, #5F2EEA 50%, #ffffff 100%);
+    background: linear-gradient(135deg,#99E6E3, #00C2BA, #007B76 100%);
     color: #121212;
     padding: 20px;
     border-radius: 10px;
@@ -201,7 +201,7 @@ body {
 }
 
 .proposal-template {
-    background: linear-gradient(90deg, #00C2BA 0%, #5F2EEA 30%, #ffffff 70%, #f8f9fa 100%);
+    background: linear-gradient(135deg,#99E6E3, #00C2BA, #007B76 100%);
     padding: 30px;
     border-radius: 15px;
     color: #121212;
@@ -240,7 +240,7 @@ body {
 }
 
 .mission-statement {
-    background: linear-gradient(135deg, #00C2BA 0%, #5F2EEA 50%, #ffffff 100%);
+    background: linear-gradient(135deg, #FF5F5F 0%, #FFAFAF 50%, #ffffff 100%);
     color: #121212;
     padding: 40px;
     border-radius: 15px;
