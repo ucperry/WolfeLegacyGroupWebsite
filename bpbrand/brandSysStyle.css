@@ -8,7 +8,7 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     color: #333;
-    background: linear-gradient(135deg, #4B3621 0%, #FFF8E7 100%);
+    background: linear-gradient(135deg, #5C5C5C 0%, #FFF8E7 100%);
 }
 
 .container {
@@ -20,8 +20,8 @@ body {
 .brand-header {
     text-align: center;
     padding: 40px 0;
-    background: linear-gradient(135deg, #FFE066 0%, #6B8E23 30%, #4B3621 100%);
-    color: #4B3621;
+    background: linear-gradient(135deg,#C96A73, #A23E48, #7F3139 100%);
+    color: #5C5C5C;
     margin-bottom: 40px;
     border-radius: 20px;
     position: relative;
@@ -55,7 +55,7 @@ body {
     position: relative;
     z-index: 1;
     font-family: 'Inter', sans-serif;
-    color: #4B3621;
+    color:#f7ee40;
     font-weight: 500;
 }
 
@@ -69,7 +69,7 @@ body {
 
 .section h2 {
     font-size: 1.8rem;
-    color: #4B3621;
+    color: #5C5C5C;
     margin-bottom: 20px;
     font-weight: 600;
     font-family: 'Inter', sans-serif;
@@ -98,7 +98,7 @@ body {
 .warm-red { background: #A23E48; }
 .fresh-olive { background: #6B8E23; }
 .cream { background: #FFF8E7; }
-.cocoa-brown { background: #4B3621; }
+.neutral-grey { background: #5C5C5C; }
 
 .color-info {
     padding: 15px;
@@ -133,7 +133,7 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 2rem;
     font-weight: 600;
-    color: #4B3621;
+    color: #5C5C5C;
     margin-bottom: 5px;
 }
 
@@ -184,8 +184,8 @@ body {
 }
 
 .business-card {
-    background: linear-gradient(135deg, #FFE066 0%, #6B8E23 50%, #ffffff 100%);
-    color: #4B3621;
+    background: linear-gradient(135deg,#7F3139, #A23E48, #C96A73  100%);
+    color: #FFE066;
     padding: 20px;
     border-radius: 10px;
     margin: 20px 0;
@@ -200,7 +200,7 @@ body {
 .business-card h3 {
     font-size: 1.2rem;
     margin-bottom: 5px;
-    color: #4B3621;
+    color: #FFE066;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
 }
@@ -208,14 +208,14 @@ body {
 .business-card p {
     font-size: 0.9rem;
     opacity: 0.8;
-    color: #4B3621;
+    color: #FFE066;
 }
 
 .proposal-template {
-    background: linear-gradient(90deg, #FFE066 0%, #6B8E23 30%, #ffffff 70%, #FFF8E7 100%);
+    background: linear-gradient(135deg,#7F3139, #A23E48, #C96A73  100%);
     padding: 30px;
     border-radius: 15px;
-    color: #4B3621;
+    color: #FFE066;
     text-align: left;
     margin: 20px 0;
     position: relative;
@@ -225,7 +225,7 @@ body {
 .proposal-template h3 {
     font-size: 2rem;
     margin-bottom: 10px;
-    color: #4B3621;
+    color: #FFE066;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
 }
@@ -252,8 +252,8 @@ body {
 }
 
 .mission-statement {
-    background: linear-gradient(135deg, #FFE066 0%, #6B8E23 50%, #ffffff 100%);
-    color: #4B3621;
+    background: linear-gradient(135deg, #FFE066 0%, #FFE98C, #FFF2B3, #ffffff  100%);
+    color: #5C5C5C;
     padding: 40px;
     border-radius: 15px;
     text-align: center;
@@ -264,7 +264,7 @@ body {
 .mission-statement h3 {
     font-size: 1.8rem;
     margin-bottom: 20px;
-    color: #4B3621;
+    color: #000000;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
 }
@@ -273,7 +273,7 @@ body {
     font-size: 1.1rem;
     line-height: 1.8;
     opacity: 0.9;
-    color: #4B3621;
+    color: #010101;
 }
 
 .logo-placeholder {
@@ -304,7 +304,7 @@ body {
 }
 
 .logo-variant.dark {
-    background: #4B3621;
+    background: #5C5C5C;
     color: white;
 }
 
@@ -326,7 +326,7 @@ body {
 }
 
 .phase h4 {
-    color: #4B3621;
+    color: #5C5C5C;
     margin-bottom: 10px;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
@@ -345,7 +345,7 @@ body {
 
 .trait {
     background: linear-gradient(135deg, #FFE066, #6B8E23);
-    color: #4B3621;
+    color: #000000;
     padding: 12px 24px;
     border-radius: 25px;
     font-weight: 600;
@@ -355,7 +355,7 @@ body {
 
 .usp-highlight {
     background: linear-gradient(135deg, #6B8E23 0%, #ffffff 100%);
-    color: #4B3621;
+    color: #5C5C5C;
     padding: 40px;
     border-radius: 15px;
     text-align: center;
@@ -366,7 +366,7 @@ body {
 .usp-highlight h3 {
     font-size: 1.8rem;
     margin-bottom: 20px;
-    color: #4B3621;
+    color: #5C5C5C;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
 }
@@ -380,7 +380,7 @@ body {
 
 .audience-card {
     background: linear-gradient(135deg, #FFE066 0%, #6B8E23 100%);
-    color: #4B3621;
+    color: #000000;
     padding: 25px;
     border-radius: 10px;
     text-align: center;
@@ -394,7 +394,7 @@ body {
 }
 
 .code-example {
-    background: #4B3621;
+    background: #5C5C5C;
     color: #FFE066;
     padding: 15px;
     border-radius: 8px;
