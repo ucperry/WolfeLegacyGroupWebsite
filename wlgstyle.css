@@ -360,27 +360,31 @@
         }
 
         .navlogix {
-    background: linear-gradient(135deg, #38Bfef 0%, #154786 100%);
-}
+        background: linear-gradient(135deg, #38Bfef 0%, #154786 100%);
+        }
 
         .stitchedtrim {
-            background: linear-gradient(135deg, #8B61A0 0%, #431E4C 100%);
+            background: linear-gradient(135deg, #8B5A96 0%, #602F6B, #431E4C 100%);
+            color: #D4AF37;
         }
 
         .whotreezy {
              background: linear-gradient(135deg,#ED2991 0%, #3b0a24 100%);
         }
 
-        .katalyst { 
-             background: linear-gradient(135deg, #eea437 0%, #543a13 100%);
+        .katalyst {
+        background: linear-gradient(135deg, #FFD97A, #EEA437, #C78C2C);
+        color: #344877;
         }
 
         .vibevision { 
-             background: linear-gradient(135deg,#00C2BA 0%, #000000 100%);
+             background: linear-gradient(135deg,#33CEC8, #00C2BA, #009A94 100%);
+             color: #5F2EEA; 
         }
 
         .brightpath { 
-             background: linear-gradient(135deg, #f7ee40 0%, #4d4a14 100%);
+             background: linear-gradient(135deg,#C96A73, #A23E48, #7F3139 100%);
+             color:#f7ee40 
         }
 
        .portfolio-card-link {
