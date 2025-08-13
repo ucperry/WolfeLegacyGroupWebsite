@@ -21,7 +21,8 @@ body {
     text-align: center;
     padding: 40px 0;
     background: linear-gradient(135deg,#99E6E3, #00C2BA, #007B76 100%);
-    color: #5F2EEA; 
+    color: #EEEEEE; 
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.25);
     margin-bottom: 40px;
     border-radius: 20px;
     position: relative;
@@ -55,7 +56,8 @@ body {
     position: relative;
     z-index: 1;
     font-family: 'Inter', sans-serif;
-    color:  #5F2EEA; 
+    color: #FFFFFF;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.25); 
     font-weight: 500;
 }
 
@@ -174,7 +176,7 @@ body {
 }
 
 .business-card {
-    background: linear-gradient(135deg,#99E6E3, #00C2BA, #007B76 100%);
+    background: linear-gradient(135deg,#007B76,#00C2BA, #99E6E3 100%);
     color: #121212;
     padding: 20px;
     border-radius: 10px;
@@ -190,21 +192,24 @@ body {
 .business-card h3 {
     font-size: 1.2rem;
     margin-bottom: 5px;
-    color: #121212;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.25); 
     font-family: 'Playfair Display', serif;
 }
 
 .business-card p {
     font-size: 0.9rem;
     opacity: 0.8;
-    color: #121212;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.25); 
 }
 
 .proposal-template {
-    background: linear-gradient(135deg,#99E6E3, #00C2BA, #007B76 100%);
+    background: linear-gradient(135deg,#007B76,#00C2BA, #99E6E3 100%);
     padding: 30px;
     border-radius: 15px;
-    color: #121212;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.25); 
     text-align: left;
     margin: 20px 0;
     position: relative;
@@ -214,7 +219,8 @@ body {
 .proposal-template h3 {
     font-size: 2rem;
     margin-bottom: 10px;
-    color: #121212;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.25); 
     font-family: 'Playfair Display', serif;
 }
 
@@ -240,8 +246,8 @@ body {
 }
 
 .mission-statement {
-    background: linear-gradient(135deg, #FF5F5F 0%, #FFAFAF 50%, #ffffff 100%);
-    color: #121212;
+    background: linear-gradient(135deg, #FF5F5F 0%, #FFAFAF 100%);
+    color: #333333;
     padding: 40px;
     border-radius: 15px;
     text-align: center;
@@ -252,7 +258,7 @@ body {
 .mission-statement h3 {
     font-size: 1.8rem;
     margin-bottom: 20px;
-    color: #121212;
+    color: #333333;
     font-family: 'Playfair Display', serif;
 }
 
@@ -260,7 +266,7 @@ body {
     font-size: 1.1rem;
     line-height: 1.8;
     opacity: 0.9;
-    color: #121212;
+    color: #333333;
 }
 
 .logo-placeholder {
@@ -341,7 +347,7 @@ body {
 
 .usp-highlight {
     background: linear-gradient(135deg, #FF5F5F 0%, #ffffff 100%);
-    color: #121212;
+    color: #333333;
     padding: 40px;
     border-radius: 15px;
     text-align: center;
@@ -352,7 +358,7 @@ body {
 .usp-highlight h3 {
     font-size: 1.8rem;
     margin-bottom: 20px;
-    color: #121212;
+    color: #333333;
     font-family: 'Playfair Display', serif;
 }
 
