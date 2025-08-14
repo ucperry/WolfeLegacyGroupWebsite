@@ -22,7 +22,7 @@ body {
 .brand-header {
     text-align: center;
     padding: 40px 0;
-    background: linear-gradient(135deg, #344877 0%, #474747 100%);
+    background: linear-gradient(135deg, #FFD97A 0%, #F2B95F 33%, #EEA437 100%);
     color: #EEA437;
     margin-bottom: 40px;
     border-radius: 20px;
@@ -117,7 +117,8 @@ body {
     position: relative;
     z-index: 1;
     font-family: 'Comfortaa', sans-serif;
-    color: #EEA437;
+    color: #344877;
+    font-weight: 600;
 }
 
 .section {
@@ -232,7 +233,7 @@ body {
 }
 
 .business-card {
-    background: linear-gradient(135deg, #eea437 0%, #ffffff 100%);
+    background: linear-gradient(135deg, #eea437 0%, #F6CE87, #ffffff 100%);
     color: #333;
     padding: 20px;
     border-radius: 10px;
@@ -258,7 +259,7 @@ body {
 }
 
 .proposal-template {
-    background: linear-gradient(90deg, #eea437 0%, #ffffff 50%, #f8f9fa 100%);
+    background: linear-gradient(135deg, #eea437 0%, #F6CE87 50%, #f8f9fa 100%);
     padding: 30px;
     border-radius: 15px;
     color: #333;
@@ -296,8 +297,8 @@ body {
 }
 
 .mission-statement {
-    background: linear-gradient(135deg, #eea437 0%, #ffffff 100%);
-    color: #333;
+    background: linear-gradient(135deg,#6A7FAE 0%, #344877 25%, #2F436C 100%);
+    color: #333
     padding: 40px;
     border-radius: 15px;
     text-align: center;
@@ -308,14 +309,14 @@ body {
 .mission-statement h3 {
     font-size: 1.8rem;
     margin-bottom: 20px;
-    color: #344877;
+    color: #eea437;
 }
 
 .mission-statement p {
     font-size: 1.1rem;
     line-height: 1.8;
     opacity: 0.9;
-    color: #333;
+    color: #eea437;
 }
 
 .logo-placeholder {
