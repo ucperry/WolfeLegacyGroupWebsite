@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,50 +5,289 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BrightPath Dev - Brand Identity System</title>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="brandSysStyle.css">
-    </head>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #5C5C5C 0%, #FFF8E7 100%);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.brand-header {
+    text-align: center;
+    padding: 40px 0;
+    background: linear-gradient(135deg, #C96A73, #A23E48, #7F3139 100%);
+    color: #5C5C5C;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.brand-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M 8 0 L 0 0 0 8" fill="none" stroke="rgba(75,54,33,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
+}
+
+.logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-top: 10px;
+    position: relative;
+    z-index: 1;
+    font-family: 'Inter', sans-serif;
+    color: #f7ee40;
+    font-weight: 500;
+}
+
+.section {
+    background: white;
+    margin: 30px 0;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.section h2 {
+    font-size: 1.8rem;
+    color: #5C5C5C;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
+
+.mission-statement {
+    background: linear-gradient(135deg, #6B8E23 0%, #ffffff 100%);
+    color: #5C5C5C;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 30px 0;
+    border: 1px solid #e9ecef;
+}
+
+.mission-statement h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333333;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+.mission-statement p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    opacity: 0.9;
+    color: #333333;
+}
+
+.logo-placeholder {
+    background: #FFF8E7;
+    border: 2px dashed #FFE066;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.logo-variant {
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.logo-variant.light {
+    background: white;
+    border: 1px solid #e9ecef;
+}
+
+.logo-variant.dark {
+    background: #5C5C5C;
+    color: white;
+}
+
+.color-palette {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.color-card {
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.color-swatch {
+    height: 80px;
+    width: 100%;
+}
+
+.light-yellow { background: #FFE066; }
+.warm-red { background: #A23E48; }
+.fresh-olive { background: #6B8E23; }
+.cream { background: #FFF8E7; }
+.neutral-grey { background: #5C5C5C; }
+
+.color-info {
+    padding: 15px;
+    background: white;
+}
+
+.color-name {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.color-hex {
+    font-family: 'JetBrains Mono', monospace;
+    color: #6C757D;
+    font-size: 0.9rem;
+}
+
+.typography-demo {
+    display: grid;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.font-example {
+    padding: 20px;
+    border-left: 4px solid #FFE066;
+    background: #FFF8E7;
+    border-radius: 8px;
+}
+
+.inter-header {
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #5C5C5C;
+    margin-bottom: 5px;
+}
+
+.inter-subheading {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    color: #6B8E23;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.jetbrains-code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1rem;
+    color: #6B8E23;
+    margin-bottom: 5px;
+    background: #FFF8E7;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.body-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.value-card {
+    text-align: center;
+    padding: 25px;
+    background: linear-gradient(135deg, #FFF8E7 0%, #f8f9fa 100%);
+    border-radius: 10px;
+    border-top: 4px solid #6B8E23;
+}
+
+.value-icon {
+    font-size: 2.5rem;
+    color: #FFE066;
+    margin-bottom: 15px;
+}
+    </style>
+</head>
 <body>
-     <a href="../index.html#portfolio" class="back-link" style="display:inline-flex;align-items:center;font-size:1.1em;text-decoration:none;margin: 20px 0;">
-    <span style="font-size:1.5em; margin-right: 8px;">&#8592;</span>
-    Back to Company Portfolio
-</a>
     <div class="container">
         <div class="brand-header">
             <div class="logo-section">
-                <div style="height:80px; width:80px; display:flex; align-items:center; justify-content:center; background:#333333; border-radius:10px; margin:0 auto; font-size:1.8rem; font-weight:600; color:#FFE066; font-family: 'JetBrains Mono', monospace;">&lt;BP/&gt;</div>
+                <img src="Bright Path Digital Icon Only- white inner circle.png" alt="Bright Path Digital Icon" style="height:280px; width:280px; display:block; margin:0 auto;" />
             </div>
-            <div class="tagline">Custom Software Solutions • Agile Development • Database Excellence</div>
+            <div class="Company Name" style="text-align:center; color:#FFE066; font-size:2.2rem; font-weight:700; margin-top:8px; font-family:'Inter',sans-serif;">Bright Path</div>
+            <div class="tagline" style="color:#FFFFFF;">Human-AI Methodology • Lean Streamlined Software</div>
         </div>
 
         <div class="section">
             <h2>Brand Overview</h2>
-            <p>BrightPath Dev is a digital applications development company that specializes in creating custom software solutions. Our brand represents the perfect fusion of technical excellence and innovative problem-solving, delivering end-to-end development services that drive business growth and digital transformation.</p>
+            <p>BrightPath Dev is a software development company that challenges the industry norm of bloated, feature-heavy applications. We specialize in creating precisely targeted software solutions that solve real business problems without unnecessary complexity or extreme pricing. Our innovative Human-AI methodology combines human expertise in problem definition and Agile planning with AI-driven development implementation, ensuring every feature delivers measurable value. BrightPath represents a purposeful approach to software development—where streamlined functionality and scope control create competitive advantages for our clients through saved time, reduced costs, and enhanced market reach.</p>
             
             <div class="mission-statement">
                 <h3>Mission Statement</h3>
-                <p>To empower businesses through exceptional custom software development and innovative digital solutions. We transform complex requirements into elegant, scalable applications using cutting-edge technologies including HTML, CSS, JavaScript, SQL, and Agile methodologies that deliver measurable business value.</p>
+                <p>To empower businesses to solve real problems with precisely chosen software solutions. Using our Human-AI methodology, our experts use Agile practices to define requirements and research-based development strategies, while our AI development team implements solutions ensuring every feature delivers measurable value and a bright path to success.</p>
             </div>
 
-            <div class="mission-statement" style="background: linear-gradient(135deg, #FFE066 0%, #CCAA4D 100%); margin-top: 20px; border: 1px solid #e9ecef;">
-                <h3 style="color: #A23E48;">Vision Statement</h3>
-                <p style="color: #A23E48;">To be the premier custom software development partner, recognized for transforming businesses through innovative applications, exceptional database solutions, and Agile development practices that drive sustainable growth and competitive advantage.</p>
+            <div class="mission-statement" style="background: linear-gradient(135deg, #6B8E23 0%, #ffffff 100%); margin-top: 20px; border: 1px solid #e9ecef;">
+                <h3 style="color: #333333;">Vision Statement</h3>
+                <p style="color: #333333;">To lead the software industry's shift from bloated, over-priced applications to purposeful solutions through our innovative Human-AI methodology. We envision a future where organizations achieve competitive advantages through streamlined software that saves time, reduces costs, and extends market reach—proving that focused functionality outperforms feature excess.</p>
             </div>
         </div>
 
         <div class="section">
             <h2>Logo & Visual Identity</h2>
-            <p>The BrightPath Dev logo represents the intersection of code and innovation. The bracket symbols with "BP" symbolize our development expertise, while the forward slash represents the path forward through technology. The light yellow emphasizes our optimistic approach to solving complex development challenges.</p>
+            <p>The BrightPath Dev logo represents the intersection of code and innovation through purposeful simplicity. The bracket symbols with "BP" symbolize our development expertise, while the forward slash represents the clear path forward through streamlined technology solutions. The design philosophy mirrors our approach: clean, functional, and free of unnecessary complexity.</p>
             
             <div class="logo-placeholder">
-                <h4 style="color: #4B3621; margin-bottom: 15px;">💻 Logo Concept Demonstration</h4>
-                <p style="color: #6C757D; margin-bottom: 20px;">The logo uses code syntax elements representing our development expertise and forward-thinking approach:</p>
+                <h4 style="color: #5C5C5C; margin-bottom: 15px;">Logo Concept Demonstration</h4>
+                <p style="color: #6C757D; margin-bottom: 20px;">The logo uses code syntax elements representing our Human-AI methodology and focused approach to development:</p>
                 <div class="logo-grid">
                     <div class="logo-variant light">
-                        <div style="height:60px; width:60px; display:flex; align-items:center; justify-content:center; background:#FFE066; border-radius:8px; margin:0 auto; font-size:1.2rem; font-weight:600; color:#4B3621; font-family: 'JetBrains Mono', monospace;">&lt;BP/&gt;</div>
+                        <img src="Bright Path Digital Icon Only- grey inner circle.png" alt="Bright Path Digital Icon - Grey Inner Circle" style="height:60px; width:60px; display:block; margin:0 auto; border-radius:8px;" />
                         <small>Primary version for light backgrounds</small>
                     </div>
                     <div class="logo-variant dark">
-                        <div style="height:60px; width:60px; display:flex; align-items:center; justify-content:center; background:#333333; border-radius:8px; margin:0 auto; font-size:1.2rem; font-weight:600; color:#FFE066; font-family: 'JetBrains Mono', monospace;">&lt;BP/&gt;</div>
+                        <img src="Bright Path Digital Icon Only- white inner circle.png" alt="Bright Path Digital Icon - White Inner Circle" style="height:60px; width:60px; display:block; margin:0 auto; border-radius:8px;" />
                         <small>Version for dark backgrounds</small>
                     </div>
                     <div class="logo-variant light">
@@ -59,12 +297,12 @@
                 </div>
             </div>
             
-            <p>Maintain consistent proportions and use the monospace font family to emphasize our technical expertise. The logo should always be legible and maintain its code-like appearance across all applications.</p>
+            <p>The logo maintains consistent proportions and uses the monospace font family to emphasize our technical precision. Every element serves a purpose—reflecting our commitment to purposeful design and streamlined solutions that eliminate unnecessary complexity.</p>
         </div>
 
         <div class="section">
-            <h2>Color Palette - Warm & Natural</h2>
-            <p>Our color system balances the energy of light yellow with fresh olive as the secondary color, creating a professional yet approachable aesthetic optimized for technical applications and client trust. Warm red serves as an accent color for highlights and special emphasis.</p>
+            <h2>Color Palette - Purposeful & Professional</h2>
+            <p>Our color system reflects BrightPath's core philosophy: every element serves a purpose. The palette balances warm, approachable tones with professional neutrals, creating a visual identity that mirrors our lean development approach—no unnecessary complexity, maximum impact.</p>
             
             <div class="color-palette">
                 <div class="color-card">
@@ -72,7 +310,7 @@
                     <div class="color-info">
                         <div class="color-name">Light Yellow</div>
                         <div class="color-hex">#FFE066</div>
-                        <p style="font-size: 0.8rem; margin-top: 5px;">Innovation, energy, optimism</p>
+                        <p style="font-size: 0.8rem; margin-top: 5px;">Energy, innovation, bright path forward</p>
                     </div>
                 </div>
                 
@@ -81,7 +319,7 @@
                     <div class="color-info">
                         <div class="color-name">Warm Red</div>
                         <div class="color-hex">#A23E48</div>
-                        <p style="font-size: 0.8rem; margin-top: 5px;">Accent color - Passion, determination, highlights</p>
+                        <p style="font-size: 0.8rem; margin-top: 5px;">Accent color - Focused determination, action</p>
                     </div>
                 </div>
                 
@@ -90,7 +328,7 @@
                     <div class="color-info">
                         <div class="color-name">Fresh Olive</div>
                         <div class="color-hex">#6B8E23</div>
-                        <p style="font-size: 0.8rem; margin-top: 5px;">Secondary color - Growth, stability, natural</p>
+                        <p style="font-size: 0.8rem; margin-top: 5px;">Secondary - Growth, stability, measured progress</p>
                     </div>
                 </div>
                 
@@ -99,16 +337,16 @@
                     <div class="color-info">
                         <div class="color-name">Cream</div>
                         <div class="color-hex">#FFF8E7</div>
-                        <p style="font-size: 0.8rem; margin-top: 5px;">Clean, soft, approachable</p>
+                        <p style="font-size: 0.8rem; margin-top: 5px;">Clean foundation, clear communication</p>
                     </div>
                 </div>
                 
                 <div class="color-card">
                     <div class="color-swatch neutral-grey"></div>
                     <div class="color-info">
-                        <div class="color-name">Neutral Greyn</div>
-                        <div class="color-hex">#4B3621</div>
-                        <p style="font-size: 0.8rem; margin-top: 5px;">Sophistication, reliability, foundation</p>
+                        <div class="color-name">Neutral Grey</div>
+                        <div class="color-hex">#5C5C5C</div>
+                        <p style="font-size: 0.8rem; margin-top: 5px;">Professional foundation, technical precision</p>
                     </div>
                 </div>
             </div>
@@ -116,350 +354,102 @@
 
         <div class="section">
             <h2>Typography System</h2>
+            <p>Our typography choices reflect the Human-AI methodology: Inter for human communication and JetBrains Mono for technical precision. Each font serves a specific purpose, ensuring clear hierarchy and optimal readability across all touchpoints.</p>
+            
             <div class="typography-demo">
                 <div class="font-example">
                     <div class="inter-header">Inter Headers</div>
-                    <p style="color: #6C757D; font-size: 0.9rem;">Modern sans-serif for headlines, user interfaces, and professional emphasis</p>
+                    <p style="color: #6C757D; font-size: 0.9rem;">Modern sans-serif for headlines, business communications, and human-focused content</p>
                 </div>
                 
                 <div class="font-example">
                     <div class="inter-subheading">Inter Subheadings</div>
-                    <p style="color: #6C757D; font-size: 0.9rem;">Clean, readable typography for subheadings and secondary hierarchy</p>
+                    <p style="color: #6C757D; font-size: 0.9rem;">Clean, approachable typography for secondary hierarchy and client-facing materials</p>
                 </div>
                 
                 <div class="font-example">
                     <div class="jetbrains-code">JetBrains Mono Code</div>
-                    <p style="color: #6C757D; font-size: 0.9rem;">Developer-optimized monospace font for code examples, technical content, and branding</p>
+                    <p style="color: #6C757D; font-size: 0.9rem;">Developer-optimized monospace for technical content, code examples, and AI-driven outputs</p>
                 </div>
                 
                 <div class="font-example">
                     <div class="body-text">Inter Body Text</div>
-                    <p style="color: #6C757D; font-size: 0.9rem;">Highly legible sans-serif for all body content, ensuring clarity in technical documentation</p>
+                    <p style="color: #6C757D; font-size: 0.9rem;">Highly legible sans-serif for all body content, ensuring clarity in business communications</p>
                 </div>
             </div>
         </div>
 
         <div class="section">
             <h2>Core Technologies & Development Values</h2>
+            <p>Our technology stack reflects the Human-AI methodology: strategic human oversight combined with AI-driven implementation. Each technology serves a specific purpose in delivering streamlined, purposeful solutions without unnecessary complexity.</p>
+            
             <div class="values-grid">
                 <div class="value-card">
-                    <div class="value-icon">🌐</div>
-                    <h4>HTML & CSS Mastery</h4>
-                    <p>Expert front-end development creating semantic, accessible, and responsive user interfaces with modern CSS techniques.</p>
-                </div>
-                
-                <div class="value-card">
-                    <div class="value-icon">⚡</div>
-                    <h4>JavaScript Excellence</h4>
-                    <p>Advanced JavaScript development for dynamic, interactive applications with modern frameworks and vanilla JS expertise.</p>
-                </div>
-                
-                <div class="value-card">
-                    <div class="value-icon">🗄️</div>
-                    <h4>SQL & Database Design</h4>
-                    <p>Comprehensive database solutions including design, optimization, analysis, and complex query development.</p>
-                </div>
-                
-                <div class="value-card">
-                    <div class="value-icon">🔄</div>
-                    <h4>Agile Methodologies</h4>
-                    <p>Iterative development practices ensuring efficient project delivery, continuous improvement, and client collaboration.</p>
+                    <div class="value-icon">🤝</div>
+                    <h4>Human-AI Collaboration</h4>
+                    <p>Strategic problem definition and requirement analysis by human experts, paired with AI-driven development implementation for optimal efficiency and precision.</p>
                 </div>
                 
                 <div class="value-card">
                     <div class="value-icon">🎯</div>
-                    <h4>Custom Software Solutions</h4>
-                    <p>Tailored application development that perfectly fits business requirements and scales with organizational growth.</p>
+                    <h4>Purposeful Feature Selection</h4>
+                    <p>Every feature is deliberately chosen to solve real business problems. No bloat, no unnecessary complexity—only functionality that delivers measurable value.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">🔄</div>
+                    <h4>Agile Methodology</h4>
+                    <p>Streamlined Agile practices that create direct pathways from business problems to software solutions, ensuring scope control and rapid value delivery.</p>
                 </div>
                 
                 <div class="value-card">
                     <div class="value-icon">📊</div>
-                    <h4>Database Analysis</h4>
-                    <p>Deep data insights through advanced analysis, reporting, and business intelligence solutions.</p>
+                    <h4>Measurable Results</h4>
+                    <p>Every solution delivers quantifiable business outcomes: saved time, reduced costs, improved efficiency, and competitive advantages.</p>
                 </div>
                 
                 <div class="value-card">
-                    <div class="value-icon">🚀</div>
-                    <h4>Performance Optimization</h4>
-                    <p>Code efficiency, database tuning, and application performance enhancement for optimal user experiences.</p>
+                    <div class="value-icon">⚡</div>
+                    <h4>Lean Development Stack</h4>
+                    <p>Carefully selected technologies that maximize impact while minimizing complexity. Modern, efficient, and purpose-driven technical choices.</p>
                 </div>
                 
                 <div class="value-card">
-                    <div class="value-icon">🔧</div>
-                    <h4>Technical Innovation</h4>
-                    <p>Cutting-edge development approaches using the latest technologies and best practices in software engineering.</p>
+                    <div class="value-icon">🛡️</div>
+                    <h4>Scope Control</h4>
+                    <p>Rigorous project boundaries prevent feature creep and maintain focus on original business objectives, ensuring projects deliver precisely what was promised.</p>
                 </div>
             </div>
         </div>
 
         <div class="section">
             <h2>Learning & Development Excellence</h2>
+            <p>Continuous learning drives our Human-AI methodology. Our team stays at the forefront of technology trends while maintaining focus on practical, business-solving applications rather than chasing every new framework or trend.</p>
+            
             <div class="values-grid">
                 <div class="value-card">
                     <div class="value-icon">🎓</div>
                     <h4>Learning and Development Philosophy</h4>
-                    <p>Fostering a culture of continuous learning and growth, ensuring our team stays current with emerging technologies and best practices in software development.</p>
+                    <p>Fostering purposeful learning that directly supports our lean development approach. We focus on technologies and methodologies that enhance our ability to deliver streamlined solutions.</p>
                 </div>
                 
                 <div class="value-card">
                     <div class="value-icon">🏆</div>
                     <h4>Certification Support</h4>
-                    <p>Supporting team members in achieving industry certifications and professional development goals to maintain expertise across all technology stacks.</p>
+                    <p>Supporting team members in achieving certifications that strengthen our Human-AI methodology and enhance our ability to solve real business problems efficiently.</p>
                 </div>
                 
                 <div class="value-card">
                     <div class="value-icon">💬</div>
                     <h4>Monthly Tech Talks</h4>
-                    <p>Regular knowledge sharing sessions featuring emerging technologies, development trends, and innovative solutions to keep our skills sharp and current.</p>
+                    <p>Regular knowledge sharing focused on practical applications, emerging AI development tools, and techniques that support our lean, purposeful development philosophy.</p>
                 </div>
                 
                 <div class="value-card">
                     <div class="value-icon">🔄</div>
                     <h4>Agile Frameworks and Practices</h4>
-                    <p>Deep expertise in Scrum, Kanban, and other Agile methodologies, ensuring efficient project delivery and continuous process improvement.</p>
+                    <p>Deep expertise in streamlined Agile methodologies that eliminate waste and maintain direct pathways from business problems to software solutions.</p>
                 </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Brand Personality</h2>
-            <p>BrightPath Dev embodies a brand personality that resonates with technical excellence, innovation, and reliable problem-solving:</p>
-            <div class="personality-traits">
-                <span class="trait">Innovative</span>
-                <span class="trait">Technical</span>
-                <span class="trait">Reliable</span>
-                <span class="trait">Agile</span>
-                <span class="trait">Solution-Focused</span>
-                <span class="trait">Collaborative</span>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Target Audience</h2>
-            <p>Our primary target audience includes businesses and organizations seeking custom software development, database solutions, and technical expertise to drive their digital transformation.</p>
-            
-            <div class="audience-grid">
-                <div class="audience-card">
-                    <h4>Growing Businesses</h4>
-                    <p>Companies needing custom software solutions and database management systems</p>
-                </div>
-                
-                <div class="audience-card">
-                    <h4>Established Enterprises</h4>
-                    <p>Organizations requiring application modernization and database optimization</p>
-                </div>
-                
-                <div class="audience-card">
-                    <h4>Startups & Entrepreneurs</h4>
-                    <p>New ventures needing MVP development and scalable technical foundations</p>
-                </div>
-                
-                <div class="audience-card">
-                    <h4>Non-Profit Organizations</h4>
-                    <p>Mission-driven organizations seeking cost-effective custom software solutions</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Development Approach</h2>
-            <div class="code-example">
-// BrightPath Dev Development Philosophy
-const development = {
-  approach: "agile",
-  technologies: ["HTML", "CSS", "JavaScript", "SQL"],
-  focus: "custom_solutions",
-  methodology: "iterative_improvement",
-  goal: "exceptional_user_experience"
-};
-            </div>
-            <p style="margin-top: 15px;">Our development approach combines technical excellence with Agile methodologies, ensuring efficient delivery of high-quality custom software solutions.</p>
-        </div>
-
-        <div class="section">
-            <h2>Unique Selling Proposition</h2>
-            <div class="usp-highlight">
-                <h3>What Sets Us Apart</h3>
-                <p style="color: #333333;">BrightPath Dev differentiates itself through comprehensive full-stack expertise, advanced database analysis capabilities, and Agile development practices that deliver custom software solutions perfectly aligned with business objectives and technical requirements.</p>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Brand Applications</h2>
-            
-            <div class="business-card">
-                <div>
-                    <h3>BRIGHTPATH DEV</h3>
-                    <p>Custom Software • Database Solutions • Agile Development</p>
-                </div>
-                <div>
-                    <p>📧 hello@brightpathdev.com • 📱 (555) 123-CODE</p>
-                    <p>🌐 brightpathdev.com</p>
-                </div>
-            </div>
-            
-            <div class="proposal-template">
-                <h3>BRIGHTPATH DEV</h3>
-                <p style="font-size: 1.2rem;">Custom Software Solutions • Database Excellence</p>
-                <p>HTML • CSS • JavaScript • SQL • Agile Methodologies</p>
-            </div>
-
-            <div class="application-grid">
-                <div class="application-card">
-                    <h4>Development Portfolio</h4>
-                    <p>Comprehensive showcase of custom applications, database solutions, and technical achievements</p>
-                </div>
-                
-                <div class="application-card">
-                    <h4>Client Project Dashboards</h4>
-                    <p>Agile project management interfaces demonstrating our systematic development approach</p>
-                </div>
-                
-                <div class="application-card">
-                    <h4>Technical Documentation</h4>
-                    <p>Professional documentation showcasing our HTML, CSS, JavaScript, and SQL expertise</p>
-                </div>
-                
-                <div class="application-card">
-                    <h4>Database Analysis Reports</h4>
-                    <p>Comprehensive data insights and optimization recommendations for business intelligence</p>
-                </div>
-                
-                <div class="application-card">
-                    <h4>Code Quality Standards</h4>
-                    <p>Development guidelines and best practices demonstrating our commitment to excellence</p>
-                </div>
-                
-                <div class="application-card">
-                    <h4>Agile Process Showcases</h4>
-                    <p>Project methodology demonstrations highlighting our iterative development capabilities</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Brand Voice & Messaging</h2>
-            <div class="messaging-grid">
-                <div class="messaging-card">
-                    <h4 style="color: #4B3621; margin-bottom: 10px;">For Technical Solutions</h4>
-                    <p><strong>Tone:</strong> Expert, precise, solution-oriented</p>
-                    <p style="font-style: italic; color: #A23E48; margin-top: 10px;">"Transforming complex requirements into elegant code solutions."</p>
-                </div>
-                
-                <div class="messaging-card">
-                    <h4 style="color: #4B3621; margin-bottom: 10px;">For Business Development</h4>
-                    <p><strong>Tone:</strong> Professional, consultative, results-focused</p>
-                    <p style="font-style: italic; color: #A23E48; margin-top: 10px;">"Custom software that drives your business forward."</p>
-                </div>
-                
-                <div class="messaging-card">
-                    <h4 style="color: #4B3621; margin-bottom: 10px;">For Project Management</h4>
-                    <p><strong>Tone:</strong> Collaborative, transparent, efficient</p>
-                    <p style="font-style: italic; color: #A23E48; margin-top: 10px;">"Agile development that adapts to your evolving needs."</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Implementation Guidelines</h2>
-            <p>All development work, client communications, and technical deliverables must align with these brand guidelines to ensure consistency:</p>
-            
-            <div style="margin-top: 20px;">
-                <div class="phase">
-                    <h4>Agile Development Process</h4>
-                    <ul>
-                        <li>Iterative development cycles with regular client feedback and collaboration</li>
-                        <li>Sprint planning and retrospective processes that demonstrate continuous improvement</li>
-                        <li>Project management tools and communication protocols that maintain transparency</li>
-                    </ul>
-                </div>
-
-                <div class="phase">
-                    <h4>Custom Solution Delivery</h4>
-                    <ul>
-                        <li>Requirements analysis methodologies that ensure accurate solution development</li>
-                        <li>Quality assurance processes for all custom software applications</li>
-                        <li>Client training and support protocols that maximize solution adoption</li>
-                    </ul>
-                </div>
-                
-                <div class="phase">
-                    <h4>Brand Consistency Standards</h4>
-                    <ul>
-                        <li>Color palette usage optimized for technical interfaces and development tools</li>
-                        <li>Typography standards using Inter and JetBrains Mono across all communications</li>
-                        <li>Logo implementation guidelines ensuring professional technical branding</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div style="background: linear-gradient(135deg, #FFE066 0%, #6B8E23 50%, #ffffff 100%); color: #4B3621; padding: 30px; border-radius: 15px; margin-top: 30px; text-align: center; border: 1px solid #e9ecef;">
-                <h3 style="margin-bottom: 15px; color: #000000; font-family: 'Inter', sans-serif; font-weight: 600;">Brand Implementation Promise</h3>
-                <p style="font-size: 1.1rem; line-height: 1.6; color: #000000;">
-                    BrightPath Dev consistently delivers exceptional custom software solutions, database excellence, and Agile development practices. Every project reinforces our commitment to technical innovation, collaborative problem-solving, and measurable business results through HTML, CSS, JavaScript, SQL, and modern development methodologies.
-                </p>
-            </div>
-        </div>
-        
-        <div class="section">
-            <h2>Brand Touchpoints</h2>
-            <p>Every interaction with BrightPath Dev is an opportunity to showcase our technical expertise and development excellence:</p>
-            
-            <div class="application-grid">
-                <div class="application-card">
-                    <h4>💻 Technical Consultations</h4>
-                    <p>Initial meetings demonstrating our development expertise and solution-oriented approach</p>
-                </div>
-                
-                <div class="application-card">
-                    <h4>📋 Project Proposals</h4>
-                    <p>Detailed technical proposals showcasing our understanding of custom software requirements</p>
-                </div>
-                
-                <div class="application-card">
-                    <h4>🔄 Agile Development Process</h4>
-                    <p>Sprint planning, daily standups, and retrospectives that demonstrate our collaborative approach</p>
-                </div>
-                
-                <div class="application-card">
-                    <h4>📊 Database Solutions</h4>
-                    <p>SQL expertise and database analysis reports showcasing our data management capabilities</p>
-                </div>
-                
-                <div class="application-card">
-                    <h4>🌐 Code Repositories</h4>
-                    <p>Well-documented HTML, CSS, and JavaScript code demonstrating our development standards</p>
-                </div>
-                
-                <div class="application-card">
-                    <h4>🚀 Application Deployments</h4>
-                    <p>Live custom software solutions that reflect our technical capabilities and user experience focus</p>
-                </div>
-                
-                <div class="application-card">
-                    <h4>📈 Performance Analytics</h4>
-                    <p>Application performance reports and optimization recommendations showcasing our technical depth</p>
-                </div>
-                
-                <div class="application-card">
-                    <h4>🎯 Success Stories</h4>
-                    <p>Case studies highlighting our custom development solutions and business impact achievements</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="section">
-            <h2>Brand Guidelines Summary</h2>
-            <div style="background: #FFF8E7; padding: 25px; border-radius: 10px; border-left: 4px solid #FFE066;">
-                <h4 style="color: #4B3621; margin-bottom: 15px;">Key Reminders</h4>
-                <ul style="color: #474747; line-height: 1.8;">
-                    <li><strong>Technical Excellence:</strong> Maintain high standards across HTML, CSS, JavaScript, and SQL development</li>
-                    <li><strong>Agile Methodology:</strong> Demonstrate iterative, collaborative development practices in all projects</li>
-                    <li><strong>Custom Solutions Focus:</strong> Emphasize tailored software development that meets specific business needs</li>
-                    <li><strong>Database Expertise:</strong> Showcase advanced SQL skills and database analysis capabilities</li>
-                    <li><strong>Professional Branding:</strong> Use warm natural color palette and technical typography consistently</li>
-                    <li><strong>Solution-Oriented Approach:</strong> Always emphasize problem-solving and business value in communications</li>
-                </ul>
             </div>
         </div>
     </div>
