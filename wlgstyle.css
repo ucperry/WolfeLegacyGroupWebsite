@@ -232,6 +232,17 @@
             overflow: auto;
         }
 
+        .portfolio-card .coming-soon {
+            margin-top: 15px;
+            padding: 5px 12px;
+            background: #e0e0e0;
+            color: #333;
+            font-weight: 600;
+            border-radius: 8px;
+            display: inline-block;
+            font-size: 0.95em;
+        }
+
         .portfolio-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 30px rgba(66, 82, 99, 0.3);
